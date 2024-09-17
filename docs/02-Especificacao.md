@@ -25,10 +25,8 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |EU COMO... `PERSONA`               | QUERO/PRECISO ... `FUNCIONALIDADE`                                  |PARA ... `MOTIVO/VALOR`                                       |
 |-----------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------|
 |Eu como estudante Universitario    | Quero encontrar rapidamente os livros relacionados ao meu curso     | para otimizar meus estudos em assuntos específicos.          |
-|Eu, como professor  | Desejo reservar livros para minhas | Para lecionar minhas aulas             |
-|                    | aulas                              |                                        |
-|Eu, como unidade    | Desejo monitorar a                 | Para garantir que o acervo esteja      |
-|de ensino           | disponibilidade dos livros         | sempre atualizado                      |
+|Eu, como professor                 | Desejo reservar livros para minhas aulas                            | Para lecionar minhas aulas                                   |
+|Eu, como unidade de ensino   | Desejo monitorar a disponibilidade dos livros                 | Para garantir que o acervo esteja sempre atualizado       |
 |Eu como estudante   | Quero renovar meus livros sem ter  | Para economizar tempo e diminuir       |
 |                    | que comparecer a biblioteca        | a burocracia                           |
 |Eu como estudante   | Quero receber notificações quando  | para otimizar meus estudos em          |
