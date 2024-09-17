@@ -28,29 +28,21 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |Universitario       |  livros relacionados ao meu curso  |   assuntos específicos.                |  
 |Eu, como professor  | Desejo reservar livros para minhas | Para lecionar minhas aulas             |
 |                    | aulas                              |                                        |
-|--------------------|------------------------------------|----------------------------------------|
 |Eu, como unidade    | Desejo monitorar a                 | Para garantir que o acervo esteja      |
 |de ensino           | disponibilidade dos livros         | sempre atualizado                      |
-|--------------------|------------------------------------|----------------------------------------|
 |Eu como estudante   | Quero renovar meus livros sem ter  | Para economizar tempo e diminuir       |
 |                    | que comparecer a biblioteca        | a burocracia                           |
-|--------------------|------------------------------------|----------------------------------------|
 |Eu como estudante   | Quero receber notificações quando  | para otimizar meus estudos em          |
 |                    | os livros que reservei estiverem   | assuntos específicos.                  |
 |                    | disponiveis                        |                                        |
-|--------------------|------------------------------------|----------------------------------------|
 |Eu como professor   | Desejo poder recomendar leituras   | Para facilitar o acesso ao material    |
 |                    |                                    | complementar que considero importante  |
-|--------------------|------------------------------------|----------------------------------------|
 |Eu, como unidade    | Quero poder acompanhar as          | Para assim poder ajustar o acervo      |
 |de ensino           | solicitações de novos títulos      | de acordo com as necessidades          |
-|--------------------|------------------------------------|----------------------------------------|
 |Eu como estudante   | Desejo poder acessar artigos       | Preciso de fontes confiáveis           |
 |                    | acadêmicos diretamente pela app    | e atualizadas para minhas pesquisas    |
-|--------------------|------------------------------------|----------------------------------------|
 |Eu como estudante   | Quero encontrar rapidamente os     | para otimizar meus estudos em          |
 |Universitario       | livros relacionados ao meu curso   | assuntos específicos.                  |
-|--------------------|------------------------------------|----------------------------------------|
 
 
 ## Requisitos
