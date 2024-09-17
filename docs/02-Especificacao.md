@@ -44,8 +44,15 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Cadastro de livros | ALTA | 
+|RF-002| Gerenciamento de acervos   | ALTA |
+|RF-003| Renovação de empréstimo   | ALTA |
+|RF-004| Emprestimo de livros   | ALTA |
+|RF-005| Pagamento de multas   | BAIXA |
+|RF-006| Notificações de prazo   | MEDIA |
+|RF-007| Reserva de livros  | ALTA |
+|RF-008| Devolução de livros  | ALTA |
+|RF-008| Fóruns  | ALTA |
 
 ### Requisitos não funcionais
 
