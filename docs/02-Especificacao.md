@@ -22,10 +22,9 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Eu como estudante   | Quero encontrar rapidamente os     | para otimizar meus estudos em          |
-|Universitario       |  livros relacionados ao meu curso  |   assuntos específicos.                |  
+|EU COMO... `PERSONA`               | QUERO/PRECISO ... `FUNCIONALIDADE`                                  |PARA ... `MOTIVO/VALOR`                                       |
+|-----------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------|
+|Eu como estudante Universitario    | Quero encontrar rapidamente os livros relacionados ao meu curso     | para otimizar meus estudos em assuntos específicos.          |
 |Eu, como professor  | Desejo reservar livros para minhas | Para lecionar minhas aulas             |
 |                    | aulas                              |                                        |
 |Eu, como unidade    | Desejo monitorar a                 | Para garantir que o acervo esteja      |
