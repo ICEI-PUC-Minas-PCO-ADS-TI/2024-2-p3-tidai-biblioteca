@@ -38,7 +38,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ## Requisitos
 
-As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade dos requisitos, aplique uma técnica de priorização e detalhe como essa técnica foi aplicada.
+As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos funcionais
 
@@ -52,43 +52,34 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-006| Notificações de prazo   | MEDIA |
 |RF-007| Reserva de livros  | ALTA |
 |RF-008| Devolução de livros  | ALTA |
-|RF-008| Fóruns  | ALTA |
+|RF-009| Fóruns  | BAIXA |
+|RF-010| Favoritos  | BAIXA |
+|RF-011| Acesso a conteudos digitais  | ALTA |
+|RF-012| Cadastro de usuários  | ALTA |
+|RF-013| Histórico de leitura e emprestimos  | BAIXA |
+
+
 
 ### Requisitos não funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
-|RNF-002| Deve processar as requisições do usuário em no máximo 3 segundos |  BAIXA | 
+|RNF-001| Disponibilidade: O sistema deve ter uma disponibilidade, garantindo que os usuários possam acessar o aplicativo a qualquer momento. | MÉDIA | 
+|RNF-002| Usabilidade: A interface do aplicativo deve ser intuitiva e fácil de usar, independentemente do nível de habilidade do usuário com tecnologia. |  ALTA |
+|RNF-003| Confiabilidade: O sistema deve garantir a integridade dos dados, prevenindo a perda ou corrupção de informações, especialmente em operações críticas como empréstimos e reservas de livros. |  ALTA |
+|RNF-004| Desempenho: O sistema deve ser capaz de responder às solicitações dos usuários em no máximo 5 segundos, garantindo uma navegação fluida e sem atrasos, mesmo em momentos de pico de acessos. |  MÉDIA |
+|RNF-005| Manutenção: O código deve ser modular e bem documentado para facilitar futuras manutenções, atualizações e possíveis expansões de funcionalidades, permitindo que desenvolvedores possam facilmente compreender e modificar o sistema. |  BAIXA |
 
-Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
-
-> **Links úteis**:
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [Entenda o que são requisitos de software, a diferença entre requisito funcional e não funcional, e como identificar e documentar cada um deles](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-O projeto está restrito aos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre |
-|002| O custo total do projeto não deve exceder o orçamento definido       |
+|001|O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 09/12/2024. |
+|002|A equipe não pode subcontratar o desenvolvimento do trabalho.       |
+|003|Todos da equipe devem desenvolver.       |
 
 ## Diagrama de casos de uso
 
