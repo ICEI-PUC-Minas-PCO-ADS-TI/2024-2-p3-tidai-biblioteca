@@ -1,10 +1,6 @@
 # Especificação do projeto
 
-<span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
+O presente projeto será desenvolvido utilizando React no frontend e Node.js no backend. O React, sendo uma biblioteca JavaScript popular para a criação de interfaces de usuário dinâmicas e componentes reutilizáveis, permitirá a construção de um aplicativo de biblioteca interativo e eficiente. A separação da lógica visual e funcional será gerenciada por CSS para estilizar os componentes React, mantendo a organização entre a estrutura e a aparência do aplicativo.No backend, utilizaremos Node.js, uma plataforma JavaScript que permite construir aplicativos escaláveis e eficientes no lado do servidor. Node.js será responsável pelo gerenciamento das operações de persistência de dados, interações com banco de dados e APIs, garantindo uma comunicação fluida entre o frontend e o backend.
 
 ## Personas
 
@@ -28,17 +24,35 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Eu como estudante   | Quero encontrar rapidamente os     | para otimizar meus estudos em          |
+|Universitario       | livros relacionados ao meu curso   | assuntos específicos.                  |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu, como professor  | Desejo reservar livros para minhas | Para lecionar minhas aulas             |
+|                    | aulas                              |                                        |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu, como unidade    | Desejo monitorar a                 | Para garantir que o acervo esteja      |
+|de ensino           | disponibilidade dos livros         | sempre atualizado                      |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu como estudante   | Quero renovar meus livros sem ter  | Para economizar tempo e diminuir       |
+|                    | que comparecer a biblioteca        | a burocracia                           |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu como estudante   | Quero receber notificações quando  | para otimizar meus estudos em          |
+|                    | os livros que reservei estiverem   | assuntos específicos.                  |
+|                    | disponiveis                        |                                        |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu como professor   | Desejo poder recomendar leituras   | Para facilitar o acesso ao material    |
+|                    |                                    | complementar que considero importante  |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu, como unidade    | Quero poder acompanhar as          | Para assim poder ajustar o acervo      |
+|de ensino           | solicitações de novos títulos      | de acordo com as necessidades          |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu como estudante   | Desejo poder acessar artigos       | Preciso de fontes confiáveis           |
+|                    | acadêmicos diretamente pela app    | e atualizadas para minhas pesquisas    |
+|--------------------|------------------------------------|----------------------------------------|
+|Eu como estudante   | Quero encontrar rapidamente os     | para otimizar meus estudos em          |
+|Universitario       | livros relacionados ao meu curso   | assuntos específicos.                  |
+|--------------------|------------------------------------|----------------------------------------|
 
-Apresente aqui as histórias de usuários que são relevantes para o projeto da sua solução. As histórias de usuários consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuários por contexto, para facilitar consultas recorrentes a esta parte do documento.
-
-> **Links úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (user stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 common user story mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
