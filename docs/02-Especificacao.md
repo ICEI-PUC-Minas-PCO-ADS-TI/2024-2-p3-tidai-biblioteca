@@ -26,7 +26,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |--------------------|------------------------------------|----------------------------------------|
 |Eu como estudante   | Quero encontrar rapidamente os     | para otimizar meus estudos em          |
 |Universitario       | livros relacionados ao meu curso   | assuntos específicos.                  |
-|--------------------|------------------------------------|----------------------------------------|
+|                    |                                    |                                        |
 |Eu, como professor  | Desejo reservar livros para minhas | Para lecionar minhas aulas             |
 |                    | aulas                              |                                        |
 |--------------------|------------------------------------|----------------------------------------|
