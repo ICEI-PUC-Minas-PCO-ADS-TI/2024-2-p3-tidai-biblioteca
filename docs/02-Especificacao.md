@@ -4,25 +4,61 @@ O presente projeto será desenvolvido utilizando React no frontend e Node.js no 
 
 ## Personas
 
-1. Marcelo - Pesquisador de Mercado
-Idade: 37 anos
-Profissão: Pesquisador de Mercado em uma Consultoria de Estratégia
-Perfil: Marcelo atua em uma agência de consultoria estratégica, onde realiza pesquisas de mercado profundas para elaborar relatórios analíticos que ajudam seus clientes a tomar decisões informadas. Ele trabalha com grandes volumes de dados e tendências, buscando fontes confiáveis para validar suas descobertas. Sua rotina exige que ele se mantenha constantemente atualizado em relação às melhores práticas, estudos de caso, relatórios econômicos e acadêmicos, além de publicações de renome.
-Motivações: Acessar materiais de alta relevância e credibilidade, como livros acadêmicos, relatórios estratégicos, estudos de mercado e artigos científicos, sem precisar investir constantemente em plataformas caras de acesso a dados.
-Necessidades: Um sistema de gestão de biblioteca que ofereça fácil acesso a e-books, artigos científicos e bases de dados, com filtros avançados para facilitar a busca por temas específicos, como setor de mercado, comportamento do consumidor, e tendências econômicas.
-Desafios: Identificar fontes que sejam atualizadas, relevantes e, acima de tudo, confiáveis, especialmente quando precisa cruzar dados de diferentes regiões e indústrias para seus relatórios.
-Objetivos: Economizar tempo e recursos ao encontrar rapidamente material de apoio de qualidade que sustente suas pesquisas e relatórios, sem depender de assinaturas caras de plataformas de pesquisa.
+1. Lucas - Estudante Universitário
+Idade: 21 anos
+Curso: Administração de Empresas
+Perfil: Lucas é um estudante dedicado que busca constantemente melhorar seu desempenho acadêmico. Ele frequenta a biblioteca regularmente para pesquisar livros e materiais que complementem suas aulas. Seu foco é otimizar seus estudos, especialmente nas disciplinas relacionadas à sua área.
+Motivações: Encontrar rapidamente livros relacionados ao seu curso para aprofundar seu conhecimento e se preparar adequadamente para as avaliações.
+Necessidades: Um sistema que permita a busca eficiente por livros específicos, com filtros por tema e disponibilidade.
+Desafios: Lidar com a pressão acadêmica e a falta de tempo, tornando essencial o acesso rápido e prático a materiais relevantes.
+Objetivos: Maximizar seu aprendizado e rendimento nas avaliações, utilizando os recursos da biblioteca de forma eficaz.
 
-2. Isabela - Mãe e Voluntária Comunitária
-Idade: 42 anos
-Profissão: Dona de Casa e Voluntária Cultural
-Perfil: Isabela é uma mãe engajada na educação dos filhos e participa ativamente das atividades culturais da sua comunidade. Ela organiza eventos de leitura para crianças e jovens, promovendo a literatura como forma de aprendizado e diversão. Seu objetivo é fomentar o hábito da leitura entre os mais jovens e encontrar materiais educativos acessíveis, tanto físicos quanto digitais, que possam ser utilizados nas atividades que organiza.
-Motivações: Facilitar o acesso a livros infantis e juvenis para atividades educacionais e recreativas, além de promover a inclusão digital ao compartilhar e-books e outros recursos digitais durante eventos comunitários.
-Necessidades: Um sistema de biblioteca que permita a reserva de livros físicos, o acesso a uma ampla gama de e-books infantis e juvenis, e a criação de listas de leitura específicas para as crianças e jovens da comunidade. A funcionalidade de pesquisa deve incluir filtros por faixa etária, temas e níveis de leitura.
-Desafios: Garantir que os materiais educativos e literários estejam sempre atualizados e sejam acessíveis à comunidade local, com opções físicas e digitais adaptadas às diferentes idades e níveis de leitura das crianças.
-Objetivos: Organizar eventos de leitura de forma eficiente e contar com uma plataforma que permita o fácil acesso e reserva de livros que possam enriquecer as atividades culturais, incentivando o hábito da leitura nas crianças e adolescentes.
+2. Maria - Professora Universitária
+Idade: 38 anos
+Disciplina: Psicologia
+Perfil: Maria é uma professora apaixonada pelo ensino e pela promoção do conhecimento. Ela valoriza a formação contínua e busca sempre novos materiais para enriquecer suas aulas. Organiza atividades e discussões em sala que requerem acesso a livros e artigos específicos.
+Motivações: Reservar livros que serão utilizados em suas aulas para garantir que seus alunos tenham acesso ao material necessário.
+Necessidades: Um sistema que facilite a reserva de livros e o acesso a recomendações de leitura.
+Desafios: Gerenciar o tempo entre a pesquisa de novos materiais e as obrigações acadêmicas, além de atender às necessidades de seus alunos.
+Objetivos: Oferecer aulas dinâmicas e bem fundamentadas, utilizando materiais atualizados e relevantes.
 
-3. Pedro - Desenvolvedor de Software
+3. Rafael - Coordenador de Ensino
+Idade: 45 anos
+Cargo: Coordenador de Graduação
+Perfil: Rafael é responsável por monitorar o acervo da biblioteca e garantir que os materiais estejam sempre atualizados. Ele se comunica frequentemente com professores e alunos para entender suas necessidades e adaptar o acervo.
+Motivações: Garantir a disponibilidade e a atualização dos livros na biblioteca para atender às demandas dos cursos.
+Necessidades: Um sistema que possibilite o monitoramento da disponibilidade dos livros e a solicitação de novos títulos de forma prática.
+Desafios: Lidar com orçamentos limitados e diferentes solicitações de diversos cursos, equilibrando as prioridades de aquisição.
+Objetivos: Manter o acervo relevante e acessível, promovendo a excelência acadêmica na instituição.
+
+4. Ana - Estudante de Graduação
+Idade: 19 anos
+Curso: Engenharia Civil
+Perfil: Ana é uma estudante engajada, que valoriza a eficiência em suas atividades acadêmicas. Ela utiliza frequentemente a biblioteca, mas busca maneiras de economizar tempo no processo de renovação de livros e pesquisa de materiais.
+Motivações: Renovar seus livros sem precisar ir até a biblioteca, facilitando sua rotina acadêmica.
+Necessidades: Um sistema que permita a renovação online de empréstimos e a consulta à disponibilidade de livros.
+Desafios: A pressão de prazos e a carga de trabalho intensa exigem que ela otimize suas tarefas diárias.
+Objetivos: Reduzir a burocracia e maximizar o tempo para estudar e participar de atividades extracurriculares.
+
+5. Carla - Professora de Educação
+Idade: 35 anos
+Disciplina: Literatura
+Perfil: Carla é uma professora que acredita no poder da leitura para a formação integral dos alunos. Ela frequentemente recomenda livros e artigos para complementar suas aulas e estimular o interesse dos estudantes.
+Motivações: Recomendar leituras relevantes e acessíveis para seus alunos, promovendo a formação crítica e o amor pela literatura.
+Necessidades: Um sistema que permita fácil recomendação de livros e acesso a novos lançamentos.
+Desafios: Encontrar materiais que estejam alinhados ao currículo e que despertem o interesse dos alunos.
+Objetivos: Enriquecer suas aulas com materiais diversificados e relevantes, contribuindo para a formação de leitores críticos.
+
+6. Fernanda - Coordenadora de Biblioteca
+Idade: 40 anos
+Cargo: Coordenadora de Biblioteca
+Perfil: Fernanda é responsável por gerenciar o acervo e as operações da biblioteca. Ela lida diretamente com alunos e professores, buscando sempre entender suas necessidades para ajustar a oferta de livros e recursos.
+Motivações: Acompanhar as solicitações de novos títulos e garantir que a biblioteca atenda às necessidades acadêmicas da instituição.
+Necessidades: Um sistema que possibilite a visualização de solicitações de novos títulos e a atualização do acervo de forma prática.
+Desafios: Conciliar a administração da biblioteca com as demandas variadas de diferentes cursos e professores.
+Objetivos: Prover um acervo atualizado e diversificado, garantindo que a biblioteca seja um recurso valioso para a comunidade acadêmica.
+
+7. Pedro - Desenvolvedor de Software
 Idade: 28 anos
 Profissão: Programador Freelancer
 Perfil: Pedro é um desenvolvedor autodidata que está constantemente aprimorando suas habilidades em novas linguagens de programação e frameworks. Ele busca por livros técnicos, manuais e outros recursos de qualidade para expandir seus conhecimentos, além de também se interessar por conteúdos relacionados a soft skills e desenvolvimento pessoal. Pedro prefere fontes acessíveis que não dependam de assinaturas caras e plataformas fechadas.
@@ -31,16 +67,7 @@ Necessidades: Um sistema de biblioteca que ofereça uma ampla coleção de livro
 Desafios: Achar fontes atualizadas, técnicas e confiáveis que estejam disponíveis em uma única plataforma, permitindo acesso fácil e rápido a materiais diversificados e pertinentes ao mercado de tecnologia.
 Objetivos: Expandir suas habilidades em desenvolvimento de software e acessar uma biblioteca que ofereça conteúdos técnicos e de desenvolvimento pessoal, tudo de forma integrada e acessível, sem custos elevados.
 
-4. Camila - Influenciadora Digital
-Idade: 29 anos
-Profissão: Criadora de conteúdo de lifestyle e cultura
-Perfil: Camila é uma influenciadora digital especializada em cultura pop, literatura e estilo de vida. Ela utiliza diversas plataformas para engajar seu público e criar conteúdos originais. Sua rotina inclui a busca constante por tendências culturais, novos lançamentos literários, e fontes de pesquisa confiáveis que possam inspirar seus vídeos, postagens e recomendações de leitura.
-Motivações: Camila busca estar sempre atualizada com as novidades literárias e culturais, fornecendo recomendações de alta qualidade para seu público. Ela valoriza o acesso a livros, e-books e outros materiais digitais que possam agregar valor ao conteúdo que produz e melhorar a interação com seus seguidores.
-Necessidades: Ela necessita de um sistema de gestão de biblioteca que facilite o acesso a novos lançamentos, e-books, e materiais de cultura pop, com funcionalidades que permitam organizar listas de leitura e compartilhar essas listas com seu público. Além disso, ela precisa de uma plataforma que permita uma busca fácil e rápida por temas populares e inovadores.
-Desafios: A maior dificuldade de Camila é encontrar materiais que sejam ao mesmo tempo acessíveis, relevantes e atuais. Ela também precisa de ferramentas que facilitem a curadoria de conteúdo para manter seu público sempre engajado com informações interessantes e atualizadas.
-Objetivos: Camila quer aumentar seu repertório literário e cultural, recomendar livros e conteúdos inovadores para seus seguidores, e continuar sendo uma referência em seu nicho de atuação, acompanhando de perto as tendências literárias e culturais.
-
-5. Marcelo - Pesquisador de Mercado
+8. Marcelo - Pesquisador de Mercado
 Idade: 37 anos
 Profissão: Pesquisador de mercado em uma agência de consultoria
 Perfil: Marcelo é um profissional dedicado a analisar dados e tendências de mercado, com o objetivo de desenvolver relatórios estratégicos que ajudem seus clientes a tomar decisões informadas. Ele tem uma rotina intensa de pesquisa, revisando uma vasta gama de fontes, como livros acadêmicos, artigos, estudos de caso e relatórios de mercado, para fundamentar suas análises. Além disso, Marcelo valoriza muito a confiabilidade e a atualidade das informações que utiliza, garantindo que seus relatórios sejam baseados em dados sólidos e bem embasados.
@@ -75,15 +102,15 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Cadastro de livros | ALTA | 
-|RF-002| Gerenciamento de acervos   | ALTA |
+|RF-001| O sistema deve permitir o cadastro de livros | ALTA | 
+|RF-002| O sistema deve permitir o gerenciamento de acervos   | ALTA |
 |RF-003| Renovação de empréstimo   | ALTA |
 |RF-004| Emprestimo de livros   | ALTA |
 |RF-005| Pagamento de multas   | BAIXA |
 |RF-006| Notificações de prazo   | MEDIA |
 |RF-007| Reserva de livros  | ALTA |
 |RF-008| Devolução de livros  | ALTA |
-|RF-009| Fóruns  | BAIXA |
+|RF-009| Permitir bate-papos em fóruns  | BAIXA |
 |RF-010| Favoritos  | BAIXA |
 |RF-011| Acesso a conteudos digitais  | ALTA |
 |RF-012| Cadastro de usuários  | ALTA |
