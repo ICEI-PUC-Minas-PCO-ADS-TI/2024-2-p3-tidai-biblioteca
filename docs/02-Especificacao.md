@@ -102,19 +102,19 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| O sistema deve permitir o cadastro de livros | ALTA | 
-|RF-002| O sistema deve permitir o gerenciamento de acervos   | ALTA |
-|RF-003| Renovação de empréstimo   | ALTA |
-|RF-004| Emprestimo de livros   | ALTA |
-|RF-005| Pagamento de multas   | BAIXA |
-|RF-006| Notificações de prazo   | MEDIA |
-|RF-007| Reserva de livros  | ALTA |
-|RF-008| Devolução de livros  | ALTA |
-|RF-009| Permitir bate-papos em fóruns  | BAIXA |
-|RF-010| Favoritos  | BAIXA |
-|RF-011| Acesso a conteudos digitais  | ALTA |
-|RF-012| Cadastro de usuários  | ALTA |
-|RF-013| Histórico de leitura e emprestimos  | BAIXA |
+|RF-001| O sistema deve permitir o cadastro completo de livros | ALTA | 
+|RF-002| O sistema deve possibilitar o gerenciamento do acervo | ALTA |
+|RF-003| O sistema deve oferecer a funcionalidade de renovação de empréstimos  | ALTA |
+|RF-004| O sistema deve permitir o empréstimo de livros | ALTA |
+|RF-005| O sistema deve possibilitar o pagamento de multas por atrasos na devolução de livros  | BAIXA |
+|RF-006| O sistema deve notificar os usuários sobre prazos de devolução, renovação ou reserva de livros | MEDIA |
+|RF-007| O sistema deve permitir a reserva de livros | ALTA |
+|RF-008| O sistema deve suportar a devolução de livros | ALTA |
+|RF-009| O sistema deve oferecer fóruns ou bate-papos onde os usuários possam interagir | BAIXA |
+|RF-010| O sistema deve permitir que os usuários adicionem livros à uma lista de favoritos | BAIXA |
+|RF-011| O sistema deve garantir o acesso a conteúdos digitais | MEDIA |
+|RF-012| O sistema deve permitir o cadastro de usuários  | ALTA |
+|RF-013| O sistema deve manter um histórico de leitura e empréstimos  | BAIXA |
 
 
 
