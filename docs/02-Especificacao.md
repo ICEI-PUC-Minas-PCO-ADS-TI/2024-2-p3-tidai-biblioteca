@@ -4,62 +4,50 @@ O presente projeto será desenvolvido utilizando React no frontend e Node.js no 
 
 ## Personas
 
-### 1. *Marcelo - Pesquisador de Mercado*
-- *Idade:* 37 anos
-- *Profissão:* Pesquisador de mercado em uma agência de consultoria
-- *Perfil:* Marcelo trabalha com dados e tendências de mercado, realizando pesquisas profundas para criar relatórios estratégicos para seus clientes. Ele está sempre à procura de fontes confiáveis e de publicações que ajudem a validar suas análises.
-- *Motivações:* Acessar materiais de referência que validem suas pesquisas de mercado, como livros acadêmicos, artigos e relatórios, sem precisar recorrer sempre a compras ou bases pagas.
-- *Necessidades:* Um sistema de gestão de biblioteca que ofereça acesso a recursos digitais como e-books e artigos científicos, com possibilidade de busca eficiente e filtros avançados por tema.
-- *Desafios:* Achar fontes que sejam confiáveis, relevantes e atualizadas para complementar seus relatórios.
-- *Objetivos:* Encontrar rapidamente material de apoio sem ter que investir em plataformas de pesquisa caras ou complicadas.
+1. Marcelo - Pesquisador de Mercado
+Idade: 37 anos
+Profissão: Pesquisador de Mercado em uma Consultoria de Estratégia
+Perfil: Marcelo atua em uma agência de consultoria estratégica, onde realiza pesquisas de mercado profundas para elaborar relatórios analíticos que ajudam seus clientes a tomar decisões informadas. Ele trabalha com grandes volumes de dados e tendências, buscando fontes confiáveis para validar suas descobertas. Sua rotina exige que ele se mantenha constantemente atualizado em relação às melhores práticas, estudos de caso, relatórios econômicos e acadêmicos, além de publicações de renome.
+Motivações: Acessar materiais de alta relevância e credibilidade, como livros acadêmicos, relatórios estratégicos, estudos de mercado e artigos científicos, sem precisar investir constantemente em plataformas caras de acesso a dados.
+Necessidades: Um sistema de gestão de biblioteca que ofereça fácil acesso a e-books, artigos científicos e bases de dados, com filtros avançados para facilitar a busca por temas específicos, como setor de mercado, comportamento do consumidor, e tendências econômicas.
+Desafios: Identificar fontes que sejam atualizadas, relevantes e, acima de tudo, confiáveis, especialmente quando precisa cruzar dados de diferentes regiões e indústrias para seus relatórios.
+Objetivos: Economizar tempo e recursos ao encontrar rapidamente material de apoio de qualidade que sustente suas pesquisas e relatórios, sem depender de assinaturas caras de plataformas de pesquisa.
 
-### 2. *Isabela - Mãe e Voluntária Comunitária*
-- *Idade:* 42 anos
-- *Profissão:* Dona de casa e voluntária em atividades culturais da comunidade
-- *Perfil:* Isabela participa ativamente da vida escolar dos filhos e de atividades culturais na comunidade local. Ela organiza encontros e eventos de leitura para crianças e procura novos livros e recursos educativos para enriquecer essas atividades.
-- *Motivações:* Facilitar o acesso a livros e recursos educativos para crianças e jovens, promovendo a leitura em eventos comunitários e em casa.
-- *Necessidades:* Um sistema de biblioteca que permita reservas de livros, listas de leitura e pesquisa de materiais de interesse infantojuvenil. Ela também busca opções de leitura digital para compartilhamento com as crianças.
-- *Desafios:* Encontrar materiais atualizados e que sejam acessíveis em sua comunidade, tanto em formato físico quanto digital.
-- *Objetivos:* Organizar eventos de leitura e ter acesso fácil a livros que despertem o interesse das crianças e jovens.
+2. Isabela - Mãe e Voluntária Comunitária
+Idade: 42 anos
+Profissão: Dona de Casa e Voluntária Cultural
+Perfil: Isabela é uma mãe engajada na educação dos filhos e participa ativamente das atividades culturais da sua comunidade. Ela organiza eventos de leitura para crianças e jovens, promovendo a literatura como forma de aprendizado e diversão. Seu objetivo é fomentar o hábito da leitura entre os mais jovens e encontrar materiais educativos acessíveis, tanto físicos quanto digitais, que possam ser utilizados nas atividades que organiza.
+Motivações: Facilitar o acesso a livros infantis e juvenis para atividades educacionais e recreativas, além de promover a inclusão digital ao compartilhar e-books e outros recursos digitais durante eventos comunitários.
+Necessidades: Um sistema de biblioteca que permita a reserva de livros físicos, o acesso a uma ampla gama de e-books infantis e juvenis, e a criação de listas de leitura específicas para as crianças e jovens da comunidade. A funcionalidade de pesquisa deve incluir filtros por faixa etária, temas e níveis de leitura.
+Desafios: Garantir que os materiais educativos e literários estejam sempre atualizados e sejam acessíveis à comunidade local, com opções físicas e digitais adaptadas às diferentes idades e níveis de leitura das crianças.
+Objetivos: Organizar eventos de leitura de forma eficiente e contar com uma plataforma que permita o fácil acesso e reserva de livros que possam enriquecer as atividades culturais, incentivando o hábito da leitura nas crianças e adolescentes.
 
-### 3. *Pedro - Desenvolvedor de Software*
-- *Idade:* 28 anos
-- *Profissão:* Programador freelancer
-- *Perfil:* Pedro é um autodidata que está sempre aprendendo novas linguagens de programação e frameworks. Ele usa uma variedade de fontes para estudar, como livros técnicos e manuais, mas também se interessa por obras que o ajudem a melhorar suas soft skills.
-- *Motivações:* Melhorar suas habilidades técnicas e ampliar seus conhecimentos em programação e desenvolvimento pessoal, sem depender de assinaturas caras de plataformas de cursos online.
-- *Necessidades:* Um sistema que ofereça acesso a livros técnicos e manuais sobre programação, além de e-books sobre desenvolvimento pessoal e empreendedorismo.
-- *Desafios:* Encontrar fontes confiáveis e atualizadas que estejam acessíveis em uma plataforma unificada.
-- *Objetivos:* Expandir suas habilidades de programação e acessar conteúdo técnico de forma gratuita ou a baixo custo.
+3. Pedro - Desenvolvedor de Software
+Idade: 28 anos
+Profissão: Programador Freelancer
+Perfil: Pedro é um desenvolvedor autodidata que está constantemente aprimorando suas habilidades em novas linguagens de programação e frameworks. Ele busca por livros técnicos, manuais e outros recursos de qualidade para expandir seus conhecimentos, além de também se interessar por conteúdos relacionados a soft skills e desenvolvimento pessoal. Pedro prefere fontes acessíveis que não dependam de assinaturas caras e plataformas fechadas.
+Motivações: Melhorar suas competências técnicas, especialmente em áreas emergentes da tecnologia, como inteligência artificial, desenvolvimento mobile e segurança cibernética, além de aprimorar suas soft skills, como liderança e empreendedorismo.
+Necessidades: Um sistema de biblioteca que ofereça uma ampla coleção de livros e manuais técnicos em desenvolvimento de software, além de materiais sobre desenvolvimento pessoal. A ferramenta deve permitir a busca por linguagens específicas, frameworks e temas de empreendedorismo e gestão de projetos.
+Desafios: Achar fontes atualizadas, técnicas e confiáveis que estejam disponíveis em uma única plataforma, permitindo acesso fácil e rápido a materiais diversificados e pertinentes ao mercado de tecnologia.
+Objetivos: Expandir suas habilidades em desenvolvimento de software e acessar uma biblioteca que ofereça conteúdos técnicos e de desenvolvimento pessoal, tudo de forma integrada e acessível, sem custos elevados.
 
-### 4. *Camila - Influenciadora Digital*
-- *Idade:* 29 anos
-- *Profissão:* Criadora de conteúdo de lifestyle e cultura
-- *Perfil:* Camila cria conteúdos para redes sociais, falando sobre livros, filmes, cultura pop e estilo de vida. Ela está sempre buscando novos livros e fontes de pesquisa para seus vídeos e postagens, além de materiais que possam inspirar suas recomendações de leitura para seu público.
-- *Motivações:* Estar a par das novidades literárias e culturais para recomendar conteúdo relevante aos seus seguidores, além de ampliar seu próprio repertório.
-- *Necessidades:* Um sistema de gestão de biblioteca que a ajude a encontrar novos lançamentos, materiais digitais e e-books, bem como gerenciar listas de leitura para compartilhar com seu público.
-- *Desafios:* Encontrar e acessar materiais que sejam populares ou inovadores para manter seu conteúdo sempre atualizado.
-- *Objetivos:* Recomendar livros e materiais culturais que sejam de interesse de seus seguidores e estar sempre por dentro das tendências literárias.
+4. Camila - Influenciadora Digital
+Idade: 29 anos
+Profissão: Criadora de conteúdo de lifestyle e cultura
+Perfil: Camila é uma influenciadora digital especializada em cultura pop, literatura e estilo de vida. Ela utiliza diversas plataformas para engajar seu público e criar conteúdos originais. Sua rotina inclui a busca constante por tendências culturais, novos lançamentos literários, e fontes de pesquisa confiáveis que possam inspirar seus vídeos, postagens e recomendações de leitura.
+Motivações: Camila busca estar sempre atualizada com as novidades literárias e culturais, fornecendo recomendações de alta qualidade para seu público. Ela valoriza o acesso a livros, e-books e outros materiais digitais que possam agregar valor ao conteúdo que produz e melhorar a interação com seus seguidores.
+Necessidades: Ela necessita de um sistema de gestão de biblioteca que facilite o acesso a novos lançamentos, e-books, e materiais de cultura pop, com funcionalidades que permitam organizar listas de leitura e compartilhar essas listas com seu público. Além disso, ela precisa de uma plataforma que permita uma busca fácil e rápida por temas populares e inovadores.
+Desafios: A maior dificuldade de Camila é encontrar materiais que sejam ao mesmo tempo acessíveis, relevantes e atuais. Ela também precisa de ferramentas que facilitem a curadoria de conteúdo para manter seu público sempre engajado com informações interessantes e atualizadas.
+Objetivos: Camila quer aumentar seu repertório literário e cultural, recomendar livros e conteúdos inovadores para seus seguidores, e continuar sendo uma referência em seu nicho de atuação, acompanhando de perto as tendências literárias e culturais.
 
-### 5. *Ricardo - Advogado Empresarial*
-- *Idade:* 45 anos
-- *Profissão:* Advogado corporativo
-- *Perfil:* Ricardo trabalha em uma grande firma de advocacia e está sempre consultando leis, normas e textos acadêmicos para casos empresariais. Ele frequentemente precisa de acesso a referências bibliográficas e publicações jurídicas para embasar suas decisões e pareceres.
-- *Motivações:* Ter acesso a documentos legais e acadêmicos de forma rápida e eficiente, sem depender exclusivamente de bases de dados jurídicas pagas.
-- *Necessidades:* Um sistema de biblioteca que ofereça recursos jurídicos, documentos acadêmicos e textos históricos sobre leis e normas, com opções de busca por palavras-chave e temas específicos.
-- *Desafios:* Encontrar fontes confiáveis e ter acesso a materiais que estejam atualizados e que cubram a área de direito empresarial e normativas regulatórias.
-- *Objetivos:* Utilizar o sistema como fonte complementar para embasar seus casos e consultas jurídicas de forma acessível._
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links úteis**:
-> - [Rock content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+5. Marcelo - Pesquisador de Mercado
+Idade: 37 anos
+Profissão: Pesquisador de mercado em uma agência de consultoria
+Perfil: Marcelo é um profissional dedicado a analisar dados e tendências de mercado, com o objetivo de desenvolver relatórios estratégicos que ajudem seus clientes a tomar decisões informadas. Ele tem uma rotina intensa de pesquisa, revisando uma vasta gama de fontes, como livros acadêmicos, artigos, estudos de caso e relatórios de mercado, para fundamentar suas análises. Além disso, Marcelo valoriza muito a confiabilidade e a atualidade das informações que utiliza, garantindo que seus relatórios sejam baseados em dados sólidos e bem embasados.
+Motivações: Ele busca otimizar o tempo dedicado à pesquisa, acessando rapidamente fontes confiáveis e robustas sem a necessidade de comprar ou utilizar bases pagas constantemente. A praticidade e a abrangência do material de pesquisa disponível são fatores essenciais para ele.
+Necessidades: Marcelo precisa de um sistema de gestão de biblioteca que ofereça um extenso acervo de recursos digitais, como e-books, artigos científicos e relatórios de mercado, com uma interface que permita a busca rápida e o uso de filtros avançados para temas específicos e relevantes à sua pesquisa.
+Desafios: Seu principal desafio é encontrar fontes que não só sejam confiáveis e de alta qualidade, mas que também estejam atualizadas e possam ser acessadas sem barreiras financeiras, já que ele lida com prazos curtos e relatórios que exigem uma abordagem precisa e atualizada.
+Objetivos: Marcelo deseja acessar, com rapidez, material de apoio relevante para seus estudos e análises de mercado, sem depender de plataformas pagas ou complicadas. Ele busca integrar o sistema de biblioteca como uma ferramenta essencial para validar suas conclusões e enriquecer seus relatórios de forma prática e acessível.
 
 ## Histórias de usuários
 
