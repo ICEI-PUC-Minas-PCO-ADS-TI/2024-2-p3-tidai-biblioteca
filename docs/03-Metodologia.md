@@ -71,15 +71,15 @@ A equipe foi dividida em papéis distintos, cada membro contribuindo para o dese
 
 #### Sprint 1
 
-Atualizado em: 21/04/2024
+Atualizado em: 20/09/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
-
+| Alessandro    | Introdução       |  21/08/2024    | 03/09/2024 | ✔️     | 23/08/2024      |
+| Matheus       | Objetivos        |  21/08/2024    | 03/09/2024 | ✔️    |   23/08/2024     |
+| Alessandro    | Histórias de usuário  | 03/09/2024  | 07/01/2005 | ⌛   |     24/08/2024   |
+| Bernardo      | Personas         |    01/01/2024   | 12/02/2005 | ❌   |                   |
+| Bernardo      | Casos de uso     |  18/09/2024    | 01/10/2024  |  📝  |                   |
 #### Sprint 2
 
 Atualizado em: 21/04/2024
