@@ -13,7 +13,7 @@ export default function Header() {
               {({ isActive }) => (
                 <>
                   <i className={`bi ${isActive ? "bi-house-fill" : "bi-house"}`}></i>
-                  Home
+                  Ínicio
                 </>
               )}
             </NavLink>
@@ -25,7 +25,7 @@ export default function Header() {
               {({ isActive }) => (
                 <>
                   <i className={`bi ${isActive ? "bi-book-fill" : "bi-book"}`}></i>
-                  Livros
+                  Pegar Livros
                 </>
               )}
             </NavLink>
@@ -37,7 +37,7 @@ export default function Header() {
               {({ isActive }) => (
                 <>
                   <i className={`bi ${isActive ? "bi-journal-bookmark-fill" : "bi-journal-bookmark"}`}></i>
-                  Meus livros
+                  Meus Livros
                 </>
               )}
             </NavLink>

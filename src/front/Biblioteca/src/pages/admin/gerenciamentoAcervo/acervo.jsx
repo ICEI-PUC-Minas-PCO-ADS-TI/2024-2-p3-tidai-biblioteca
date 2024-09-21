@@ -1,4 +1,4 @@
-import style from '../dashboardAcervo/acervo.module.css'
+import style from '../gerenciamentoAcervo/acervo.module.css'
 
 export default function Acervo (){
     return(
