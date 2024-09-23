@@ -21,7 +21,7 @@ import Emprestimos from './pages/admin/emprestimos/emprestimos.jsx';
 
 function App() {
   //Tela padrao = 'user', Tela Admin = 'admin'
-    const TipoUsuario = 'user';
+    const TipoUsuario = 'admin';
 
     return (
         <Router>

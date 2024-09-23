@@ -1,7 +1,7 @@
 import style from '../homeAdmin/homeAdmin.module.css'
 
 export default function HomeAdmin(){
-    return(
+    return( 
         <h1>Home Admin</h1>
     )
 }
