@@ -12,16 +12,16 @@ const livrosExemplo = [
 
 const Acervo = () => {
   const [livros, setLivros] = useState([]);
-  const [filtro, setFiltro] = useState('todos'); // Estado para armazenar o filtro selecionado
+  const [filtro, setFiltro] = useState('todos'); 
 
   useEffect(() => {
-    // Simulação de busca de livros (pode ser substituído por uma chamada de API)
+    // Simulação de busca de livros 
     setLivros(livrosExemplo);
   }, []);
 
   // Função para lidar com a mudança de filtro
   const handleFiltroChange = (e) => {
-    setFiltro(e.target.value); // Atualiza o filtro com o valor selecionado
+    setFiltro(e.target.value);
   };
 
   // Função para filtrar os livros de acordo com o filtro selecionado
@@ -99,7 +99,7 @@ const Acervo = () => {
         {livrosFiltrados.map((livro) => (
           <div key={livro.id} className={styles.card}>
             <div className={styles.cardImage}>
-              {/* Imagem genérica do livro */}
+              {}
               <img src="https://via.placeholder.com/150" alt={`Capa do livro ${livro.titulo}`} />
             </div>
             <div className={styles.cardContent}>
