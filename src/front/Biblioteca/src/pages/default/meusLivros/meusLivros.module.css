@@ -1,5 +1,3 @@
-/* src/pages/admin/gerenciamentoAcervo/acervo.module.css */
-
 .acervoContainer {
   display: flex;
   padding: 20px;
@@ -34,7 +32,7 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
-  flex: 1; /* Ocupa o espaço restante */
+  flex: 1; 
 }
 
 .card {
