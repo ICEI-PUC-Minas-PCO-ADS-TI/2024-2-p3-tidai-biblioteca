@@ -77,19 +77,26 @@ Atualizado em: 20/09/2024
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Alessandro    | Introdução       |  21/08/2024    | 03/09/2024 | ✔️     | 23/08/2024      |
 | Matheus       | Objetivos        |  21/08/2024    | 03/09/2024 | ✔️    |   23/08/2024     |
-| Alessandro    | Histórias de usuário  | 03/09/2024  | 07/01/2005 | ⌛   |     24/08/2024   |
-| Bernardo      | Personas         |    01/01/2024   | 12/02/2005 | ❌   |                   |
-| Bernardo      | Casos de uso     |  18/09/2024    | 01/10/2024  |  📝  |                   |
+| Alessandro    | Histórias de usuário  | 03/09/2024  | 07/01/2005 | ✔️   |     24/08/2024   |
+| Bernardo      | Personas         |    01/01/2024   | 12/02/2005 | ✔️   |                   |
+| Bernardo      | Casos de uso     |  18/09/2024    | 01/10/2024  |  ✔️  |                   |
+| Matheus     | Casos de uso     |  18/09/2024    | 01/10/2024  |  ✔️  |                   |
+| Bernardo      | Casos de uso     |  18/09/2024    | 01/10/2024  |  ✔️  |                   |
+| Alessandro      | Casos de uso     |  18/09/2024    | 01/10/2024  |  ✔️  |                   |
+| Matehus      | Casos de uso     |  18/09/2024    | 01/10/2024  |  ✔️  |                   |
+
 #### Sprint 2
 
 Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Matheus        | Página inicial   |  17/09/2024    | 01/10/2024 | ✔️    | 20/09/2024     |
+| Matheus        | Tela de login   |  17/09/2024    | 01/10/2024 | 📝    |      |
+| Bernardo        | Tela de acervo de usuário   |  19/09/2024    | 01/10/2024 | 📝    |      |
+| Alessandro        | Forúm   |  17/09/2024    | 01/10/2024 | ✔️    | 20/09/2024     |
+| Luiza        | Tela de acervo do administrador   |  17/09/2024    | 01/10/2024 | ✔️    | 20/09/2024     |
+| Matheus        | Página inicial   |  17/09/2024    | 01/10/2024 | ✔️    | 20/09/2024     |
 
 
 Legenda:
