@@ -26,7 +26,7 @@ export function Acervo() {
     </div>
         <section className={style.livros}>
             
-        <h1 className={style.tConteudo}>Conteúdo</h1>
+        <h1 className={style.tConteudo}>Coleção</h1>
         <div className={style.content}>
         <div className={style.livro}>
         <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivro}></img>
