@@ -1,0 +1,286 @@
+main{
+    display: flex;
+}
+
+.pesquisa{
+    flex-direction: column;
+ justify-content: baseline; 
+    align-items: baseline;   
+   
+}
+
+.conteudopesquisa{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.elemento{
+    position: relative;
+    height: 10px;
+    line-height: 80px;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: -190px;
+}
+
+.label{
+    margin-top: -15px;
+    margin-left: 15px;
+    position: absolute;
+    padding: 0 10px;
+    margin: 0 10 30px;
+    transition: 0.20 ease;
+    background-color: transparent;
+
+
+}
+
+input{
+    position: absolute;
+   width: 250px;
+   height: 50px;
+    outline: none;
+    font-size: 18px;
+    padding: 0 30px;
+    margin-top: 5px;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid #202020;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+    
+
+}
+
+input:focus + .label, 
+input:valid + label{
+    background-color:white;
+    color: #202020;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+}
+
+.conteudofiltros{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: #333333;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.filtrospesquisa{
+    border-right: 2px solid black;
+    width: 400px;
+    height: 900px;
+}
+
+.generos{
+    font-size: 18px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 2px solid black;cursor: pointer; 
+   transition: background-color 0.3s ease;
+}
+
+.generos:hover {
+    background-color: black;
+    color:white 
+  }
+  
+  .generos.active {
+    color: white; 
+  }
+
+  section{
+
+    width: 70%;
+    padding-left: 100px;
+    padding-top: 70px;
+
+  }
+
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+
+  }
+
+  .tConteudo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+    margin-right: 100px;
+    color:#202020;
+    }
+
+  .livro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 70px;
+    max-width: 300px;
+    
+  }
+  .imglivro{
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  .edit{
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #202020;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .edit:hover {
+    background-color: black;
+    color:white 
+  }
+
+  @media (max-width: 1281px) {
+
+    .filtrospesquisa{
+      width: 600px;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    
+
+    .imglivro{
+      width: 60%;
+    }
+    .edit{
+      width: 120px;
+    }
+
+    .livro{
+      margin-left: 0px;
+      width: 200px;
+    }
+
+    
+    .filtrospesquisa{
+      width: 300px;
+      height: 2000px;
+    }
+    .conteudofiltros{
+      width: 200px;
+      
+      margin-left: 30px;
+    }
+
+    .elemento{
+      margin-left: -130px;
+    }
+
+
+    section{
+
+      padding-left: 0px;
+  
+    }
+
+    input{
+      width: 130px;
+      margin-left: 0px;
+    }
+  }
+
+  @media (max-width: 601px) {
+    .imglivro{
+      width: 60%;
+    }
+    .edit{
+      width: 100px;
+    }
+
+    .livro{
+      width: 150px;
+    }
+
+    .elemento{
+      margin-left: -90px;
+    }
+    
+    .conteudofiltros{
+      width: 180px;
+      margin-right: 30px;
+    }
+
+    .tConteudo{
+      margin-left: 90px;
+    }
+
+    section{
+      padding-left: 0px;
+      width: 85%;
+  
+    }
+
+    input{
+    width: 100px;
+    height: 35px;
+    }
+  
+  }
+
+  @media (max-width: 415px){
+    .elemento{
+      margin-left: -90px;
+      width: 50px;
+    }
+
+    .conteudofiltros{
+      width: 120px;
+      margin-left: 10px;
+    }
+
+    .imglivro{
+      width: 45%;
+    }
+    .edit{
+      width: 70px;
+    }
+    input{
+     width: 50px;
+  }
+
+  .livro{
+    width: 120px;
+  }
+
+  section{
+    width: 300px;
+  }
+    .generos{
+      font-size: 16px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+      .tConteudo{
+        font-size: 40px;
+        margin-right: 160px;
+        }
+  
+  }
