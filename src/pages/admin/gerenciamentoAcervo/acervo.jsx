@@ -61,7 +61,7 @@ export function Acervo() {
 
         <div className={style.livro}>
         <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivro}></img>
-        <button className={style.edit}>Edita</button>
+        <button className={style.edit}>Editar</button>
         </div>
 
         <div className={style.livro}>
