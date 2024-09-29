@@ -9,6 +9,7 @@ main{
    
 }
 
+
 .conteudopesquisa{
   display: flex;
     align-items: center;
@@ -37,7 +38,7 @@ main{
 
 }
 
-input{
+.inputge{
     position: absolute;
    width: 250px;
    height: 50px;
@@ -55,8 +56,8 @@ input{
 
 }
 
-input:focus + .label, 
-input:valid + label{
+.inputge:focus + .label, 
+.inputge:valid + label{
     background-color:white;
     color: #202020;
     height: 30px;
@@ -201,7 +202,7 @@ input:valid + label{
   
     }
 
-    input{
+    .inputge{
       width: 130px;
       margin-left: 0px;
     }
@@ -238,7 +239,7 @@ input:valid + label{
   
     }
 
-    input{
+    .inputge{
     width: 100px;
     height: 35px;
     }
@@ -262,7 +263,7 @@ input:valid + label{
     .edit{
       width: 70px;
     }
-    input{
+    .inputge{
      width: 50px;
   }
 

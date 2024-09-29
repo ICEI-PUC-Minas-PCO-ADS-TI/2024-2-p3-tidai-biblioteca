@@ -9,7 +9,7 @@ export function Acervo() {
         <div className={style.pesquisa}>
           <div className={style.conteudopesquisa}>
             <div className={style.elemento}>
-              <input type='text' required></input>
+              <input className={style.inputge} type='text' required></input>
               <div className={style.label}>Pesquisar</div>
             </div>
           </div>
@@ -21,6 +21,7 @@ export function Acervo() {
                 <div className={style.generos}>Terror</div>
                 <div className={style.generos}>Classicos</div>
                 <div className={style.generos}>Ficção Cientifica</div>
+                <a scr="src/pages/default/foruns.jsx"></a>
             </div>
         </div>
     </div>
@@ -68,7 +69,7 @@ export function Acervo() {
         <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivro}></img>
         <button className={style.edit}>Editar</button>
         </div>
-
+        
         </div>
         </section>
       </main>
