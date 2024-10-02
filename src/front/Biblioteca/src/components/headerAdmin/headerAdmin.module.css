@@ -1,7 +1,7 @@
 .HeaderAdmin{
     display: flex;
     gap: 2.5rem;
-    background-color: #202020;
+    background-color: #1b13b2;
     height: 80px;
     justify-content: center;
     justify-items: center;
@@ -11,16 +11,15 @@
     border-bottom:2px solid transparent ;
 }
 
-
 .HeaderAdmin i{
     margin: 10px;
     font-size: 25px;
 }
-a{
+.HeaderAdmin a{
     text-decoration: none;
     color: inherit;
 }
-ul{
+.HeaderAdmin ul{
 
     list-style: none;
     display: flex;

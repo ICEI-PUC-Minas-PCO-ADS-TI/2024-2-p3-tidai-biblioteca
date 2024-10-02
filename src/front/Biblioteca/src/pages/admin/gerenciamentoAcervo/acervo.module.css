@@ -48,7 +48,7 @@ main{
     margin-top: 5px;
     line-height: 80px;
     border-radius: 10px;
-    border: 2px solid #202020;
+    border: 2px solid #1b13b2;
     background: transparent;
     transition: 0.1s ease;
     z-index: 1111;
@@ -59,7 +59,7 @@ main{
 .inputge:focus + .label, 
 .inputge:valid + label{
     background-color:white;
-    color: #202020;
+    color: #1b13b2;
     height: 30px;
     margin-top: 10px;
     line-height: 30px;
@@ -73,14 +73,15 @@ main{
     justify-content: center;
     flex-direction: column;
     width: 300px;
-    background-color: #333333;
+    color: white;
+    background-color: #1b13b2;
     margin-top: 100px;
     margin-left: 50px;
     padding-top: 20px;
     border-radius: 20px;
 }
 .filtrospesquisa{
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(255, 255, 255);
     width: 400px;
     height: 900px;
 }
@@ -90,7 +91,7 @@ main{
     padding-left: 50px;
     padding-bottom: 20px;
     padding-top: 10px;
-    border-bottom: 2px solid black;cursor: pointer; 
+    border-bottom: 2px solid rgb(255, 255, 255);cursor: pointer; 
    transition: background-color 0.3s ease;
 }
 

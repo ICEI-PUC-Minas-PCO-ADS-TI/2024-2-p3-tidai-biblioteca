@@ -1,76 +1,92 @@
-import style from '../emprestimos/emprestimos.module.css'
-import React from 'react';
+import style from "../emprestimos/emprestimos.module.css";
+import BarraDePesquisa from "../../../components/barraPesquisa/barraPesquisa";
+import Buttons from "../../../components/buttons/buttons";
+import { useState } from "react";
+
+export default function Emprestimos() {
 
 
-export default function Emprestimos (){
-    return(
-        <>
-        <form className={style.search}>
-         <div className={style.searchem}>
-            <input className={style.inputem} type='search' placeholder='Pesquisar'></input>
-         </div>
-         </form>
-        <h1 class className={style.tituloEm}>Histórico</h1>
+  const [abrirPopUp, setAbrirPopUp ] = useState(false) ;
+
+
+
+  return (
+    <>
+      <div className={style.main}>
         
 
-         <main className={style.livrosEm}>
+        <div className={style.container}>
+              <h2>Lista de Emprestimos</h2>
+              <div className={style.barraPesquisaEmprestimo}>
+                <BarraDePesquisa />
+            </div>
+              <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Livro</th>
+              <th>Inicio do emprestimo</th>
+              <th>Vencimento</th>
+              <th>Status</th>
+              <th>Telefone</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
 
-            <div className={style.conteudoEm}>
-
-         <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
-
-        <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
-
-        <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
-
-        <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
-
-        <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
-
-        <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
-
-        <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
-
-        <div className={style.livroEm}>
-        <img src="src/pages/admin/gerenciamentoAcervo/HarryPotter.jpg" className={style.imglivroEm}></img>
-        <h3 className={style.tituloliEm}>Harry Potter e a pedra fisolofal</h3>
-        <h4 className={style.tempoEm}>Tempo restante: 2 dias</h4>
-        </div>
+          <tbody>
+            <tr>
+              <td>João</td>
+              <td>The Witcher</td>
+              <td>27/09/2024</td>
+              <td>10/10/2024</td>
+              <td>Em dia</td>
+              <td>99812232</td>
+              <td><Buttons title='Mais Info' variant='info' onClick={()=> setAbrirPopUp(true)} /></td>
+              <td><Buttons title='Devolvido' variant='confirmacao'/></td>
+            </tr>
+            <tr>
+              <td>Lucas</td>
+              <td>The Witcher</td>
+              <td>27/09/2024</td>
+              <td>10/10/2024</td>
+              <td>Em dia</td>
+              <td>99812232</td>
+              <td><Buttons title='Mais Info' variant='info' onClick={()=> setAbrirPopUp(true)} /></td>
+              <td><Buttons title='Devolvido' variant='confirmacao'/></td>
+            </tr>
+          </tbody>
+        </table>
 
         </div>
 
-
-         </main>
-        </>
-
-    )
+        {abrirPopUp && (
+            <div className={style.popup}>
+            <div className={style.popupContent}>
+              <div>
+                <p>Nome: Saulo</p>
+                <p>Cpf: 123.233.230.09</p>
+              </div>
+              <div>
+                <p>Telefone: 37 9 9892849</p>
+                <p>E-mail: Saulo@gmail.com</p>
+              </div>
+              <div>
+                <p> Rua: Floriano Peixoto</p>
+              </div>
+              <div>
+                <p> Bairro: Vila Tavares</p>
+              </div>
+                
+              <div>
+                <p> Cidade: Bom despacho</p>
+                <p> Numero: 102</p>
+              </div>
+              <Buttons title='Fechar' variant='delete' onClick={()=> setAbrirPopUp(false)}/>
+            </div>
+          </div>
+        )}
+      </div>
+    </>
+  );
 }
-

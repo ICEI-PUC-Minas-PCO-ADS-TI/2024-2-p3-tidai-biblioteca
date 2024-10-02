@@ -10,18 +10,17 @@ import Biblioteca from './pages/default/biblioteca/biblioteca.jsx';
 import Forum from './pages/default/foruns/foruns.jsx';
 import Historico from './pages/default/historico/historico.jsx';
 import MeusLivros from './pages/default/meusLivros/meusLivros.jsx';
-import Multas from './pages/default/multas/multas.jsx';
+import Usuario from './pages/default/usuario/usuario.jsx';
 
 //Rotas do header de admin
 import HomeAdmin from './pages/admin/homeAdmin/homeAdmin.jsx'
 import CadastroLivro from './pages/admin/cadastroLivro/cadastroLivro.jsx';
-import CadastroUsuario from './pages/admin/cadastroUsuario/cadastroUsuario.jsx';
 import Acervo from './pages/admin/GerenciamentoAcervo/acervo.jsx';
 import Emprestimos from './pages/admin/emprestimos/emprestimos.jsx';
 
 function App() {
   //Tela padrao = 'user', Tela Admin = 'admin'
-    const TipoUsuario = 'admin';
+    const TipoUsuario = 'user';
 
     return (
         <Router>
@@ -29,21 +28,22 @@ function App() {
             <Routes>
                 {TipoUsuario === 'user' && (
                     <>
-                        <Route path="/home" element={<Home />} />
+                        <Route path="/home" element={<Biblioteca/>} />
                         <Route path="/biblioteca" element={<Biblioteca />} />
                         <Route path="/forum" element={<Forum />} />
                         <Route path="/historico" element={<Historico />} />
                         <Route path="/meus-livros" element={<MeusLivros />} />
-                        <Route path="/multas" element={<Multas />} />
+                        <Route path='/minhaConta' element={<Usuario/>}/>
+        
                     </>
                 )}
                 {TipoUsuario === 'admin' && (
                     <>
-                        <Route path="/homeAdmin" element={<HomeAdmin/>} />
+                        <Route path="/homeAdmin" element={<Acervo/>} />
                         <Route path="/cadastro-de-livro" element= {<CadastroLivro/>}/>
-                        <Route path="/cadastro-de-usuario" element= {<CadastroUsuario/>}/>
                         <Route path="/gerenciar-acervo" element= {<Acervo/>}/>
                         <Route path="/lista-de-emprestimos" element={<Emprestimos />} />
+                        <Route path='/minhaConta' element={<Usuario/>}/>
 
                     </>
                 )}

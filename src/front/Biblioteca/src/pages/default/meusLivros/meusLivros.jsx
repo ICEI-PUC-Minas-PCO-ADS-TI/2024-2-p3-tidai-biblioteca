@@ -2,29 +2,27 @@ import React, { useState, useEffect } from 'react';
 import styles from './meusLivros.module.css'; 
 
 const livrosExemplo = [
-  { id: 1, titulo: 'O Alquimista', autor: 'Paulo Coelho', disponivel: true, tipo: 'fisico' },
-  { id: 2, titulo: '1984', autor: 'George Orwell', disponivel: true, tipo: 'virtual' },
-  { id: 3, titulo: 'Dom Casmurro', autor: 'Machado de Assis', disponivel: false, tipo: 'fisico' },
-  { id: 4, titulo: 'A Odisseia', autor: 'Homero', disponivel: true, tipo: 'virtual' },
-  { id: 5, titulo: 'Senhor dos Anéis', autor: 'J.R.R. Tolkien', disponivel: false, tipo: 'emprestado', tipoFisicoVirtual: 'fisico' },
-  { id: 6, titulo: 'Harry Potter', autor: 'J.K. Rowling', disponivel: false, tipo: 'emprestado', tipoFisicoVirtual: 'virtual' }
+  { id: 1, titulo: 'O Alquimista', autor: 'Paulo Coelho', lido: true, tipo: 'fisico' },
+  { id: 2, titulo: '1984', autor: 'George Orwell', lido: true, tipo: 'virtual' },
+  { id: 3, titulo: 'Dom Casmurro', autor: 'Machado de Assis', lido: false, tipo: 'fisico' },
+  { id: 4, titulo: 'A Odisseia', autor: 'Homero', lido: true, tipo: 'virtual' },
+  { id: 5, titulo: 'Senhor dos Anéis', autor: 'J.R.R. Tolkien', lido: false, tipo: 'emprestado', tipoFisicoVirtual: 'fisico', diasParaDevolucao: 5 },
+  { id: 6, titulo: 'Harry Potter', autor: 'J.K. Rowling', lido: false, tipo: 'emprestado', tipoFisicoVirtual: 'virtual', diasParaDevolucao: 3 },
+  { id: 7, titulo: 'Cem Anos de Solidão', autor: 'Gabriel Garcia Marquez', lido: false, tipo: 'reservado' }
 ];
 
 const Acervo = () => {
   const [livros, setLivros] = useState([]);
-  const [filtro, setFiltro] = useState('todos'); 
+  const [filtro, setFiltro] = useState('todos');
 
   useEffect(() => {
-    // Simulação de busca de livros 
     setLivros(livrosExemplo);
   }, []);
 
-  // Função para lidar com a mudança de filtro
   const handleFiltroChange = (e) => {
     setFiltro(e.target.value);
   };
 
-  // Função para filtrar os livros de acordo com o filtro selecionado
   const livrosFiltrados = livros.filter((livro) => {
     if (filtro === 'todos') return true;
     if (filtro === 'fisicos') {
@@ -34,6 +32,8 @@ const Acervo = () => {
       return livro.tipo === 'virtual' || (livro.tipo === 'emprestado' && livro.tipoFisicoVirtual === 'virtual');
     }
     if (filtro === 'emprestados') return livro.tipo === 'emprestado';
+    if (filtro === 'reservados') return livro.tipo === 'reservado';
+    if (filtro === 'lidos') return livro.lido;
     return true;
   });
 
@@ -88,7 +88,31 @@ const Acervo = () => {
                 checked={filtro === 'emprestados'}
                 onChange={handleFiltroChange}
               />
-              Emprestados
+              Empréstimos
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                type="radio"
+                name="filtro"
+                value="reservados"
+                checked={filtro === 'reservados'}
+                onChange={handleFiltroChange}
+              />
+              Reservados
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                type="radio"
+                name="filtro"
+                value="lidos"
+                checked={filtro === 'lidos'}
+                onChange={handleFiltroChange}
+              />
+              Já lidos
             </label>
           </div>
         </form>
@@ -99,14 +123,16 @@ const Acervo = () => {
         {livrosFiltrados.map((livro) => (
           <div key={livro.id} className={styles.card}>
             <div className={styles.cardImage}>
-              {}
               <img src="https://via.placeholder.com/150" alt={`Capa do livro ${livro.titulo}`} />
             </div>
             <div className={styles.cardContent}>
               <h3>{livro.titulo}</h3>
               <p>{livro.autor}</p>
-              <p>{livro.disponivel ? 'Disponível' : 'Indisponível'}</p>
-              <button className={styles.editButton}>Editar Livro</button>
+              {livro.tipo === 'emprestado' ? (
+                <p>Faltam {livro.diasParaDevolucao} dias para devolver</p>
+              ) : (
+                <p>{livro.lido ? 'Já lido' : 'Ainda não lido'}</p>
+              )}
             </div>
           </div>
         ))}

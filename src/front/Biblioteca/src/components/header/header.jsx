@@ -1,5 +1,6 @@
 import style from '../header/header.module.css';
 import { NavLink } from 'react-router-dom';
+import BarraPesquisa from '../barraPesquisa/barraPesquisa';
 
 export default function Header() {
   return (
@@ -9,7 +10,9 @@ export default function Header() {
           <li>
             <NavLink
               to="/home"
-              className={({ isActive }) => isActive ? `${style.active} ${style.link}` : style.link}>
+              className={({ isActive }) =>
+                isActive ? `${style.active} ${style.link}` : style.link
+              }>
               {({ isActive }) => (
                 <>
                   <i className={`bi ${isActive ? "bi-house-fill" : "bi-house"}`}></i>
@@ -18,22 +21,28 @@ export default function Header() {
               )}
             </NavLink>
           </li>
+          {/* 
           <li>
             <NavLink
               to="/biblioteca"
-              className={({ isActive }) => isActive ? `${style.active} ${style.link}` : style.link}>
+              className={({ isActive }) =>
+                isActive ? `${style.active} ${style.link}` : style.link
+              }>
               {({ isActive }) => (
                 <>
                   <i className={`bi ${isActive ? "bi-book-fill" : "bi-book"}`}></i>
-                  Pegar Livros
+                  Biblioteca
                 </>
               )}
             </NavLink>
           </li>
+          */}
           <li>
             <NavLink
               to="/meus-livros"
-              className={({ isActive }) => isActive ? `${style.active} ${style.link}` : style.link}>
+              className={({ isActive }) =>
+                isActive ? `${style.active} ${style.link}` : style.link
+              }>
               {({ isActive }) => (
                 <>
                   <i className={`bi ${isActive ? "bi-journal-bookmark-fill" : "bi-journal-bookmark"}`}></i>
@@ -42,10 +51,13 @@ export default function Header() {
               )}
             </NavLink>
           </li>
+            {/* 
           <li>
             <NavLink
               to="/historico"
-              className={({ isActive }) => isActive ? `${style.active} ${style.link}` : style.link}>
+              className={({ isActive }) =>
+                isActive ? `${style.active} ${style.link}` : style.link
+              }>
               {({ isActive }) => (
                 <>
                   <i className={`bi ${isActive ? "bi-hourglass-split" : "bi-hourglass-bottom"}`}></i>
@@ -54,26 +66,31 @@ export default function Header() {
               )}
             </NavLink>
           </li>
+        */}
           <li>
             <NavLink
-              to="/multas"
-              className={({ isActive }) => isActive ? `${style.active} ${style.link}` : style.link}>
+              to="/forum"
+              className={({ isActive }) =>
+                isActive ? `${style.active} ${style.link}` : style.link
+              }>
               {({ isActive }) => (
                 <>
-                  <i className={`bi ${isActive ? "bi-credit-card-fill" : "bi-credit-card"}`}></i>
-                  Pagamentos
+                  <i className={`bi ${isActive ? "bi-chat-left-text-fill" : "bi-chat-left-text"}`}></i>
+                  Fórum
                 </>
               )}
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/forum"
-              className={({ isActive }) => isActive ? `${style.active} ${style.link}` : style.link}>
+              to="/minhaConta"
+              className={({ isActive }) =>
+                isActive ? `${style.active} ${style.link}` : style.link
+              }>
               {({ isActive }) => (
                 <>
-                  <i className={`bi ${isActive ? "bi-chat-left-text-fill" : "bi-chat-left-text"}`}></i>
-                  Fórum
+                 <i className="bi bi-person-fill-gear"></i>
+                  Minha conta
                 </>
               )}
             </NavLink>
@@ -83,4 +100,3 @@ export default function Header() {
     </>
   );
 }
-

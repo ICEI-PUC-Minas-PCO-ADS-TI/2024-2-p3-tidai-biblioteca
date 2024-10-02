@@ -1,146 +1,85 @@
-.livroEm{
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    margin-bottom: 50px;
-    background-color: #edecec;
-    max-width: 170px;
-    padding-bottom: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    
-  }
-  .imglivroEm{
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .search{
-    display:flex;
-    justify-content: flex-end;
-    
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-    .inputem{
-        width: 200px;
-        height: 40px;
-        margin-top: 30px;
-        margin-right: 10px;
-        padding-left: 20px;
-        background-color: #bcbcbc;
-        font-weight: 700;
-        font-size: 15px;
-        border:none;
-        border-radius: 15px;
-    }
+.barraPesquisaEmprestimo {
+  margin: 15px;
+}
+.container {
+  margin-top: 15px;
+  padding-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+table{
+  margin-top: 15px;
+  border-spacing: 0;
+  width: 1000px;
+  border-collapse: collapse;
+}
 
-  
- .livrosEm{
-   padding-left: 200px;
-   padding-right: 200px;
-    
-  }
+thead tr{
+  background-color: #007bff;
+  color: #ffffff;
+  height: 40px;
+  border-radius: 8px;
+  border-bottom: 2px solid #000000;
+}
 
-  .conteudoEm{
-    padding-top: 70px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+td {
+  text-align: center;
+  padding: 20px;
+}
 
-  .tituloEm{
-    font-size: 50px;
-    color: black;
-    display: flex;
-    justify-content: center;
-  }
-  .tituloliEm{
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-  }
+tbody tr{
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
 
-  .tempoEm{
-    font-size: 13px;
-    text-align: center;
-  }
+tbody tr:nth-child(even) {
+  background-color: rgb(169, 169, 169, 0.1);
+  border-radius: 8px;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  @media (max-width: 900px) {
-    
-
-    .imglivroEm{
-      width: 100%;
-    }
-    
-
-    .tituloliEm{
-        width: 100%;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 700;
-      }
-    
-      .tempoEm{
-        font-size: 13px;
-        text-align: center;
-      }
-    .livroEm{
-      margin-left: 40px;
-      width: 200px;
-    }
-    .livrosEm{
-        padding-right: 100px;
-      padding-left: 90px;
-  
-    }
-
-    
-  }
-
-  @media (max-width: 601px) {
-    .imglivroEm{
-      width: 100%;
-    }
-    
-
-    .livroEm{
-      width: 130px;
-    }
-
-    
-    .livrosEm{
-      padding-left: 0px;
-      width: 85%;
-  
-    }
-
-    
-  
-  }
-
-  @media (max-width: 415px){
-
-
-    .imglivroEm{
-      width: 100%;
-    }
-   
-
-  .livroEm{
-    width: 90px;
-    margin-left: 10px;
-  }
-
- .livrosEm{
-    width: 300px;
-    padding-left: 40px;
-  }
-
-  .tituloliEm{
-    font-size: 12px;
-  }
-
-  .tempoEm{
-    font-size: 10px;
-  }
-  }
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.popupContent div{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  width: 700px;
+}
+.popupContent p {
+  margin-left: 15px;
+  border-radius: 8px;
+  display: flex;
+  padding: 0.3em;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(182, 181, 182, 0.466);
+}      
