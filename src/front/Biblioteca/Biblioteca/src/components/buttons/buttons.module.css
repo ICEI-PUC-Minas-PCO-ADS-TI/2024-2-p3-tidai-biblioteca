@@ -1,0 +1,42 @@
+.button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    transition: background-color 0.3s;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonInfo {
+    background-color: #007bff;
+}
+
+.buttonInfo:hover {
+    background-color: #0056b3;
+}
+
+.buttonConfirmacao {
+    background-color: rgb(40, 167, 69);
+}
+
+.buttonConfirmacao:hover {
+    background-color: rgb(33, 136, 56);
+}
+
+.buttonDelete {
+    background-color: #ff3d3d;
+}
+
+.buttonDelete:hover {
+    background-color: #b30000;
+}
+.buttonUpdate {
+    background-color: rgb(255, 193, 7);
+}
+.buttonUpdate:hover{
+    background-color: rgb(255, 179, 0);
+}

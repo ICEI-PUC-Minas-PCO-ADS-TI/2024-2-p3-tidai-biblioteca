@@ -1,0 +1,159 @@
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(251, 251, 252, 0.2), rgba(0, 51, 153, 0.2)),
+    url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Old-Library-Wallpaper.jpg");
+}
+
+.main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    position: relative;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.right h2 {
+    border-bottom: 1px solid #ffff;
+}
+
+.right {
+    font-size: 30px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+    background: linear-gradient(
+        to top left,
+        #0099ff,
+        #0099ff,
+        #0056b3,  
+        #1013a5,
+        #1013a5 
+      );
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.inputs i {
+    width: 60px;
+    font-size: 35px;
+    margin-left: 1.5rem;
+    color: rgba(0, 123, 255);
+}
+
+.inputs input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-left: 2px solid #00000057;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.inputs {
+    border-left: 5px solid rgba(0, 123, 255);
+    margin-top: 2rem;
+    border-radius: 8px;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.left button i {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.left button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: aliceblue;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: none;
+    padding: 0.6em 1.2em;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: rgb(0, 123, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main button:hover {
+    background-color: #0056b3;
+}
+
+.main a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.right button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: black;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: none;
+    padding: 0.6em 1.2em;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.right button:hover {
+    background-color: #f0f0f0;
+}
+

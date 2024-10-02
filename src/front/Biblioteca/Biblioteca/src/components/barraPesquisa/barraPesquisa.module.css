@@ -1,0 +1,39 @@
+.barraPesquisa input{
+    border: none;
+    border-right: 1px solid black;
+    outline: none;
+    margin: 5px;
+    padding-left: 10px;
+    width: 550px;
+    height: 25px;
+    background: transparent;
+    }
+    .barraPesquisa{
+    width: 600px;
+    padding: .25rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    }
+    .barraPesquisa i{
+    margin: 7px;
+    font-size: 20px;
+    }
+    .barraPesquisa button {
+    border: none;
+    outline: none;
+    background: transparent;
+    }
+    .barraPesquisa button :hover {
+    cursor: pointer;
+    }
+    .barraPesquisa input:focus{
+    border: none;
+    border-right: 1px solid blue;
+    }
+    .barraPesquisa input:focus + button i {
+    color: blue;
+    }
+    .focado{
+    border: 1px solid blue;
+    box-shadow: 0 4px 12px rgba(0, 4, 255, 0.3);
+    }

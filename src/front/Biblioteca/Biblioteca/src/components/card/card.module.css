@@ -1,0 +1,52 @@
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Aumenta o tamanho mínimo */
+    gap: 20px;
+    padding: 20px;
+    flex: 1; /* Ocupa o espaço restante */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    text-align: center;
+    transition: transform 0.2s; /* Efeito de transição suave */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+  }
+  
+  .cardImage img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 4px; /* Bordas arredondadas para as imagens */
+  }
+  .cardContent {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .cardContent h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #212529; /* Cor do título do card */
+  }
+  
+  .cardContent p {
+    font-size: 1rem;
+    color: #6c757d; /* Cor do texto com menor destaque */
+  }
+  .buttonsCard{
+    height: 30px;
+    gap: 1em;
+    display: flex;
+    margin: 1em;
+  }
