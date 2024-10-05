@@ -88,3 +88,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .formGroup button::hover {
     background-color: #f0f0f0;
 }
+@media (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main {
+        height: 100%;
+    }
+    .container {
+        margin: 15px;
+        width: 70%;
+        height: 70%;
+        padding: 2rem;
+    }
+    
+    .container h1 {
+        font-size: 20px;
+    }
+    
+    .doubleInput {
+        display: flex;
+        flex-direction: column;
+    }
+}

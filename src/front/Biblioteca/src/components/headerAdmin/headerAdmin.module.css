@@ -31,6 +31,52 @@
     filter: brightness(0), invert(1);
 }
 .active {
-    border-bottom: 4px solid #F0F0F0;
+    border-bottom: 2px solid #F0F0F0;
+}
+@media (max-width: 768px) {
+    .HeaderAdmin {
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .HeaderAdmin i {
+        font-size: 18px;
+    }
+
+    .HeaderAdmin a {
+        font-size: 10px;
+    }
+
+    .contentHeaderAdmin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
     }
+}
+@media (max-width:375px) {
+    .HeaderAdmin {
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .HeaderAdmin i {
+        font-size: 18px;
+    }
+
+    .HeaderAdmin a {
+        font-size: 10px;
+    }
+
+    .contentHeaderAdmin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+

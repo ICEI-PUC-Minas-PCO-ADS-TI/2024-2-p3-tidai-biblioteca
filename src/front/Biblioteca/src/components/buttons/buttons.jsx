@@ -1,6 +1,6 @@
 import style from '../buttons/buttons.module.css';
 
-export default function Buttons({ title, variant, onClick }) {
+export default function Buttons({ title, variant, onClick, className: customClass }) {
     const className = 
         variant === 'info' ? style.buttonInfo :
         variant === 'update' ? style.buttonUpdate :
@@ -9,7 +9,10 @@ export default function Buttons({ title, variant, onClick }) {
         '';
 
     return (
-        <button className={`${style.button} ${className}`} onClick={onClick}>
+        <button 
+          className={`${style.button} ${className} ${customClass}`} 
+          onClick={onClick}
+        >
             {title}
         </button>
     );

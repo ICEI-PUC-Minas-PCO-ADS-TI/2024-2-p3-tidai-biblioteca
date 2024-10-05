@@ -1,13 +1,19 @@
+.mainForms{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .containerForms {
     display: flex;
     font-size: 25px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     max-width: 900px;
     padding: 2rem;
-    margin: 0 auto;
+    margin: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .titleForm{
@@ -25,37 +31,74 @@
     height: 20px;
     border-radius: 8px;
     font-size: 18px;
+    border: 1px solid;
     padding: .40rem;
+    outline: none;
 }
 .doubleInputs input:hover {
-    border: 2px solid;
+    border: 1px solid #007bff;
 }
 .doubleInputs input:focus {
-    border: 2px solid;
+    border: 1px solid #007bff;
+    outline: none;
 }
 .containerForms label {
     display: flex;
     flex-direction: column;
-    margin-right: 1rem; 
+    margin-right: 1rem;
 }
 
 .containerForms textarea{
         height: 150px;
 }
 
-.containerForms button {
-    color:aliceblue;
-    border-radius: 8px;
-    margin-top: 2rem;
-    border: none;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: rgba(0, 123, 255);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.buttonCadastroLivro{
+    margin-top: 1em;
 }
-button:hover {
-    background-color: #0056b3;
+@media (max-width: 768px) {
+    .containerForms {
+      padding: 1rem;
+      margin: 15px;
+      font-size: 18px;
+    }
+  
+    .titleForm {
+      font-size: 32px;
+      margin: 1.5rem;
+    }
+  
+    .doubleInputs {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .doubleInputs input {
+      width: 100%;
+    }
+  
+    .containerForms label {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .containerForms {
+      padding: 0.5rem;
+      margin: 10px;
+      font-size: 16px;
+    }
+  
+    .titleForm {
+      font-size: 28px;
+      margin: 1rem;
+    }
+  
+    .doubleInputs input {
+      font-size: 16px;
+      width: 100%;
+    }
+  
+    .containerForms textarea {
+      height: 120px;
+    }
   }

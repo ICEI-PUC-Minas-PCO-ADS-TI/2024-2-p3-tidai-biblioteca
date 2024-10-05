@@ -14,10 +14,10 @@ export default function Header() {
                 isActive ? `${style.active} ${style.link}` : style.link
               }>
               {({ isActive }) => (
-                <>
+                <div className={`${style.contentHeader} ${isActive ? style.active : ''}`}>
                   <i className={`bi ${isActive ? "bi-house-fill" : "bi-house"}`}></i>
                   Ínicio
-                </>
+                </div>
               )}
             </NavLink>
           </li>
@@ -44,10 +44,10 @@ export default function Header() {
                 isActive ? `${style.active} ${style.link}` : style.link
               }>
               {({ isActive }) => (
-                <>
+                <div className={`${style.contentHeader} ${isActive ? style.active : ''}`}>
                   <i className={`bi ${isActive ? "bi-journal-bookmark-fill" : "bi-journal-bookmark"}`}></i>
                   Meus Livros
-                </>
+                </div>
               )}
             </NavLink>
           </li>
@@ -74,13 +74,14 @@ export default function Header() {
                 isActive ? `${style.active} ${style.link}` : style.link
               }>
               {({ isActive }) => (
-                <>
+                <div className={`${style.contentHeader} ${isActive ? style.active : ''}`}>
                   <i className={`bi ${isActive ? "bi-chat-left-text-fill" : "bi-chat-left-text"}`}></i>
                   Fórum
-                </>
+                </div>
               )}
             </NavLink>
           </li>
+          
           <li>
             <NavLink
               to="/minhaConta"
@@ -88,10 +89,10 @@ export default function Header() {
                 isActive ? `${style.active} ${style.link}` : style.link
               }>
               {({ isActive }) => (
-                <>
-                 <i className="bi bi-person-fill-gear"></i>
+                <div className={`${style.contentHeader} ${isActive ? style.active : ''}`}>
+                 <i className={`bi ${isActive ? "bi bi-person-fill" : "bi bi-person"}`}></i>
                   Minha conta
-                </>
+                </div>
               )}
             </NavLink>
           </li>

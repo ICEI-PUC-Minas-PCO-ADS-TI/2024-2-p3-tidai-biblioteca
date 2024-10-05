@@ -35,11 +35,11 @@
     z-index: 2;
 }
 
-.right h2 {
+.rigth h2 {
     border-bottom: 1px solid #ffff;
 }
 
-.right {
+.rigth {
     font-size: 30px;
     border-radius: 8px;
     position: relative;
@@ -134,7 +134,7 @@
     border-bottom: 1px solid black;
 }
 
-.right button {
+.rigth button {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -153,7 +153,155 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.right button:hover {
+.rigth button:hover {
     background-color: #f0f0f0;
 }
+.buttonsCadastros{
+    display: flex;
+    gap:1em;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
+
+.buttonsNavLink button {
+    background-color: white;
+    color: blue;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonsNavLink button:hover {
+    background-color: blue;
+    color: white;
+}
+.cadastroLeft{
+    font-size: 15px;
+    margin: 1em;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttonsCadastro{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.buttonsCadastro button{
+    height: 50px;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  
+  .popupContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .popupContent input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .popupContent button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .popupContent button:hover {
+    background-color: #0056b3;
+  }
+  
+@media (max-width: 1000px) {
+    .left {
+        width: 50%;
+        height: 60%;
+    }
+
+    .inputs {
+        width: 75%;
+        height: 40px;
+    }
+
+    .rigth {
+        width: 45%;
+        height: 75%;
+    }
+    .rigth h1 {
+        font-size: 40px;
+    }
+    .rigth h2 {
+        font-size: 25px;
+    }
+    .cadastroRigth h4{
+            font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .rigth {
+        display: none;
+    }
+    .cadastroLeft{
+        display: flex;
+    }
+    .cadastroLeft button {
+        height: 40px;
+    }
+    .left {
+        width: 70%;
+        height: 80%;
+        padding: 2rem;
+    }
+    .checkbox {
+        font-size: 12px;
+        text-align: center;
+        align-items: center;
+    }
+    .left button{
+
+        height: 40px;
+    }
+    .inputs {
+        width: 100%;
+    }
+    .left button {
+        margin: 10px 0;
+    }
+
+    h4 {
+        text-align: center;
+    }
+}

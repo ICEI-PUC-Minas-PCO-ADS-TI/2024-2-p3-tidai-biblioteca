@@ -14,12 +14,12 @@ export default function HeaderAdmin() {
               }
             >
               {({ isActive }) => (
-                <>
+                <div className={`${style.contentHeaderAdmin} ${isActive ? style.active : ''}`}>
                   <i
                     className={`bi ${isActive ? "bi-house-fill" : "bi-house"}`}
                   ></i>
                   Ínicio
-                </>
+                </div>
               )}
             </NavLink>
           </li>
@@ -52,14 +52,14 @@ export default function HeaderAdmin() {
               }
             >
               {({ isActive }) => (
-                <>
+                <div className={`${style.contentHeaderAdmin} ${isActive ? style.active : ''}`}>
                   <i
                     className={`bi ${
                       isActive ? "bi-journal-text" : "bi-journal-plus"
                     }`}
                   ></i>
                   Cadastrar Livros
-                </>
+                </div>
               )}
             </NavLink>
           </li>
@@ -71,7 +71,7 @@ export default function HeaderAdmin() {
               }
             >
               {({ isActive }) => (
-                <>
+                <div className={`${style.contentHeaderAdmin} ${isActive ? style.active : ''}`}>
                   <i
                     className={`bi ${
                       isActive
@@ -79,8 +79,8 @@ export default function HeaderAdmin() {
                         : "bi-file-earmark-text"
                     }`}
                   ></i>
-                  Lista de empréstimos
-                </>
+                  Empréstimos
+                </div>
               )}
             </NavLink>
           </li>
@@ -92,10 +92,10 @@ export default function HeaderAdmin() {
               }
             >
               {({ isActive }) => (
-                <>
-                  <i className="bi bi-person-fill-gear"></i>
+                <div className={`${style.contentHeaderAdmin} ${isActive ? style.active : ''}`}>
+                 <i className={`bi ${isActive ? "bi bi-person-fill" : "bi bi-person"}`}></i>
                   Minha conta
-                </>
+                </div>
               )}
             </NavLink>
           </li>

@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import Login from './pages/login/login.jsx';
 import Header from './components/header/header.jsx';
 import HeaderAdmin from './components/headerAdmin/headerAdmin.jsx';
-import { useState } from 'react';
+
 
 
 //Rotas do header padrão
@@ -18,36 +20,51 @@ import CadastroLivro from './pages/admin/cadastroLivro/cadastroLivro.jsx';
 import Acervo from './pages/admin/GerenciamentoAcervo/acervo.jsx';
 import Emprestimos from './pages/admin/emprestimos/emprestimos.jsx';
 
+import CadastroAdmin from './pages/login/cadastroAdmin/cadastroAdmin.jsx';
+import CadastroUsuario from './pages/login/cadastroUsuario/cadastroUsuario.jsx';
+
 function App() {
-  //Tela padrao = 'user', Tela Admin = 'admin'
-    const TipoUsuario = 'user';
+    const [isAuthenticated, setIsAuthenticated] = useState(false); 
+    const [tipoUsuario, setTipoUsuario] = useState(''); 
+
+    const handleLogin = (tipo) => {
+        setTipoUsuario(tipo);
+        setIsAuthenticated(true); 
+        console.log(tipo)
+    };
 
     return (
         <Router>
-            {TipoUsuario === 'admin' ? <HeaderAdmin /> : <Header />}
-            <Routes>
-                {TipoUsuario === 'user' && (
-                    <>
-                        <Route path="/home" element={<Biblioteca/>} />
-                        <Route path="/biblioteca" element={<Biblioteca />} />
-                        <Route path="/forum" element={<Forum />} />
-                        <Route path="/historico" element={<Historico />} />
-                        <Route path="/meus-livros" element={<MeusLivros />} />
-                        <Route path='/minhaConta' element={<Usuario/>}/>
-        
-                    </>
-                )}
-                {TipoUsuario === 'admin' && (
-                    <>
-                        <Route path="/homeAdmin" element={<Acervo/>} />
-                        <Route path="/cadastro-de-livro" element= {<CadastroLivro/>}/>
-                        <Route path="/gerenciar-acervo" element= {<Acervo/>}/>
-                        <Route path="/lista-de-emprestimos" element={<Emprestimos />} />
-                        <Route path='/minhaConta' element={<Usuario/>}/>
-
-                    </>
-                )}
-            </Routes>
+            {!isAuthenticated ? (
+                <Routes>
+                    <Route path="/" element={<Login onLogin={handleLogin} />} />
+                    <Route path="/cadastroUsuario" element={<CadastroUsuario />} />
+                    <Route path="/cadastroAdministrador" element={<CadastroAdmin />} />
+                </Routes>
+            ) : (
+                <>
+                    {tipoUsuario === 'admin' ? <HeaderAdmin /> : <Header />}
+                    <Routes>
+                        {tipoUsuario === 'user' && (
+                            <>
+                                <Route path="/home" element={<Biblioteca />} />
+                                <Route path="/forum" element={<Forum />} />
+                                <Route path="/historico" element={<Historico />} />
+                                <Route path="/meus-livros" element={<MeusLivros />} />
+                                <Route path='/minhaConta' element={<Usuario />} />
+                            </>
+                        )}
+                        {tipoUsuario === 'admin' && (
+                            <>
+                                <Route path="/homeAdmin" element={<Acervo />} />
+                                <Route path="/cadastro-de-livro" element={<CadastroLivro />} />
+                                <Route path="/lista-de-emprestimos" element={<Emprestimos />} />
+                                <Route path='/minhaConta' element={<Usuario />} />
+                            </>
+                        )}
+                    </Routes>
+                </>
+            )}
         </Router>
     );
 }
