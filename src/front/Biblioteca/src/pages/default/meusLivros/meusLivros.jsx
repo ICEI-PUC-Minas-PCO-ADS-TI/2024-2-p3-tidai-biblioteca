@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import styles from './meusLivros.module.css'; 
+import Card from '../../../components/card/card'; 
+import Buttons from '../../../components/buttons/buttons';
 
 const livrosExemplo = [
-  { id: 1, titulo: 'O Alquimista', autor: 'Paulo Coelho', lido: true, tipo: 'fisico' },
-  { id: 2, titulo: '1984', autor: 'George Orwell', lido: true, tipo: 'virtual' },
-  { id: 3, titulo: 'Dom Casmurro', autor: 'Machado de Assis', lido: false, tipo: 'fisico' },
-  { id: 4, titulo: 'A Odisseia', autor: 'Homero', lido: true, tipo: 'virtual' },
-  { id: 5, titulo: 'Senhor dos Anéis', autor: 'J.R.R. Tolkien', lido: false, tipo: 'emprestado', tipoFisicoVirtual: 'fisico', diasParaDevolucao: 5 },
-  { id: 6, titulo: 'Harry Potter', autor: 'J.K. Rowling', lido: false, tipo: 'emprestado', tipoFisicoVirtual: 'virtual', diasParaDevolucao: 3 },
-  { id: 7, titulo: 'Cem Anos de Solidão', autor: 'Gabriel Garcia Marquez', lido: false, tipo: 'reservado' }
+  { id: 1, titulo: 'O Alquimista', autor: 'Paulo Coelho', editora: 'A Girafa', lido: true, tipo: 'fisico', img: 'https://a-static.mlcdn.com.br/800x560/livro-o-alquimista/magazineluiza/222802300/37882f0e29de6fbea589fc2b31a26907.jpg' },
+  { id: 2, titulo: '1984', autor: 'George Orwell', editora: 'Agir', lido: true, tipo: 'virtual', img: 'https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788535932966/1984-edicao-especial.jpg' },
+  { id: 3, titulo: 'Dom Casmurro', autor: 'Machado de Assis', editora: 'Alameda Editorial', lido: false, tipo: 'fisico', tipo: 'reservado', img: 'https://http2.mlstatic.com/D_NQ_NP_996781-MLB49524854253_032022-O.webp' },
+  { id: 4, titulo: 'A Odisseia', autor: 'Homero', lido: true, editora: 'Alta Life', tipo: 'virtual', img: 'https://a-static.mlcdn.com.br/800x560/livro-odisseia/livrariamartinsfontespaulista/807086/2cd1e0e81b20cf1284ca775d1d0c0ca7.jpg' },
+  { id: 5, titulo: 'Senhor dos Anéis', autor: 'J.R.R. Tolkien', lido: false, tipo: 'emprestado', diasParaDevolucao: 5, img: 'https://th.bing.com/th/id/OIP.9-531jr1Sn12ZHvLtivqhQHaK_?rs=1&pid=ImgDetMain' },
+  { id: 6, titulo: 'Harry Potter', autor: 'J.K. Rowling', editora: 'Academia', lido: false, tipo: 'emprestado', diasParaDevolucao: 3, img: 'https://i.pinimg.com/originals/b8/7a/d7/b87ad786fe9ed85d25715be4f942fc23.jpg' },
+  { id: 7, titulo: 'Cem Anos de Solidão', autor: 'Gabriel Garcia Marquez', editora:'Record', lido: false, tipo: 'reservado', img: 'https://m.media-amazon.com/images/I/81SQPrWU7SL._AC_UF1000,1000_QL80_.jpg' }
 ];
 
 const Acervo = () => {
@@ -25,117 +27,50 @@ const Acervo = () => {
 
   const livrosFiltrados = livros.filter((livro) => {
     if (filtro === 'todos') return true;
-    if (filtro === 'fisicos') {
-      return livro.tipo === 'fisico' || (livro.tipo === 'emprestado' && livro.tipoFisicoVirtual === 'fisico');
-    }
-    if (filtro === 'virtuais') {
-      return livro.tipo === 'virtual' || (livro.tipo === 'emprestado' && livro.tipoFisicoVirtual === 'virtual');
-    }
-    if (filtro === 'emprestados') return livro.tipo === 'emprestado';
-    if (filtro === 'reservados') return livro.tipo === 'reservado';
-    if (filtro === 'lidos') return livro.lido;
-    return true;
+    if (filtro === 'emprestimos') return livro.tipo === 'emprestado';
+    if (filtro === 'reservado') return livro.tipo === 'reservado';
+    if (filtro === 'lido') return livro.lido;
+    return false;
   });
 
   return (
+    
+    
     <div className={styles.acervoContainer}>
-      {/* Barra lateral */}
+    
       <div className={styles.sidebar}>
         <h2>Filtros</h2>
         <form>
-          <div>
-            <label>
-              <input
-                type="radio"
-                name="filtro"
-                value="todos"
-                checked={filtro === 'todos'}
-                onChange={handleFiltroChange}
-              />
-              Todos os livros
-            </label>
-          </div>
-          <div>
-            <label>
-              <input
-                type="radio"
-                name="filtro"
-                value="fisicos"
-                checked={filtro === 'fisicos'}
-                onChange={handleFiltroChange}
-              />
-              Físicos
-            </label>
-          </div>
-          <div>
-            <label>
-              <input
-                type="radio"
-                name="filtro"
-                value="virtuais"
-                checked={filtro === 'virtuais'}
-                onChange={handleFiltroChange}
-              />
-              Virtuais
-            </label>
-          </div>
-          <div>
-            <label>
-              <input
-                type="radio"
-                name="filtro"
-                value="emprestados"
-                checked={filtro === 'emprestados'}
-                onChange={handleFiltroChange}
-              />
-              Empréstimos
-            </label>
-          </div>
-          <div>
-            <label>
-              <input
-                type="radio"
-                name="filtro"
-                value="reservados"
-                checked={filtro === 'reservados'}
-                onChange={handleFiltroChange}
-              />
-              Reservados
-            </label>
-          </div>
-          <div>
-            <label>
-              <input
-                type="radio"
-                name="filtro"
-                value="lidos"
-                checked={filtro === 'lidos'}
-                onChange={handleFiltroChange}
-              />
-              Já lidos
-            </label>
-          </div>
+          {['todos', 'emprestimos', 'reservado', 'lido'].map(tipo => (
+            <div key={tipo}>
+              <label>
+                <input
+                  type="radio"
+                  name="filtro"
+                  value={tipo}
+                  checked={filtro === tipo}
+                  onChange={handleFiltroChange}
+                />
+                {tipo.charAt(0).toUpperCase() + tipo.slice(1)} 
+              </label>
+            </div>
+          ))}
         </form>
       </div>
 
-      {/* Cards de Livros */}
+      
       <div className={styles.cardContainer}>
-        {livrosFiltrados.map((livro) => (
-          <div key={livro.id} className={styles.card}>
-            <div className={styles.cardImage}>
-              <img src="https://via.placeholder.com/150" alt={`Capa do livro ${livro.titulo}`} />
-            </div>
-            <div className={styles.cardContent}>
-              <h3>{livro.titulo}</h3>
-              <p>{livro.autor}</p>
-              {livro.tipo === 'emprestado' ? (
-                <p>Faltam {livro.diasParaDevolucao} dias para devolver</p>
-              ) : (
-                <p>{livro.lido ? 'Já lido' : 'Ainda não lido'}</p>
-              )}
-            </div>
-          </div>
-        ))}
+        {livrosFiltrados.length === 0 ? (
+          <p>Nenhum livro encontrado.</p>
+        ) : (
+          livrosFiltrados.map((livro) => (
+            <Card key={livro.id} img={livro.img} titulo={livro.titulo} autor={livro.autor} editora={livro.editora}>
+              <p>{livro.tipo === 'emprestado' ? `Faltam ${livro.diasParaDevolucao} dias para devolver` : (livro.lido ? 'Já lido' : 'Reservado')}</p>
+              <Buttons title='Ver mais' variant='info' />
+              {livro.tipo === 'emprestado' && <Buttons title='Devolver' variant='confirmacao' />}
+            </Card>
+          ))
+        )}
       </div>
     </div>
   );

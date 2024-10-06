@@ -1,4 +1,4 @@
-/* src/pages/admin/gerenciamentoAcervo/acervo.module.css */
+/* src/pages/admin/gerenciamentoAcervo/meusLivros.module.css */
 
 .acervoContainer {
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .sidebar {
-  width: 200px; /* Aumenta a largura da sidebar */
+  width: 240px; /* Aumenta a largura da sidebar para melhor espaço */
   padding: 20px;
   background-color: #ffffff; /* Fundo branco para destacar a sidebar */
   border-right: 1px solid #ccc;
@@ -34,13 +34,17 @@
 }
 
 /* Estilos para os cards dos livros */
+/* src/pages/admin/gerenciamentoAcervo/acervo.module.css */
+
 .cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Aumenta o tamanho mínimo */
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste conforme necessário */
+  gap: 20px; /* Espaçamento entre os cards */
   padding: 20px;
-  flex: 1; /* Ocupa o espaço restante */
+  flex: 1; /* Certifique-se de que ocupa o espaço restante */
+  margin: 0; /* Remova margens que possam estar causando espaço em branco */
 }
+
 
 .card {
   background-color: #ffffff;
@@ -49,26 +53,30 @@
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
   text-align: center;
-  transition: transform 0.2s; /* Efeito de transição suave */
+  transition: transform 0.2s, box-shadow 0.2s; /* Efeito de transição suave */
 }
 
 .card:hover {
   transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
 }
 
+
+/* src/components/card/card.module.css */
+
 .cardImage img {
-  width: 150px;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 10px;
+  width: 100%; /* Ajusta a imagem para ocupar 100% do container */
+  height: auto; /* Mantém a proporção da imagem */
   border-radius: 4px; /* Bordas arredondadas para as imagens */
 }
+
 
 .cardContent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .cardContent h3 {
   font-size: 1.2rem;
@@ -81,6 +89,13 @@
   color: #6c757d; /* Cor do texto com menor destaque */
 }
 
+/* Estilos para os botões */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between; /* Distribui os botões */
+  margin-top: 10px; /* Espaço acima dos botões */
+}
+
 .editButton {
   background-color: #007bff;
   color: #ffffff;
@@ -88,10 +103,25 @@
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
   transition: background-color 0.3s; /* Efeito de transição suave */
 }
 
 .editButton:hover {
   background-color: #0056b3;
 }
+
+.confirmButton {
+  background-color: #28a745; /* Verde para confirmação */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.confirmButton:hover {
+  background-color: #218838;
+}
+
+
