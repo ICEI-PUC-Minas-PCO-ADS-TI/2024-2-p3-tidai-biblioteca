@@ -12,7 +12,7 @@ export default function Card(props)
                 <h3>{props.titulo}</h3>
                 <p>Autor: {props.autor}</p>
                 <p>Editora: {props.editora}</p>
-                <p>Quantidade: {props.qtd}</p>
+                {props.qtd && <p>Quantidade: {props.qtd}</p>}
               </div>
                 <div className={style.buttonsCard}>
                   {props.children}
