@@ -9,7 +9,7 @@
 
 ![HomePage](images/HomePage.jpg)
 ![LivrosReservados](images/LivrosReservados.jpg)
-![gerenciarAcervo](images/gerenciarAcervo.jpg)
+![gerenciarAcervo](images/gerenciarAcervo.png)
 ![login](images/login.jpg)
 
 
