@@ -7,8 +7,12 @@
 
 ## Wireframes
 
-###Página inicial
 ![HomePage](images/HomePage.jpg)
+![LivrosReservados](images/LivrosReservados.jpg)
+![gerenciarAcervo](images/gerenciarAcervo.jpg)
+![login](images/login.jpg)
+
+
  
 
 
