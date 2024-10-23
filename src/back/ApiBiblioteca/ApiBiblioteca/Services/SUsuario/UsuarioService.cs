@@ -18,6 +18,7 @@ namespace ApiBiblioteca.Services.SUsuario
             _context = context;
             _configuration = configuration;
         }
+
         public async Task<IEnumerable<Usuario>> GetUsuarios()
         {
                 return await _context.Usuarios.ToListAsync();
@@ -77,22 +78,32 @@ namespace ApiBiblioteca.Services.SUsuario
 
         public async Task<string> Authenticate(string username, string password)
         {
-            // Validar o usuário no banco de dados
             var user = await _context.Usuarios.SingleOrDefaultAsync(u => u.Nome == username && u.Senha == password);
             if (user == null)
             {
-                return null; // Autenticação falhou
+                return null;
             }
 
-            // Gerar o token JWT
+            string userRole;
+            if (username == "admin" && password == "1234")
+            {
+                userRole = "administrador";
+            }
+            else
+            {
+                userRole = "leitor"; 
+            }
+
             var jwtSettings = _configuration.GetSection("JwtSettings");
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+           
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, user.Nome),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            new Claim(JwtRegisteredClaimNames.Sub, user.Nome),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Role, userRole)
             };
 
             var token = new JwtSecurityToken(
@@ -105,5 +116,6 @@ namespace ApiBiblioteca.Services.SUsuario
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
     }
 }

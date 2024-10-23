@@ -1,6 +1,7 @@
 ﻿using ApiBiblioteca.DTO;
 using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SUsuario;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +22,7 @@ namespace ApiBiblioteca.Controllers
             _usuarioService = usuariosService;
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpGet("todosUsuarios")]
         public async Task<ActionResult<IAsyncEnumerable<Usuario>>> GetUsuarios()
         {
