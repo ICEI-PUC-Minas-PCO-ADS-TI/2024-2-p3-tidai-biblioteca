@@ -1,0 +1,42 @@
+﻿using ApiBiblioteca.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
+
+namespace ApiBiblioteca.Services.SLivro
+{
+    public class LivroService : ILivroService
+    {
+        private readonly BibliotecaContext _context;
+
+        public LivroService(BibliotecaContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<IEnumerable<Livro>> GetLivros()
+        {
+            
+               return await _context.Livros.ToListAsync();
+        }
+        public async Task<Livro> GetLivroPorId(int id)
+        {
+            var livro = await _context.Livros.FindAsync(id);
+            return livro;
+        }
+        public async Task CreateLivro(Livro livro)
+        {
+            _context.Livros.Add(livro);
+            await _context.SaveChangesAsync();
+        }
+        public async Task UpdateLivro(Livro livro)
+        {
+            _context.Entry(livro).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+        }
+        public async Task DeleteLivro(Livro livro)
+        {
+            _context.Livros.Remove(livro);
+            await _context.SaveChangesAsync();
+        }
+    }
+}

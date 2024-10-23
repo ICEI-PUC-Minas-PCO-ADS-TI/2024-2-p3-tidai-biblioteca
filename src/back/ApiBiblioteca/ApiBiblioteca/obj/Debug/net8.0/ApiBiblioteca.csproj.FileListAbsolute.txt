@@ -1,0 +1,461 @@
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.Development.json
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.json
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.exe
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.deps.json
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.runtimeconfig.json
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.pdb
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Humanizer.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\MySqlConnector.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.CodeDom.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.AssemblyReference.cache
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfoInputs.cache
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfo.cs
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.CoreCompileInputs.cache
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cs
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cache
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.build.json
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.development.json
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.ApiBiblioteca.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiBiblioteca.props
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiBiblioteca.props
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiBiblioteca.props
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\scopedcss\bundle\ApiBiblioteca.styles.css
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBibli.6E31F417.Up2Date
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\refint\ApiBiblioteca.dll
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.pdb
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.genruntimeconfig.cache
+E:\Projeto_Biblioteca\Api\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ref\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.exe
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.deps.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.runtimeconfig.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.pdb
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Humanizer.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.AssemblyReference.cache
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfoInputs.cache
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfo.cs
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.sourcelink.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.ApiBiblioteca.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiBiblioteca.props
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiBiblioteca.props
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiBiblioteca.props
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\scopedcss\bundle\ApiBiblioteca.styles.css
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBibli.6E31F417.Up2Date
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\refint\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.pdb
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.genruntimeconfig.cache
+C:\Users\matheus.alvim\Music\Api\Api Github\ApiBiblioteca\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ref\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.json
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.exe
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.deps.json
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.runtimeconfig.json
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.pdb
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Humanizer.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.AssemblyReference.cache
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfoInputs.cache
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfo.cs
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.ApiBiblioteca.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiBiblioteca.props
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiBiblioteca.props
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiBiblioteca.props
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\scopedcss\bundle\ApiBiblioteca.styles.css
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBibli.6E31F417.Up2Date
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\refint\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.pdb
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.genruntimeconfig.cache
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ref\ApiBiblioteca.dll
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.AssemblyReference.cache
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfoInputs.cache
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfo.cs
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.CoreCompileInputs.cache
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cs
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cache
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.sourcelink.json
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.dll
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\refint\ApiBiblioteca.dll
+E:\Git_Biblioteca\Api_20-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.pdb
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.AssemblyReference.cache
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfoInputs.cache
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.AssemblyInfo.cs
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.csproj.CoreCompileInputs.cache
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cs
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.MvcApplicationPartsAssemblyInfo.cache
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.sourcelink.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\refint\ApiBiblioteca.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.pdb
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.Development.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\appsettings.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.exe
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.deps.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.runtimeconfig.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ApiBiblioteca.pdb
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Humanizer.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\MySqlConnector.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.CodeDom.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.build.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.development.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.ApiBiblioteca.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiBiblioteca.props
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiBiblioteca.props
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiBiblioteca.props
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\scopedcss\bundle\ApiBiblioteca.styles.css
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBibli.6E31F417.Up2Date
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.genruntimeconfig.cache
+E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ref\ApiBiblioteca.dll
