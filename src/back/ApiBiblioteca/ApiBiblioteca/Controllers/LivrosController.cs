@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApiBiblioteca.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/livros")]
     [ApiController]
     public class LivrosController : ControllerBase
     {
@@ -39,6 +39,17 @@ namespace ApiBiblioteca.Controllers
             {
                 return NotFound($"Não existe livro com id = {id}");
             }
+            return Ok(livro);
+        }
+
+        [HttpGet("pesquisar")]
+        public async Task<ActionResult<Livro>> PesquisarLivro(string nome)
+        {
+            if (string.IsNullOrWhiteSpace(nome))
+            {
+                throw new ArgumentException("O nome do livro não pode ser nulo ou vazio.", nameof(nome));
+            }
+            var livro = await _livroService.PesquisarLivro(nome);
             return Ok(livro);
         }
 

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ApiBiblioteca.Services.SLivro
 {
     public class LivroService : ILivroService
+
     {
         private readonly BibliotecaContext _context;
 
@@ -37,6 +38,17 @@ namespace ApiBiblioteca.Services.SLivro
         {
             _context.Livros.Remove(livro);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Livro>> PesquisarLivro(string nome)
+        {
+            nome = nome.ToLower();
+
+            var livros = await _context.Livros
+                .Where(l => l.Titulo.ToLower().Contains(nome) || l.Autor.ToLower().Contains(nome)).ToListAsync();
+
+            return livros;
+            
         }
     }
 }

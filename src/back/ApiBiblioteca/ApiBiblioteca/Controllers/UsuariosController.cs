@@ -22,7 +22,7 @@ namespace ApiBiblioteca.Controllers
             _usuarioService = usuariosService;
         }
 
-        [Authorize(Roles = "leitor,administrador")]
+        
         [HttpGet("todosUsuarios")]
         public async Task<ActionResult<IAsyncEnumerable<Usuario>>> GetUsuarios()
         {
@@ -30,6 +30,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(usuarios);
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpGet("{id:int}", Name = "GetAlunoPorId")]
         public async Task<ActionResult<Usuario>> GetUsuarioId(int id)
         {
