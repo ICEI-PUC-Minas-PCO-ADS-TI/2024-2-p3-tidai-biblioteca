@@ -1,10 +1,12 @@
-﻿using ApiBiblioteca.Models;
+﻿using ApiBiblioteca.DTO;
+using ApiBiblioteca.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiBiblioteca.Services.SLivro
 {
     public class LivroService : ILivroService
+
 
     {
         private readonly BibliotecaContext _context;
@@ -16,13 +18,30 @@ namespace ApiBiblioteca.Services.SLivro
 
         public async Task<IEnumerable<Livro>> GetLivros()
         {
-            
-               return await _context.Livros.ToListAsync();
+
+            return await _context.Livros.ToListAsync();
         }
         public async Task<Livro> GetLivroPorId(int id)
         {
             var livro = await _context.Livros.FindAsync(id);
             return livro;
+        }
+
+        public async Task<IEnumerable<Object>> GetAutorLivros()
+        {
+            var autores = await _context.Livros
+                .Select(l => l.Autor)
+                .Distinct().ToListAsync();
+
+            return autores;
+        }
+        public async Task<IEnumerable<Object>> GetGeneroLivros()
+        {
+            var generos = await _context.Livros.
+                Select(l => l.Genero).
+                Distinct().ToListAsync();
+
+            return generos;
         }
         public async Task CreateLivro(Livro livro)
         {
@@ -49,6 +68,17 @@ namespace ApiBiblioteca.Services.SLivro
 
             return livros;
             
+        }
+
+        public async Task<IEnumerable<Livro>> FiltroLivro(string nome)
+        {
+            nome = nome.ToLower();
+
+            var livros = await _context.Livros
+                .Where(l=> l.Genero.ToLower() == (nome) || l.Autor.ToLower() == (nome))
+                .ToListAsync();
+
+            return livros;
         }
     }
 }

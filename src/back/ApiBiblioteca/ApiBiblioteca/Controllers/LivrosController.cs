@@ -1,4 +1,5 @@
-﻿using ApiBiblioteca.Models;
+﻿using ApiBiblioteca.DTO;
+using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SLivro;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -51,6 +52,42 @@ namespace ApiBiblioteca.Controllers
             }
             var livro = await _livroService.PesquisarLivro(nome);
             return Ok(livro);
+        }
+        [HttpGet("filtro")]
+
+        public async Task<ActionResult<Livro>> FiltroLivro(string nome)
+        {
+            if (string.IsNullOrWhiteSpace(nome))
+            {
+                throw new ArgumentException("O nome do filtro não pode ser nulo ou vazio.", nameof(nome));
+            }
+            var livros = await _livroService.FiltroLivro(nome);
+            return Ok(livros);
+        }
+
+        [HttpGet("autor")]
+        public async Task<ActionResult<Object>> GetAutorLivros(){
+
+            var autores = await _livroService.GetAutorLivros();
+
+            if (autores == null || !autores.Any())
+            {
+                return NotFound("Nenhum livro encontrado");
+            }
+
+            return Ok(autores);
+        }
+
+        [HttpGet("generos")]
+        public async Task<ActionResult<Object>> GetGenerosLivros()
+        {
+            var generos = await _livroService.GetGeneroLivros();
+
+            if (generos == null || !generos.Any())
+            {
+                return NotFound("Nenhum livro encontrado");
+            }
+            return Ok(generos);
         }
 
         [HttpPost]
