@@ -3,10 +3,11 @@ using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SEmprestimo;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ApiBiblioteca.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("emprestimos")]
     [ApiController]
     public class EmprestimoController : ControllerBase
     {
@@ -18,7 +19,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpGet]
-
+        [SwaggerOperation(Summary = "Retorna todos os emprestimos")]
         public async Task<IActionResult> GetEmprestimo()
         {
             try
@@ -31,7 +32,8 @@ namespace ApiBiblioteca.Controllers
                 return BadRequest("Livros não encontrador");
             }
         }
-        [HttpGet("{id:int}", Name = "GetEmprestimoPorId")]
+        [HttpGet("{id:int}")]
+        [SwaggerOperation(Summary = "Retorna emprestimo por id")]
 
         public async Task<ActionResult<Emprestimo>> GetEmprestimoPorId(int id)
         {
@@ -46,7 +48,8 @@ namespace ApiBiblioteca.Controllers
             }
         }
 
-        [HttpGet("emprestimoPorNome")]
+        [HttpGet("usuarios/livros")]
+        [SwaggerOperation(Summary = "Retorna emprestimo como nome do livro e o nome do usuario")]
         public async Task<ActionResult<EmprestimoDTO>> GetEmprestimos()
         {
             try
@@ -61,7 +64,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpDelete("{id:int}")]
-
+        [SwaggerOperation(Summary = "Deleta um emprestimo")]
         public async Task<ActionResult> DeleteEmprestimo(int id)
         {
             try
@@ -84,7 +87,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpPut]
-
+        [SwaggerOperation(Summary = "Renova um emprestimo para mais 7 dias")]
         public async Task<ActionResult> Renovacao(int id)
         {
             try

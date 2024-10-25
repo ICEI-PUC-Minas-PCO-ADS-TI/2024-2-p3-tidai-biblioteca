@@ -50,8 +50,9 @@ namespace ApiBiblioteca.Services.SReserva
         {
             var usuario = await _context.Usuarios.Include(u => u.Reservas)
                                                   .FirstOrDefaultAsync(u => u.Id == UsuarioId);
+            var livro = await _context.Livros.FindAsync(LivroId);
 
-            if (usuario != null)
+            if (usuario != null && livro.Quantidade > 0)
             {
                 var _reserva = new Reserva
                 {
@@ -59,7 +60,7 @@ namespace ApiBiblioteca.Services.SReserva
                     LivroId = LivroId,
                     DataReserva = DateOnly.FromDateTime(DateTime.Now)
                 };
-
+                livro.Quantidade--;
                 usuario.Reservas.Add(_reserva); 
                 await _context.SaveChangesAsync();
             }

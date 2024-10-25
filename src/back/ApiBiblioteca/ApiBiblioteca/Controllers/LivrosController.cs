@@ -1,14 +1,14 @@
-﻿using ApiBiblioteca.DTO;
-using ApiBiblioteca.Models;
+﻿using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SLivro;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace ApiBiblioteca.Controllers
 {
-    [Route("api/livros")]
+    [Route("livros")]
     [ApiController]
     public class LivrosController : ControllerBase
     {
@@ -20,6 +20,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpGet]
+        [SwaggerOperation(Summary = "Retorna todos os livros")]
         public async Task<ActionResult<IEnumerable<Livro>>> GetLivros()
         {
             var livros = await _livroService.GetLivros();
@@ -32,7 +33,8 @@ namespace ApiBiblioteca.Controllers
             return Ok(livros);
         }
 
-        [HttpGet("{id:int}", Name = "GetLivro")]
+        [HttpGet("{id:int}")]
+        [SwaggerOperation(Summary = "Retorna livro por id")]
         public async Task<ActionResult<Livro>> GetLivroId(int id)
         {
             var livro = await _livroService.GetLivroPorId(id);
@@ -44,6 +46,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpGet("pesquisar")]
+        [SwaggerOperation(Summary = "Pesquisa um livro")]
         public async Task<ActionResult<Livro>> PesquisarLivro(string nome)
         {
             if (string.IsNullOrWhiteSpace(nome))
@@ -53,44 +56,9 @@ namespace ApiBiblioteca.Controllers
             var livro = await _livroService.PesquisarLivro(nome);
             return Ok(livro);
         }
-        [HttpGet("filtro")]
-
-        public async Task<ActionResult<Livro>> FiltroLivro(string nome)
-        {
-            if (string.IsNullOrWhiteSpace(nome))
-            {
-                throw new ArgumentException("O nome do filtro não pode ser nulo ou vazio.", nameof(nome));
-            }
-            var livros = await _livroService.FiltroLivro(nome);
-            return Ok(livros);
-        }
-
-        [HttpGet("autor")]
-        public async Task<ActionResult<Object>> GetAutorLivros(){
-
-            var autores = await _livroService.GetAutorLivros();
-
-            if (autores == null || !autores.Any())
-            {
-                return NotFound("Nenhum livro encontrado");
-            }
-
-            return Ok(autores);
-        }
-
-        [HttpGet("generos")]
-        public async Task<ActionResult<Object>> GetGenerosLivros()
-        {
-            var generos = await _livroService.GetGeneroLivros();
-
-            if (generos == null || !generos.Any())
-            {
-                return NotFound("Nenhum livro encontrado");
-            }
-            return Ok(generos);
-        }
 
         [HttpPost]
+        [SwaggerOperation(Summary = "Cria um livro")]
         public async Task<ActionResult> CreateLivro([FromBody] Livro livro)
         {
             if (livro == null)
@@ -103,6 +71,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpPut("{id:int}")]
+        [SwaggerOperation(Summary = "Edita um livro")]
         public async Task<ActionResult> EditLivro(int id, [FromBody] Livro livro)
         {
             if (livro.Id != id)
@@ -115,6 +84,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [SwaggerOperation(Summary = "Deleta um livro")]
         public async Task<ActionResult> DeleteLivro(int id)
         {
             var livro = await _livroService.GetLivroPorId(id);

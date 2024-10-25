@@ -100,6 +100,7 @@ builder.Services.AddSwaggerGen(c =>
             new string[] {}
         }
     });
+    c.EnableAnnotations();
 });
 
 var app = builder.Build();

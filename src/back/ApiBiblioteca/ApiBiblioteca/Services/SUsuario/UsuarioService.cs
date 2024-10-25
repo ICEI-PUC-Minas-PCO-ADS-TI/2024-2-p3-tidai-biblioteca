@@ -29,10 +29,26 @@ namespace ApiBiblioteca.Services.SUsuario
             var usuario = await _context.Usuarios.FindAsync(id);
             return usuario;
         }
-        public async Task CreateUsuario(Usuario usuario)
+        public async Task<Usuario> CreateUsuario(CreateUsuarioDTO usuarioDTO)
         {
+            var usuario = new Usuario
+            {
+              Nome = usuarioDTO.Nome,
+              Email = usuarioDTO.Email,
+              Cpf = usuarioDTO.Cpf,
+              Cep = usuarioDTO.Cep,
+              Rua = usuarioDTO.Rua,
+              Bairro = usuarioDTO.Bairro,
+              Cidade = usuarioDTO.Cidade,
+              Uf = usuarioDTO.Uf,
+              NumeroCasa = usuarioDTO.NumeroCasa,
+              Telefone = usuarioDTO.Telefone,
+              DataNascimento = usuarioDTO.DataNascimento,
+              Senha = usuarioDTO.Senha,
+            };
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
+            return usuario;
         }
         public async Task UpdateUsuario(Usuario usuario)
         {
@@ -116,6 +132,5 @@ namespace ApiBiblioteca.Services.SUsuario
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-
     }
 }

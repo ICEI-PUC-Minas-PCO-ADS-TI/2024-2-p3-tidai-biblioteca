@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projeto_Biblioteca\\Api-23-10\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {}
+    "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {}
   },
   "projects": {
-    "E:\\Projeto_Biblioteca\\Api-23-10\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {
+    "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeto_Biblioteca\\Api-23-10\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
         "projectName": "ApiBiblioteca",
-        "projectPath": "E:\\Projeto_Biblioteca\\Api-23-10\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
-        "packagesPath": "C:\\Users\\alvim\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeto_Biblioteca\\Api-23-10\\ApiBiblioteca\\ApiBiblioteca\\obj\\",
+        "projectPath": "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
+        "packagesPath": "C:\\Users\\matheus.alvim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alvim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matheus.alvim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,6 +69,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.9.0, )"
             }
           },
           "imports": [
@@ -90,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

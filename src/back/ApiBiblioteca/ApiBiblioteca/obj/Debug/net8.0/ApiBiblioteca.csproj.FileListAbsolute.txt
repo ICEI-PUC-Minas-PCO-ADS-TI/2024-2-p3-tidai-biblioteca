@@ -459,3 +459,12 @@ E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\sco
 E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBibli.6E31F417.Up2Date
 E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ApiBiblioteca.genruntimeconfig.cache
 E:\Projeto_Biblioteca\Api-23-10\ApiBiblioteca\ApiBiblioteca\obj\Debug\net8.0\ref\ApiBiblioteca.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\matheus.alvim\Desktop\ApiBiblioteca\ApiBiblioteca\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll

@@ -6,12 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ApiBiblioteca.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("usuarios")]
     [ApiController]
     public class UsuariosController : ControllerBase
     {
@@ -23,7 +24,8 @@ namespace ApiBiblioteca.Controllers
         }
 
         
-        [HttpGet("todosUsuarios")]
+        [HttpGet]
+        [SwaggerOperation(Summary = "Retorna todos os usuarios")]
         public async Task<ActionResult<IAsyncEnumerable<Usuario>>> GetUsuarios()
         {
             var usuarios = await _usuarioService.GetUsuarios();
@@ -31,7 +33,8 @@ namespace ApiBiblioteca.Controllers
         }
 
         [Authorize(Roles = "leitor,administrador")]
-        [HttpGet("{id:int}", Name = "GetAlunoPorId")]
+        [HttpGet("{id:int}")]
+        [SwaggerOperation(Summary = "Retorna usario por id")]
         public async Task<ActionResult<Usuario>> GetUsuarioId(int id)
         {
             var usuario = await _usuarioService.GetUsuarioId(id);
@@ -42,14 +45,16 @@ namespace ApiBiblioteca.Controllers
             return Ok(usuario);
         }
 
-        [HttpPost("createUsuario")]
-        public async Task<ActionResult> CreateUsuario(Usuario usuario)
+        [HttpPost]
+        [SwaggerOperation(Summary = "Cria um usuario")]
+        public async Task<ActionResult> CreateUsuario(CreateUsuarioDTO usuarioDTO)
         {
-            await _usuarioService.CreateUsuario(usuario);
+            var usuario = await _usuarioService.CreateUsuario(usuarioDTO);
             return CreatedAtRoute("GetAlunoPorId", new { id = usuario.Id }, usuario);
         }
 
         [HttpPut("{id:int}")]
+        [SwaggerOperation(Summary = "Edita um usuario")]
         public async Task<ActionResult> Edit(int id, [FromBody] Usuario usuario)
         {
             if (usuario.Id != id)
@@ -62,6 +67,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [SwaggerOperation(Summary = "Deleta um usuario")]
         public async Task<ActionResult> DeleteUsuario(int id)
         {
             var usuario = await _usuarioService.GetUsuarioId(id);
@@ -74,14 +80,16 @@ namespace ApiBiblioteca.Controllers
             return Ok($"Usuário de id: {id} foi excluído com sucesso");
         }
 
-        [HttpGet("emprestimoUsuario")]
+        [HttpGet("emprestimos")]
+        [SwaggerOperation(Summary = "Retorna os emprestimos de um determinado usuario")]
         public async Task<ActionResult<Emprestimo>> GetEmprestimosUsuario(int id)
         {
             var emprestimos = await _usuarioService.GetEmprestimoUsuario(id);
             return Ok(emprestimos);
         }
 
-        [HttpGet("reservaUsuario")]
+        [HttpGet("reservas")]
+        [SwaggerOperation(Summary = "Retorna os reservas de um determinado usuario")]
         public async Task<ActionResult<Emprestimo>> GetReservaUsuario(int id)
         {
             var reservas = await _usuarioService.GetReservasUsuario(id);
@@ -89,6 +97,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpPost("login")]
+        [SwaggerOperation(Summary = "Retorna um token jwt")]
         public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
         {
             var token = await _usuarioService.Authenticate(loginDto.Username, loginDto.Password);
