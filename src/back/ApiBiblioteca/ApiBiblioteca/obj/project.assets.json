@@ -2936,19 +2936,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matheus.alvim\\.nuget\\packages\\": {}
+    "C:\\Users\\alvim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
+      "projectUniqueName": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
       "projectName": "ApiBiblioteca",
-      "projectPath": "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
-      "packagesPath": "C:\\Users\\matheus.alvim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matheus.alvim\\Desktop\\ApiBiblioteca\\ApiBiblioteca\\obj\\",
+      "projectPath": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
+      "packagesPath": "C:\\Users\\alvim\\.nuget\\packages\\",
+      "outputPath": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matheus.alvim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alvim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3028,7 +3028,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

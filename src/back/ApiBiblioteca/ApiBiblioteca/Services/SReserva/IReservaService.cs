@@ -8,7 +8,7 @@ namespace ApiBiblioteca.Services.SReserva
         Task<IEnumerable<ReservaDTO>> GetReservas();
         Task<IEnumerable<Reserva>> GetReserva();
         Task<Reserva> GetReservaPorId(int id);
-        Task CreateReserva(int UsuarioId, int LivroId);
+        Task<string> CreateReserva(CreateReservaDTO reservaDTO);
         Task DeleteReserva(int idReserva);
         Task TransferenciaParaEmprestimo(Reserva reserva);
 

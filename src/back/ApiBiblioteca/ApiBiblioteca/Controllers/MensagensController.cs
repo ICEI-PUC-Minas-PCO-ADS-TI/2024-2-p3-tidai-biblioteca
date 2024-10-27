@@ -1,12 +1,13 @@
 ﻿using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SMensagen;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ApiBiblioteca.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("mensagens")]
     [ApiController]
     public class MensagensController : ControllerBase
     {
@@ -18,6 +19,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpGet]
+        [SwaggerOperation(Summary = "Obtém todas as mensagens")]
         public async Task<ActionResult<IEnumerable<Mensagen>>> GetMensagens()
         {
             var mensagens = await _mensagemService.GetMensagens();
@@ -25,6 +27,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation(Summary = "Cria uma nova mensagem")]
         public async Task<ActionResult<Mensagen>> CreateMensagen([FromBody] Mensagen mensagen)
         {
             if (mensagen == null)
@@ -37,6 +40,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Atualiza uma mensagem existente")]
         public async Task<ActionResult> UpdateMensagen(int id, [FromBody] Mensagen mensagen)
         {
             if (id != mensagen.Id)
@@ -49,6 +53,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Exclui uma mensagem por ID")]
         public async Task<ActionResult> DeleteMensagen(int id)
         {
             await _mensagemService.DeleteMensagen(id);

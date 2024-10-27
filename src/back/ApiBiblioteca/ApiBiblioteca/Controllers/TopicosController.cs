@@ -1,12 +1,13 @@
 ﻿using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.STopicos;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ApiBiblioteca.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("topico")]
     [ApiController]
     public class TopicoController : ControllerBase
     {
@@ -18,6 +19,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpGet]
+        [SwaggerOperation(Summary = "Obtém todos os tópicos")]
         public async Task<ActionResult<IEnumerable<Topico>>> GetTopicos()
         {
             var topicos = await _topicoService.GetTopicos();
@@ -25,6 +27,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation(Summary = "Cria um novo tópico")]
         public async Task<ActionResult<Topico>> CreateTopico([FromBody] Topico topico)
         {
             if (topico == null)
@@ -37,6 +40,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Atualiza um tópico existente")]
         public async Task<ActionResult> UpdateTopico(int id, [FromBody] Topico topico)
         {
             if (id != topico.Id)
@@ -49,6 +53,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Exclui um tópico por ID")]
         public async Task<ActionResult> DeleteTopico(int id)
         {
             await _topicoService.DeleteTopico(id);

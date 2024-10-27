@@ -47,6 +47,39 @@ namespace ApiBiblioteca.Services.SEmprestimo
             }
 
         }
+        public async Task<string> CreateEmprestimo(CreateEmprestimoDTO emprestimoDTO)
+        {
+            
+            var usuario = await _context.Usuarios.FindAsync(emprestimoDTO.UsuarioId);
+            if (usuario == null)
+            {
+                return "Usuário não encontrado.";
+            }
+
+            
+            var livro = await _context.Livros.FindAsync(emprestimoDTO.LivroId);
+            if (livro == null)
+            {
+                return "Livro não encontrado.";
+            }
+            if (livro.Quantidade <= 0)
+            {
+                return "Livro indisponível para empréstimo.";
+            }
+
+            var emprestimo = new Emprestimo
+            {
+                LivroId = emprestimoDTO.LivroId,
+                UsuarioId = emprestimoDTO.UsuarioId,
+                DataEmprestimo = DateOnly.FromDateTime(DateTime.Now),
+                DataDevolucao = DateOnly.FromDateTime(DateTime.Now.AddDays(7))
+            };
+            livro.Quantidade--;
+            _context.Emprestimos.Add(emprestimo);
+            await _context.SaveChangesAsync();
+
+            return $"Empréstimo com IdUsuario: {emprestimoDTO.UsuarioId} e IdLivro: {emprestimoDTO.LivroId} criado com sucesso.";
+        }
 
         public async Task<IEnumerable<EmprestimoDTO>> GetEmprestimoDTO()
         {

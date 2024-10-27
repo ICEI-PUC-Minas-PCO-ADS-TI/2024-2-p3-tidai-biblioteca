@@ -62,6 +62,27 @@ namespace ApiBiblioteca.Controllers
                 return BadRequest("Requisição falhou");
             }
         }
+        [HttpPost]
+        [SwaggerOperation(Summary = "Cria um empréstimo de livro")]
+        public async Task<ActionResult> CreateEmprestimo([FromBody] CreateEmprestimoDTO emprestimoDTO)
+        {
+            var resultado = await _emprestimoService.CreateEmprestimo(emprestimoDTO);
+
+            if (resultado == "Usuário não encontrado.")
+            {
+                return NotFound(new { mensagem = resultado });
+            }
+            else if (resultado == "Livro não encontrado.")
+            {
+                return NotFound(new { mensagem = resultado });
+            }
+            else if (resultado == "Livro indisponível para empréstimo.")
+            {
+                return BadRequest(new { mensagem = resultado });
+            }
+
+            return Ok(new { mensagem = resultado });
+        }
 
         [HttpDelete("{id:int}")]
         [SwaggerOperation(Summary = "Deleta um emprestimo")]

@@ -46,24 +46,43 @@ namespace ApiBiblioteca.Services.SReserva
         }
 
 
-        public async Task CreateReserva(int UsuarioId, int LivroId)
+        public async Task<string> CreateReserva(CreateReservaDTO reservaDTO)
         {
-            var usuario = await _context.Usuarios.Include(u => u.Reservas)
-                                                  .FirstOrDefaultAsync(u => u.Id == UsuarioId);
-            var livro = await _context.Livros.FindAsync(LivroId);
 
-            if (usuario != null && livro.Quantidade > 0)
+            var usuario = await _context.Usuarios.FindAsync(reservaDTO.UsuarioId);
+            if (usuario == null)
             {
-                var _reserva = new Reserva
-                {
-                    UsuarioId = UsuarioId,
-                    LivroId = LivroId,
-                    DataReserva = DateOnly.FromDateTime(DateTime.Now)
-                };
-                livro.Quantidade--;
-                usuario.Reservas.Add(_reserva); 
-                await _context.SaveChangesAsync();
+                return "Usuário não encontrado.";
             }
+
+           
+            var livro = await VerificarLivro(reservaDTO.LivroId);
+            if (livro == null)
+            {
+                return "Livro não encontrado.";
+            }
+            if (livro.Quantidade <= 0)
+            {
+                return "Livro indisponível para reserva.";
+            }
+
+
+            var reserva = new Reserva
+            {
+                UsuarioId = reservaDTO.UsuarioId,
+                LivroId = reservaDTO.LivroId,
+                DataReserva = DateOnly.FromDateTime(DateTime.Now)
+            };
+            livro.Quantidade--;
+            _context.Reservas.Add(reserva);
+            await _context.SaveChangesAsync();
+
+            return $"Reserva com IdUsuario: {reservaDTO.UsuarioId} e IdLivro: {reservaDTO.LivroId} criada com sucesso.";
+        }
+
+        private async Task<Livro?> VerificarLivro(int livroId)
+        {
+            return await _context.Livros.FindAsync(livroId);
         }
 
         public async Task DeleteReserva(int idReserva)

@@ -2,12 +2,13 @@
 using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SReserva;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ApiBiblioteca.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("reserva")]
     [ApiController]
     public class ReservasController : ControllerBase
     {
@@ -19,6 +20,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpGet("{id:int}", Name = "GetReserva")]
+        [SwaggerOperation(Summary = "Obtém uma reserva por ID")]
         public async Task<ActionResult<Reserva>> GetReservaId(int id)
         {
             var reserva = await _reservaService.GetReservaPorId(id);
@@ -29,33 +31,45 @@ namespace ApiBiblioteca.Controllers
             return Ok(reserva);
         }
 
-        [HttpPost("createReservas")]
-        public async Task<IActionResult> CreateReserva([FromBody] CreateReservaDTO reserva)
+        [HttpPost]
+        [SwaggerOperation(Summary = "Cria uma nova reserva de livro")]
+        public async Task<ActionResult> CreateReserva([FromBody] CreateReservaDTO reservaDTO)
         {
-            if (reserva == null)
+            var resultado = await _reservaService.CreateReserva(reservaDTO);
+            if (resultado == "Usuário não encontrado.")
             {
-                return BadRequest("Reserva inválida.");
+                return NotFound(new { mensagem = resultado });
+            }
+            else if (resultado == "Livro não encontrado.")
+            {
+                return NotFound(new { mensagem = resultado });
+            }
+            else if (resultado == "Livro indisponível para reserva.")
+            {
+                return BadRequest(new { mensagem = resultado });
             }
 
-            await _reservaService.CreateReserva(reserva.UsuarioId, reserva.LivroId);
-            return Ok($"Reserva com IdUsuario: {reserva.UsuarioId} e IdLivro: {reserva.LivroId} criada com sucesso");
+            return Ok(new { mensagem = resultado });
         }
 
         [HttpGet]
+        [SwaggerOperation(Summary = "Lista todas as reservas")]
         public async Task<ActionResult<IEnumerable<Reserva>>> GetReserva()
         {
             var reservas = await _reservaService.GetReserva();
             return Ok(reservas);
         }
 
-        [HttpGet("reversasPorNome")]
+        [HttpGet("/usuario/livro")]
+        [SwaggerOperation(Summary = "Lista reservas com dados de usuário e livro")]
         public async Task<ActionResult<IEnumerable<ReservaDTO>>> GetReservas()
         {
             var reservas = await _reservaService.GetReservas();
             return Ok(reservas);
         }
 
-        [HttpPost("transferenciaEmprestimo/{id}")]
+        [HttpPost("/emprestimo{id}")]
+        [SwaggerOperation(Summary = "Converte uma reserva em empréstimo")]
         public async Task<ActionResult> TransferenciaParaEmprestimo(int id)
         {
             var reserva = await _reservaService.GetReservaPorId(id);
@@ -70,6 +84,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [SwaggerOperation(Summary = "Deleta uma reserva por ID")]
         public async Task<ActionResult> DeleteReserva(int id)
         {
             var reserva = await _reservaService.GetReservaPorId(id);
