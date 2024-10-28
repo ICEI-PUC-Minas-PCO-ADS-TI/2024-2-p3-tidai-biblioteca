@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {}
+    "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj": {}
   },
   "projects": {
-    "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {
+    "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
+        "projectUniqueName": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj",
         "projectName": "ApiBiblioteca",
-        "projectPath": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
+        "projectPath": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj",
         "packagesPath": "C:\\Users\\alvim\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\obj\\",
+        "outputPath": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alvim\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,5 @@
-﻿using ApiBiblioteca.Models;
+﻿using ApiBiblioteca.DTO;
+using ApiBiblioteca.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,11 +25,26 @@ namespace ApiBiblioteca.Services.SLivro
             var livro = await _context.Livros.FindAsync(id);
             return livro;
         }
-        public async Task CreateLivro(Livro livro)
+        public async Task CreateLivro(CreateLivroDTO livroDTO)
         {
+            var livro = new Livro
+            {
+                Titulo = livroDTO.Titulo,
+                Autor = livroDTO.Autor,
+                Editora = livroDTO.Editora,
+                Edicao = livroDTO.Edicao,
+                NumeroPaginas = livroDTO.NumeroPaginas,
+                Genero = livroDTO.Genero,
+                Quantidade = livroDTO.Quantidade,
+                Descricao = livroDTO.Descricao,
+                CapaUrl = livroDTO.CapaUrl,
+                AnoLivro = livroDTO.AnoLivro
+            };
+
             _context.Livros.Add(livro);
             await _context.SaveChangesAsync();
         }
+
         public async Task UpdateLivro(Livro livro)
         {
             _context.Entry(livro).State = EntityState.Modified;

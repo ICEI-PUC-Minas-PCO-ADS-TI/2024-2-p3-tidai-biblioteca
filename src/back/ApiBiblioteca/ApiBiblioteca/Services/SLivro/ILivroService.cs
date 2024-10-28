@@ -1,4 +1,5 @@
-﻿using ApiBiblioteca.Models;
+﻿using ApiBiblioteca.DTO;
+using ApiBiblioteca.Models;
 
 namespace ApiBiblioteca.Services.SLivro
 {
@@ -7,7 +8,7 @@ namespace ApiBiblioteca.Services.SLivro
         Task<IEnumerable<Livro>> GetLivros();
         Task<IEnumerable<Livro>>PesquisarLivro(string nome);
         Task<Livro> GetLivroPorId(int id);
-        Task CreateLivro(Livro livro);
+        Task CreateLivro(CreateLivroDTO livroDTO);
         Task UpdateLivro(Livro livro);
         Task DeleteLivro(Livro livro);
     }

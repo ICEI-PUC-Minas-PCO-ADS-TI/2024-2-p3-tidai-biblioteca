@@ -23,7 +23,7 @@ namespace ApiBiblioteca.Controllers
             _usuarioService = usuariosService;
         }
 
-        
+       
         [HttpGet]
         [SwaggerOperation(Summary = "Retorna todos os usuarios")]
         public async Task<ActionResult<IAsyncEnumerable<Usuario>>> GetUsuarios()
@@ -32,7 +32,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(usuarios);
         }
 
-        [Authorize(Roles = "leitor,administrador")]
+        [Authorize(Roles = "administrador")]
         [HttpGet("{id:int}")]
         [SwaggerOperation(Summary = "Retorna usario por id")]
         public async Task<ActionResult<Usuario>> GetUsuarioId(int id)
@@ -49,10 +49,11 @@ namespace ApiBiblioteca.Controllers
         [SwaggerOperation(Summary = "Cria um usuario")]
         public async Task<ActionResult> CreateUsuario(CreateUsuarioDTO usuarioDTO)
         {
-            var usuario = await _usuarioService.CreateUsuario(usuarioDTO);
-            return CreatedAtRoute("GetAlunoPorId", new { id = usuario.Id }, usuario);
+            await _usuarioService.CreateUsuario(usuarioDTO);
+            return Ok("Usuario criado com sucesso");
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpPut("{id:int}")]
         [SwaggerOperation(Summary = "Edita um usuario")]
         public async Task<ActionResult> Edit(int id, [FromBody] Usuario usuario)
@@ -66,6 +67,20 @@ namespace ApiBiblioteca.Controllers
             return Ok($"Usuário com id={id} foi atualizado com sucesso");
         }
 
+        [Authorize(Roles = "administrador")]
+        [HttpGet("pesquisar")]
+        [SwaggerOperation(Summary = "Pesquisa um usuario")]
+        public async Task<ActionResult<Usuario>> PesquisarLivro(string nome)
+        {
+            if (string.IsNullOrWhiteSpace(nome))
+            {
+                throw new ArgumentException("O nome do usuario não pode ser nulo ou vazio.", nameof(nome));
+            }
+            var livro = await _usuarioService.PesquisarLivro(nome);
+            return Ok(livro);
+        }
+
+        //[Authorize(Roles = "leitor,administrador")]
         [HttpDelete("{id:int}")]
         [SwaggerOperation(Summary = "Deleta um usuario")]
         public async Task<ActionResult> DeleteUsuario(int id)
@@ -80,6 +95,7 @@ namespace ApiBiblioteca.Controllers
             return Ok($"Usuário de id: {id} foi excluído com sucesso");
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpGet("emprestimos")]
         [SwaggerOperation(Summary = "Retorna os emprestimos de um determinado usuario")]
         public async Task<ActionResult<Emprestimo>> GetEmprestimosUsuario(int id)
@@ -88,26 +104,13 @@ namespace ApiBiblioteca.Controllers
             return Ok(emprestimos);
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpGet("reservas")]
         [SwaggerOperation(Summary = "Retorna os reservas de um determinado usuario")]
         public async Task<ActionResult<Emprestimo>> GetReservaUsuario(int id)
         {
             var reservas = await _usuarioService.GetReservasUsuario(id);
             return Ok(reservas);
-        }
-
-        [HttpPost("login")]
-        [SwaggerOperation(Summary = "Retorna um token jwt")]
-        public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
-        {
-            var token = await _usuarioService.Authenticate(loginDto.Username, loginDto.Password);
-
-            if (token == null)
-            {
-                return Unauthorized("Usuário ou senha inválidos");
-            }
-
-            return Ok(new { Token = token });
         }
     }
 }

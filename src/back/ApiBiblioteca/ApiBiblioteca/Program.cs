@@ -1,5 +1,6 @@
 using ApiBiblioteca.Middleware;
 using ApiBiblioteca.Models;
+using ApiBiblioteca.Services.SAuthenticaded;
 using ApiBiblioteca.Services.SEmprestimo;
 using ApiBiblioteca.Services.SLivro;
 using ApiBiblioteca.Services.SMensagen;
@@ -69,6 +70,7 @@ builder.Services.AddScoped<IReservaService, ReservaService>();
 builder.Services.AddScoped<IEmprestimoService, EmprestimoService>();
 builder.Services.AddScoped<ITopicoService,TopicoService>();
 builder.Services.AddScoped<IMensagemService, MensagenService>();
+builder.Services.AddScoped<IAutheticatedService, AutheticatedService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

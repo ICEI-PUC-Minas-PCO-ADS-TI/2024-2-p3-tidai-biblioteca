@@ -1,18 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\",
+  "WorkspaceRootPath": "E:\\Projeto_Biblioteca\\API_FINAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api\\apibiblioteca\\apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api\\apibiblioteca\\apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\services\\slivro\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\slivro\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\services\\slivro\\ilivroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\slivro\\ilivroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\dto\\createlivrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\createlivrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\services\\semprestimo\\emprestimoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\semprestimo\\emprestimoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\dto\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api\\apibiblioteca\\apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\services\\sauthenticaded\\autheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\sauthenticaded\\autheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\services\\sauthenticaded\\iautheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\sauthenticaded\\iautheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|e:\\projeto_biblioteca\\api_final\\apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 157,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,42 +98,228 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MensagensController.cs",
-              "DocumentMoniker": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\MensagensController.cs",
-              "ToolTip": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Controllers\\MensagensController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "DocumentIndex": 3,
+              "Title": "LivroService.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwEMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:03:44.112Z",
+              "WhenOpened": "2024-10-28T16:48:30.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILivroService.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T16:47:26.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateLivroDTO.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
+              "RelativeToolTip": "ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T16:44:19.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmprestimoService.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T16:37:31.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateUsuarioDTO.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
+              "RelativeToolTip": "ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T16:02:49.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\appsettings.json",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\appsettings.json",
+              "RelativeToolTip": "ApiBiblioteca\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-28T15:58:05.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:16:43.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmprestimoController.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\EmprestimoController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\EmprestimoController.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\EmprestimoController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\EmprestimoController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAcwF0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:23:01.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TopicosController.cs",
-              "DocumentMoniker": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\TopicosController.cs",
-              "ToolTip": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Controllers\\TopicosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Title": "LivrosController.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\LivrosController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\LivrosController.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\LivrosController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\LivrosController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCkAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:02:52.878Z",
+              "WhenOpened": "2024-10-28T15:22:20.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ReservasController.cs",
-              "DocumentMoniker": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\ReservasController.cs",
-              "ToolTip": "E:\\Projeto_Biblioteca\\Api\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Controllers\\ReservasController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAwGQAAAAAAAAA",
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAUwFIAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:00:14.548Z",
+              "WhenOpened": "2024-10-28T15:21:09.315Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:21:02.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Program.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Program.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Program.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Program.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:12:12.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthenticatedController.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAwwBEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:11:34.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AutheticatedService.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAmwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:09:06.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAutheticatedService.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:07:52.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MensagensController.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:03:44.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TopicosController.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:02:52.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "ToolTip": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAIwFsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:00:14.548Z"
             }
           ]
         }

@@ -5,13 +5,13 @@ namespace ApiBiblioteca.Services.SUsuario
 {
     public interface IUsuarioService
     {
-        Task<string> Authenticate(string username, string password);
         Task<IEnumerable<Usuario>> GetUsuarios();
         Task<Usuario> GetUsuarioId(int id);
+        Task<IEnumerable<Usuario>> PesquisarLivro(string nome);
         Task<IEnumerable<ReservaDTO>> GetReservasUsuario(int id);
         Task<IEnumerable<EmprestimoDTO>> GetEmprestimoUsuario(int id);
         Task DeleteUsuario(Usuario usuario);
-        Task <Usuario> CreateUsuario(CreateUsuarioDTO usuarioDTO);
+        Task CreateUsuario(CreateUsuarioDTO usuarioDTO);
         Task UpdateUsuario(Usuario usuario);
     }
 }

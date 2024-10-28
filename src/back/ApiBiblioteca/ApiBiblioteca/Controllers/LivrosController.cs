@@ -1,5 +1,7 @@
-﻿using ApiBiblioteca.Models;
+﻿using ApiBiblioteca.DTO;
+using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SLivro;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
@@ -19,6 +21,7 @@ namespace ApiBiblioteca.Controllers
             _livroService = livroService;
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpGet]
         [SwaggerOperation(Summary = "Retorna todos os livros")]
         public async Task<ActionResult<IEnumerable<Livro>>> GetLivros()
@@ -33,6 +36,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(livros);
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpGet("{id:int}")]
         [SwaggerOperation(Summary = "Retorna livro por id")]
         public async Task<ActionResult<Livro>> GetLivroId(int id)
@@ -45,6 +49,8 @@ namespace ApiBiblioteca.Controllers
             return Ok(livro);
         }
 
+
+        [Authorize(Roles = "leitor,administrador")]
         [HttpGet("pesquisar")]
         [SwaggerOperation(Summary = "Pesquisa um livro")]
         public async Task<ActionResult<Livro>> PesquisarLivro(string nome)
@@ -57,19 +63,21 @@ namespace ApiBiblioteca.Controllers
             return Ok(livro);
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpPost]
         [SwaggerOperation(Summary = "Cria um livro")]
-        public async Task<ActionResult> CreateLivro([FromBody] Livro livro)
+        public async Task<ActionResult> CreateLivro([FromBody] CreateLivroDTO livroDTO)
         {
-            if (livro == null)
+            if (livroDTO == null)
             {
                 return BadRequest("Livro inválido.");
             }
 
-            await _livroService.CreateLivro(livro);
-            return CreatedAtRoute("GetLivro", new { id = livro.Id }, livro);
+            await _livroService.CreateLivro(livroDTO);
+            return Ok("Livro cadastrado com sucesso");
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpPut("{id:int}")]
         [SwaggerOperation(Summary = "Edita um livro")]
         public async Task<ActionResult> EditLivro(int id, [FromBody] Livro livro)
@@ -83,6 +91,7 @@ namespace ApiBiblioteca.Controllers
             return Ok($"Livro com id: {id} atualizado com sucesso");
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpDelete("{id:int}")]
         [SwaggerOperation(Summary = "Deleta um livro")]
         public async Task<ActionResult> DeleteLivro(int id)

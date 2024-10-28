@@ -28,7 +28,7 @@ namespace ApiBiblioteca.Services.SEmprestimo
             var livro = await _context.Livros.FindAsync(emprestimo.LivroId);
             livro.Quantidade++;
             _context.Emprestimos.Remove(emprestimo);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             
         }
         public async Task Renovacao(int id)

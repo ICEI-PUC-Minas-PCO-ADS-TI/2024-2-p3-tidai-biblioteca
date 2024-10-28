@@ -1,6 +1,7 @@
 ﻿using ApiBiblioteca.DTO;
 using ApiBiblioteca.Models;
 using ApiBiblioteca.Services.SReserva;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace ApiBiblioteca.Controllers
             _reservaService = reservaService;
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpGet("{id:int}", Name = "GetReserva")]
         [SwaggerOperation(Summary = "Obtém uma reserva por ID")]
         public async Task<ActionResult<Reserva>> GetReservaId(int id)
@@ -31,6 +33,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(reserva);
         }
 
+        [Authorize(Roles = "leitor,administrador")]
         [HttpPost]
         [SwaggerOperation(Summary = "Cria uma nova reserva de livro")]
         public async Task<ActionResult> CreateReserva([FromBody] CreateReservaDTO reservaDTO)
@@ -52,6 +55,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(new { mensagem = resultado });
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpGet]
         [SwaggerOperation(Summary = "Lista todas as reservas")]
         public async Task<ActionResult<IEnumerable<Reserva>>> GetReserva()
@@ -60,6 +64,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(reservas);
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpGet("/usuario/livro")]
         [SwaggerOperation(Summary = "Lista reservas com dados de usuário e livro")]
         public async Task<ActionResult<IEnumerable<ReservaDTO>>> GetReservas()
@@ -68,6 +73,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(reservas);
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpPost("/emprestimo{id}")]
         [SwaggerOperation(Summary = "Converte uma reserva em empréstimo")]
         public async Task<ActionResult> TransferenciaParaEmprestimo(int id)
@@ -83,6 +89,7 @@ namespace ApiBiblioteca.Controllers
             return Ok("Transferência concluída com sucesso");
         }
 
+        [Authorize(Roles = "administrador")]
         [HttpDelete("{id:int}")]
         [SwaggerOperation(Summary = "Deleta uma reserva por ID")]
         public async Task<ActionResult> DeleteReserva(int id)

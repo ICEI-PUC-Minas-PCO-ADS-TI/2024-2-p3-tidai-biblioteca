@@ -29,26 +29,25 @@ namespace ApiBiblioteca.Services.SUsuario
             var usuario = await _context.Usuarios.FindAsync(id);
             return usuario;
         }
-        public async Task<Usuario> CreateUsuario(CreateUsuarioDTO usuarioDTO)
+        public async Task CreateUsuario(CreateUsuarioDTO usuarioDTO)
         {
             var usuario = new Usuario
             {
-              Nome = usuarioDTO.Nome,
-              Email = usuarioDTO.Email,
-              Cpf = usuarioDTO.Cpf,
-              Cep = usuarioDTO.Cep,
-              Rua = usuarioDTO.Rua,
-              Bairro = usuarioDTO.Bairro,
-              Cidade = usuarioDTO.Cidade,
-              Uf = usuarioDTO.Uf,
-              NumeroCasa = usuarioDTO.NumeroCasa,
-              Telefone = usuarioDTO.Telefone,
-              DataNascimento = usuarioDTO.DataNascimento,
-              Senha = usuarioDTO.Senha,
+                Nome = usuarioDTO.Nome,
+                Email = usuarioDTO.Email,
+                Cpf = usuarioDTO.Cpf,
+                Cep = usuarioDTO.Cep,
+                Rua = usuarioDTO.Rua,
+                Bairro = usuarioDTO.Bairro,
+                Cidade = usuarioDTO.Cidade,
+                Uf = usuarioDTO.Uf,
+                NumeroCasa = usuarioDTO.NumeroCasa,
+                Telefone = usuarioDTO.Telefone,
+                DataNascimento = usuarioDTO.DataNascimento,
+                Senha = usuarioDTO.Senha,
             };
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
-            return usuario;
         }
         public async Task UpdateUsuario(Usuario usuario)
         {
@@ -74,7 +73,16 @@ namespace ApiBiblioteca.Services.SUsuario
                 
                 .ToListAsync();
         }
+        public async Task<IEnumerable<Usuario>> PesquisarLivro(string nome)
+        {
+            nome = nome.ToLower();
 
+            var usuarios = await _context.Usuarios
+                .Where(l => l.Nome.ToLower().Contains(nome)).ToListAsync();
+
+            return usuarios;
+
+        }
         public async Task<IEnumerable<EmprestimoDTO>> GetEmprestimoUsuario(int id)
         {
             return await _context.Emprestimos
@@ -89,48 +97,6 @@ namespace ApiBiblioteca.Services.SUsuario
                              DataDevolucao = e.DataDevolucao 
                          })
                          .ToListAsync();
-        }
-
-
-        public async Task<string> Authenticate(string username, string password)
-        {
-            var user = await _context.Usuarios.SingleOrDefaultAsync(u => u.Nome == username && u.Senha == password);
-            if (user == null)
-            {
-                return null;
-            }
-
-            string userRole;
-            if (username == "admin" && password == "1234")
-            {
-                userRole = "administrador";
-            }
-            else
-            {
-                userRole = "leitor"; 
-            }
-
-            var jwtSettings = _configuration.GetSection("JwtSettings");
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-           
-            var claims = new[]
-            {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Nome),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.Role, userRole)
-            };
-
-            var token = new JwtSecurityToken(
-                issuer: jwtSettings["Issuer"],
-                audience: jwtSettings["Audience"],
-                claims: claims,
-                expires: DateTime.Now.AddMinutes(30),
-                signingCredentials: creds
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }
