@@ -42,9 +42,7 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ### Modelo físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
+Script utilizado na criação do banco de dados:
 
 ```sql
 CREATE DATABASE Biblioteca;
@@ -117,8 +115,6 @@ foreign key (livro_id) references Livros(id)
 );
 
 ```
-Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
-
 
 ## Tecnologias
 
