@@ -1,26 +1,22 @@
 # Arquitetura da solução
 
-<span style="color:red">Pré-requisitos: <a href="04-Projeto-interface.md"> Projeto de interface</a></span>
-
 Para a arquitetura do sistema web de gerenciamento de biblioteca, projetamos um ambiente capaz de atender múltiplos usuários com uma aplicação leve e acessível pela internet. A seguir, detalhamos a arquitetura, os componentes principais e a infraestrutura de rede e hardware.
 
-1. Arquitetura da Aplicação
-1.1. Frontend
-O frontend foi desenvolvido utilizando o React, com suporte de JavaScript, CSS e HTML para a interface de usuário. O React permite que o sistema seja modular, reativo e com uma experiência de usuário responsiva, enquanto o CSS e HTML são utilizados para estilizar e estruturar a interface visual.
+Arquitetura da Aplicação:
 
-1.2. Backend e API
+O frontend foi desenvolvido utilizando o React, com suporte de JavaScript, CSS e HTML para a interface de usuário. O React permite que o sistema seja modular, reativo e com uma experiência de usuário responsiva, enquanto o CSS e HTML são utilizados para estilizar e estruturar a interface visual.
 O backend foi implementado em ASP.NET Core, que fornece uma API RESTful para que o frontend se comunique com o banco de dados. A API é documentada e testada utilizando o Swagger, permitindo fácil visualização dos endpoints disponíveis e simplificando a manutenção. O backend gerencia a lógica de negócios, autenticação e integrações de dados.
 
-1.3. Banco de Dados
+Banco de Dados:
+
 Para o armazenamento dos dados, utilizamos o MySQL, que é escalável e compatível com aplicações de grande volume. O banco de dados armazena todas as informações necessárias, incluindo dados de usuários, livros, empréstimos e reservas.
 
-1.4. Hospedagem
+Hospedagem:
+
 Toda a aplicação será hospedada em um ambiente com suporte à web, permitindo que os usuários acessem o sistema de qualquer lugar pela internet. O serviço pode ser configurado em um servidor cloud (AWS, Azure ou DigitalOcean) ou em um servidor dedicado, com HTTPS para segurança de dados e um balanceamento de carga para otimizar o desempenho.
 
-2. Infraestrutura de Rede e Hardware
-Para garantir o desempenho e a segurança do sistema, listamos a seguir a configuração recomendada para os componentes de rede e hardware.
+Infraestrutura de Rede e Hardware
 
-2.1. Servidores
 Servidor de Aplicação (Frontend e Backend):
 
 CPU: Processador Intel Xeon E3/E5 ou AMD EPYC com pelo menos 4 núcleos.
@@ -36,24 +32,24 @@ Armazenamento: SSD de 256 GB ou mais, para desempenho nas operações de leitura
 Sistema Operacional: Linux (por sua performance com MySQL).
 Segurança: Configuração de acesso restrito por IP e replicação de dados em tempo real para um servidor secundário.
 
-2.2. Infraestrutura de Rede
+Infraestrutura de Rede
 
 Switches: Um switch gerenciável de 24 portas Gigabit Ethernet para alta velocidade de transmissão entre servidores e outros dispositivos.
 Roteador: Roteador com VPN integrada para comunicação segura com a infraestrutura interna.
 Firewall: Um firewall de camada de aplicação com detecção de intrusões (IPS), proteção contra ataques DDoS e políticas de segurança que restrinjam o acesso apenas às portas necessárias, como 80/443 (HTTP/HTTPS) para a aplicação web e 3306 para o banco de dados, acessível apenas pela rede interna.
 
-2.3. Máquinas Cliente
+Máquinas Cliente
 
 CPU: Processador Dual Core (Intel Core i3 ou AMD equivalente).
 Memória RAM: 4 GB (mínimo).
 Sistema Operacional: Windows, macOS ou Linux, com navegador compatível (Chrome, Firefox, Edge).
 Navegador: De preferência atualizado, compatível com PWA (Progressive Web App) para que o sistema funcione como um aplicativo web moderno.
 
-3. Comunicação entre os Componentes
+Comunicação entre os Componentes
    
 A comunicação entre o frontend (React) e o backend (ASP.NET) se dá via API REST, com o Swagger documentando todos os endpoints para fácil integração e testes. O backend realiza as operações CRUD (Create, Read, Update, Delete) no banco de dados MySQL, onde os dados dos usuários e livros são armazenados. Todo o tráfego entre frontend e backend é protegido por HTTPS.
 
-5. Segurança e Backup
+Segurança e Backup
    
 A segurança é reforçada com SSL/TLS para a comunicação externa. A autenticação de usuários utiliza tokens JWT (JSON Web Tokens) para sessões seguras. Há também um sistema de backup automatizado configurado no servidor de banco de dados e no servidor de aplicação para garantir a recuperação de dados em caso de falhas.
 
