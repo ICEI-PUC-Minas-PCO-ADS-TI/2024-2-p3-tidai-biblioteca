@@ -16,11 +16,21 @@ O diagrama de classes ilustra graficamente a estrutura do software e como cada u
 
 ##  Modelo de dados
 
-O desenvolvimento da solução proposta requer a existência de bases de dados que permitam realizar o cadastro de dados e os controles associados aos processos identificados, assim como suas recuperações.
+Este modelo de dados representa uma estrutura de banco de dados para uma aplicação de gerenciamento de fórum e biblioteca, composta por seis tabelas principais: Usuarios, Topicos, Mensagens, Livros, Reservas e Emprestimos.
 
-Utilizando a notação do DER (Diagrama Entidade-Relacionamento), elabore um modelo, usando alguma ferramenta, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar também o controle de acesso dos usuários (partes interessadas nos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
+Usuarios: Contém informações dos usuários, como id, nome, email, cpf, endereço (detalhado por campos como cep, rua, bairro, etc.), data_nascimento, telefone e senha. Cada usuário possui um identificador único (id) e outras restrições de unicidade para os campos email e cpf.
 
-Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos.
+Topicos: Armazena tópicos de discussão no fórum, com campos para id, titulo, descricao, usuario_id (que referencia o usuário que criou o tópico) e data_criacao (registrada automaticamente com o horário de criação). A relação com a tabela Usuarios é feita pelo campo usuario_id, como chave estrangeira.
+
+Mensagens: Armazena mensagens dentro dos tópicos, com um id único, conteudo da mensagem, usuario_id (quem postou a mensagem), topico_id (tópico ao qual pertence) e data_criacao. Além disso, mensagem_id permite referenciar outra mensagem, criando uma estrutura hierárquica para respostas. A tabela utiliza chaves estrangeiras para os campos usuario_id, topico_id e mensagem_id.
+
+Livros: Tabela destinada ao armazenamento de informações sobre os livros, incluindo id, titulo, autor, editora, edicao, numero_paginas, genero, quantidade disponível, descricao, capa_url (link da capa) e ano_livro (data de publicação).
+
+Reservas: Registra as reservas de livros pelos usuários. Inclui id, usuario_id, livro_id e data_reserva. As chaves estrangeiras usuario_id e livro_id referenciam, respectivamente, as tabelas Usuarios e Livros.
+
+Emprestimos: Registra os empréstimos de livros, contendo id, usuario_id, livro_id, data_emprestimo, data_devolucao e status (com o valor padrão “Em dia”). Assim como na tabela de reservas, usuario_id e livro_id referenciam as tabelas de Usuarios e Livros.
+
+Esse modelo permite a organização de um sistema de fórum e biblioteca, com controle de usuários, tópicos, mensagens hierárquicas, além do gerenciamento de livros, reservas e empréstimos.
 
 ### Modelo ER
 
