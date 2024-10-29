@@ -115,13 +115,38 @@ Explique como a hospedagem e o lançamento da plataforma foram realizados.
 
 ## Qualidade de software
 
-Conceituar qualidade é uma tarefa complexa, mas ela pode ser vista como um método gerencial que, por meio de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+A norma ISO/IEC 25010 é um padrão internacional que oferece um modelo de qualidade para produtos de software, estruturando-o em oito características e suas subcaracterísticas. Com base nesse modelo, nossa equipe selecionará algumas subcaracterísticas como referência para nortear o desenvolvimento do projeto, assegurando que o produto atenda aos requisitos de qualidade necessários. Abaixo, destaco as características e subcaracterísticas relevantes para o nosso projeto:
 
-No contexto do desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem atendidas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, esse nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+1-Funcionalidade:
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software. Com base nessas características e nas respectivas subcaracterísticas, identifique as subcaracterísticas que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software, considerando alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão à equipe avaliar os objetos de interesse.
+Adequação Funcional: Garantia de que as funções oferecidas pelo software são apropriadas às necessidades dos usuários.
+Acurácia Funcional: Precisão dos resultados e informações fornecidas pelo sistema.
+2-Confiabilidade:
 
-> **Links úteis**:
-> - [ISO/IEC 25010:2011 - Systems and Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE) — System and Software Quality Models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de software - Engenharia de Software](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
+Maturidade: Capacidade do software de minimizar falhas e interrupções.
+Disponibilidade: Garantia de que o sistema estará operacional e acessível quando necessário.
+3-Usabilidade:
+
+Aprendizagem: Facilidade com que novos usuários podem aprender a usar o sistema.
+Acessibilidade: Recursos e funcionalidades que garantem a acessibilidade para diferentes tipos de usuários.
+4-Eficiência de Desempenho:
+
+Tempo de Resposta: Tempo necessário para o sistema responder às ações do usuário.
+Utilização de Recursos: Capacidade do software de operar sem sobrecarregar o hardware.
+5-Segurança:
+
+Confidencialidade: Proteção dos dados de acesso não autorizado.
+Integridade: Proteção contra modificações não autorizadas e controle de versão de dados.
+6-Compatibilidade:
+
+Interoperabilidade: Capacidade de integração e comunicação com outros sistemas.
+Coexistência: Capacidade de coexistir com outros produtos, sem interferência.
+7-Manutenibilidade:
+
+Modularidade: Facilidade de alterar ou modificar partes do sistema sem afetar o todo.
+Analisabilidade: Capacidade de diagnosticar problemas e de prever o impacto das mudanças.
+8-Portabilidade:
+
+Adaptabilidade: Flexibilidade do sistema para ser usado em diferentes ambientes.
+Instalabilidade: Facilidade e velocidade com que o sistema pode ser instalado em diferentes dispositivos.
+Essas subcaracterísticas servirão como base para avaliar e orientar o desenvolvimento de nosso projeto, visando a construção de um software robusto, confiável e adaptado às necessidades do usuário final.
