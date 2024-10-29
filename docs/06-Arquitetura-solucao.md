@@ -121,30 +121,37 @@ A norma ISO/IEC 25010 é um padrão internacional que oferece um modelo de quali
 
 Adequação Funcional: Garantia de que as funções oferecidas pelo software são apropriadas às necessidades dos usuários.
 Acurácia Funcional: Precisão dos resultados e informações fornecidas pelo sistema.
+
 2-Confiabilidade:
 
 Maturidade: Capacidade do software de minimizar falhas e interrupções.
 Disponibilidade: Garantia de que o sistema estará operacional e acessível quando necessário.
+
 3-Usabilidade:
 
 Aprendizagem: Facilidade com que novos usuários podem aprender a usar o sistema.
 Acessibilidade: Recursos e funcionalidades que garantem a acessibilidade para diferentes tipos de usuários.
+
 4-Eficiência de Desempenho:
 
 Tempo de Resposta: Tempo necessário para o sistema responder às ações do usuário.
 Utilização de Recursos: Capacidade do software de operar sem sobrecarregar o hardware.
+
 5-Segurança:
 
 Confidencialidade: Proteção dos dados de acesso não autorizado.
 Integridade: Proteção contra modificações não autorizadas e controle de versão de dados.
+
 6-Compatibilidade:
 
 Interoperabilidade: Capacidade de integração e comunicação com outros sistemas.
 Coexistência: Capacidade de coexistir com outros produtos, sem interferência.
+
 7-Manutenibilidade:
 
 Modularidade: Facilidade de alterar ou modificar partes do sistema sem afetar o todo.
 Analisabilidade: Capacidade de diagnosticar problemas e de prever o impacto das mudanças.
+
 8-Portabilidade:
 
 Adaptabilidade: Flexibilidade do sistema para ser usado em diferentes ambientes.
