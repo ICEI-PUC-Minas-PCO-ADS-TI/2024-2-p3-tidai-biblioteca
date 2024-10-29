@@ -47,43 +47,75 @@ Insira aqui o script de criação das tabelas do banco de dados.
 Veja um exemplo:
 
 ```sql
--- Criação da tabela Medico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+CREATE DATABASE Biblioteca;
+
+CREATE TABLE topicos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(255) NOT NULL,
+descricao TEXT,
+usuario_id INT,
+data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+CREATE TABLE mensagens (
+id INT AUTO_INCREMENT PRIMARY KEY,
+topico_id INT,
+mensagem_id INT NULL, -- Referencia uma mensagem anterior (resposta)
+conteudo TEXT NOT NULL,
+usuario_id INT,
+data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (topico_id) REFERENCES topicos(id),
+FOREIGN KEY (mensagem_id) REFERENCES mensagens(id),
+FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+CREATE TABLE Usuarios (
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL UNIQUE,
+cpf CHAR(11) NOT NULL UNIQUE,
+cep CHAR(8) NOT NULL,
+rua VARCHAR(50) NOT NULL,
+bairro VARCHAR(50) NOT NULL,
+cidade VARCHAR(50) NOT NULL,
+uf CHAR(2) NOT NULL,
+numero_casa INT NOT NULL,
+telefone VARCHAR(15) NOT NULL,
+data_nascimento DATE,
+senha VARCHAR(255) NOT NULL
+);
+create table Livros (
+id int primary key auto_increment,
+titulo varchar(255) not null,
+autor varchar(100) not null,
+editora varchar(50) not null,
+edicao int not null,
+numero_paginas bigint(10) not null,
+genero varchar(255) not null,
+quantidade int not null,
+descricao text,
+capa_url varchar(255) not null,
+ano_livro date
+);
+create table Reservas(
+id int primary key auto_increment,
+usuario_id int,
+livro_id int,
+data_reserva date not null,
+foreign key (usuario_id) references Usuarios(id),
+foreign key (livro_id) references Livros(id)
+);
+create table Emprestimos(
+id int primary key auto_increment,
+usuario_id int,
+livro_id int,
+data_emprestimo date not null,
+data_devolucao date not null,
+status varchar(50) default 'Em dia',
+foreign key (usuario_id) references Usuarios(id),
+foreign key (livro_id) references Livros(id)
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
-);
-
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
-);
-
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
-);
 ```
 Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
 
