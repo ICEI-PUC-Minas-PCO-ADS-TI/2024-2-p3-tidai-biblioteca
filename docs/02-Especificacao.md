@@ -106,7 +106,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-002| O sistema deve possibilitar o gerenciamento do acervo | ALTA |
 |RF-003| O sistema deve oferecer a funcionalidade de renovação de empréstimos  | ALTA |
 |RF-004| O sistema deve permitir o empréstimo de livros | ALTA |
-|RF-005| O sistema deve possibilitar o pagamento de multas por atrasos na devolução de livros  | BAIXA |
+|RF-005| O sistema deve bloquear as reservas e empréstimos de livros por atrasos na devolução | MEDIA |
 |RF-006| O sistema deve notificar os usuários sobre prazos de devolução, renovação ou reserva de livros | MEDIA |
 |RF-007| O sistema deve permitir a reserva de livros | ALTA |
 |RF-008| O sistema deve suportar a devolução de livros | ALTA |
