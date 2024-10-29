@@ -143,8 +143,6 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 
 
-![caso de uso 01](images/uml_caso_de_uso01.png).
-
-![caso de uso 02](images/uml_caso_de_uso02.png).
+![caso de uso 01](images/casosDeUsoTI.drawio).
 
 
