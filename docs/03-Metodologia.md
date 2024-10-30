@@ -56,6 +56,13 @@ A equipe foi dividida em papéis distintos, cada membro contribuindo para o dese
 - Desenvolvedor: Matheus Henrique Alvim
 - Desenvolvedor: Luiza Sampaio Ribeiro
 
+#### Sprint 3
+- _Scrum master_: Alessandro Gomes Pereira
+- Desenvolvedor: Alessandro Gomes Pereira
+- Desenvolvedor: Bernardo Azevedo Estrela
+- Desenvolvedor: Matheus Henrique Alvim
+- Desenvolvedor: Luiza Sampaio Ribeiro
+
 
 ### Ferramentas
 
