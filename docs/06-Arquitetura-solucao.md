@@ -186,13 +186,13 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
+Para hospedar uma API ASP.NET com Swagger no GitHub Pages, consideramos que o GitHub Pages serve apenas conteúdo estático, como HTML, CSS e JavaScript, enquanto a API ASP.NET normalmente requer um servidor backend para executar operações no lado do servidor. No entanto, encontramos uma maneira de simular a documentação interativa da API com Swagger no GitHub Pages, onde podemos mostrar as definições da API de forma prática.
 
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+Primeiro, configuramos o Swagger no projeto ASP.NET para gerar um arquivo de especificação da API em JSON. O Swagger cria uma interface gráfica útil para documentar e testar a API, e essa interface pode ser exportada para uso estático. Com o Swagger UI, geramos uma versão estática em HTML da documentação da API.
+
+Com os arquivos HTML estáticos prontos, criamos um repositório no GitHub para hospedar essa documentação. Colocamos os arquivos gerados na raiz do repositório, mas também poderíamos ter usado uma pasta "docs" para isso. Em seguida, ativamos o GitHub Pages nas configurações do repositório, definindo o branch principal ou a pasta "docs" como a fonte de publicação. Assim, o GitHub Pages gera automaticamente um link para acessar a documentação, permitindo que os usuários explorem todos os endpoints disponíveis e visualizem exemplos de requisições e respostas diretamente na interface do Swagger UI.
+
+Essa solução funciona bem para exibir uma visão geral dos endpoints e da estrutura da API, mas como o GitHub Pages não oferece suporte para execução de backends, as chamadas reais para os endpoints da API não funcionam. Para que os usuários possam testar a API de forma completa, seria necessário hospedá-la em outro serviço de nuvem, como Azure ou AWS, e então vincular o Swagger para acessar essa instância online da API. Dessa forma, a interface do Swagger UI no GitHub Pages proporciona uma experiência completa de documentação e interação, enquanto a API real fica hospedada externamente.
 
 ## Qualidade de software
 
