@@ -79,7 +79,7 @@ Esse modelo permite a organização de um sistema de fórum e biblioteca, com co
 
 ### Esquema relacional
 
-![ER](images/DataBase.png).
+![ER](images/DataBase.PNG).
 
 
 ### Modelo físico
