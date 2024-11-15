@@ -1,274 +1,25 @@
 [
   {
-    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
-    "Method": "GetMensagens",
-    "RelativePath": "api/Mensagens",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.Models.Mensagen, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
-    "Method": "CreateMensagen",
-    "RelativePath": "api/Mensagens",
+    "ContainingType": "ApiBiblioteca.Controllers.AuthenticatedController",
+    "Method": "Login",
+    "RelativePath": "api/Authenticated/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "mensagen",
-        "Type": "ApiBiblioteca.Models.Mensagen",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ApiBiblioteca.Models.Mensagen",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
-    "Method": "UpdateMensagen",
-    "RelativePath": "api/Mensagens/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "mensagen",
-        "Type": "ApiBiblioteca.Models.Mensagen",
+        "Name": "loginDto",
+        "Type": "ApiBiblioteca.DTO.LoginDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
-    "Method": "DeleteMensagen",
-    "RelativePath": "api/Mensagens/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
-    "Method": "GetReserva",
-    "RelativePath": "api/Reservas",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.Models.Reserva, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
-    "Method": "GetReservaId",
-    "RelativePath": "api/Reservas/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ApiBiblioteca.Models.Reserva",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetReserva"
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
-    "Method": "DeleteReserva",
-    "RelativePath": "api/Reservas/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
-    "Method": "CreateReserva",
-    "RelativePath": "api/Reservas/createReservas",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "reserva",
-        "Type": "ApiBiblioteca.DTO.CreateReservaDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
-    "Method": "GetReservas",
-    "RelativePath": "api/Reservas/reversasPorNome",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.DTO.ReservaDTO, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
     "Method": "TransferenciaParaEmprestimo",
-    "RelativePath": "api/Reservas/transferenciaEmprestimo/{id}",
+    "RelativePath": "emprestimo{id}",
     "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
-    "Method": "GetTopicos",
-    "RelativePath": "api/Topico",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.Models.Topico, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
-    "Method": "CreateTopico",
-    "RelativePath": "api/Topico",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "topico",
-        "Type": "ApiBiblioteca.Models.Topico",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ApiBiblioteca.Models.Topico",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
-    "Method": "UpdateTopico",
-    "RelativePath": "api/Topico/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "topico",
-        "Type": "ApiBiblioteca.Models.Topico",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
-    "Method": "DeleteTopico",
-    "RelativePath": "api/Topico/{id}",
-    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -288,6 +39,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.EmprestimoController",
+    "Method": "CreateEmprestimo",
+    "RelativePath": "emprestimos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emprestimoDTO",
+        "Type": "ApiBiblioteca.DTO.CreateEmprestimoDTO",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -397,8 +164,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "livro",
-        "Type": "ApiBiblioteca.Models.Livro",
+        "Name": "livroDTO",
+        "Type": "ApiBiblioteca.DTO.CreateLivroDTO",
         "IsRequired": true
       }
     ],
@@ -484,6 +251,271 @@
     "ReturnTypes": [
       {
         "Type": "ApiBiblioteca.Models.Livro",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
+    "Method": "GetMensagens",
+    "RelativePath": "mensagens",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.Models.Mensagen, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
+    "Method": "CreateMensagen",
+    "RelativePath": "mensagens",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mensagen",
+        "Type": "ApiBiblioteca.Models.Mensagen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiBiblioteca.Models.Mensagen",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
+    "Method": "UpdateMensagen",
+    "RelativePath": "mensagens/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "mensagen",
+        "Type": "ApiBiblioteca.Models.Mensagen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.MensagensController",
+    "Method": "DeleteMensagen",
+    "RelativePath": "mensagens/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
+    "Method": "CreateReserva",
+    "RelativePath": "reserva",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservaDTO",
+        "Type": "ApiBiblioteca.DTO.CreateReservaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
+    "Method": "GetReserva",
+    "RelativePath": "reserva",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.Models.Reserva, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
+    "Method": "GetReservaId",
+    "RelativePath": "reserva/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiBiblioteca.Models.Reserva",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetReserva"
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
+    "Method": "DeleteReserva",
+    "RelativePath": "reserva/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
+    "Method": "GetTopicos",
+    "RelativePath": "topico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.Models.Topico, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
+    "Method": "CreateTopico",
+    "RelativePath": "topico",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "topico",
+        "Type": "ApiBiblioteca.Models.Topico",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiBiblioteca.Models.Topico",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
+    "Method": "UpdateTopico",
+    "RelativePath": "topico/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "topico",
+        "Type": "ApiBiblioteca.Models.Topico",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.TopicoController",
+    "Method": "DeleteTopico",
+    "RelativePath": "topico/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBiblioteca.Controllers.ReservasController",
+    "Method": "GetReservas",
+    "RelativePath": "usuario/livro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBiblioteca.DTO.ReservaDTO, ApiBiblioteca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -620,19 +652,29 @@
   },
   {
     "ContainingType": "ApiBiblioteca.Controllers.UsuariosController",
-    "Method": "Login",
-    "RelativePath": "usuarios/login",
-    "HttpMethod": "POST",
+    "Method": "PesquisarLivro",
+    "RelativePath": "usuarios/pesquisar",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "loginDto",
-        "Type": "ApiBiblioteca.DTO.LoginDTO",
-        "IsRequired": true
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "ApiBiblioteca.Models.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ApiBiblioteca.Controllers.UsuariosController",

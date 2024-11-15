@@ -1,6 +1,5 @@
 ﻿using ApiBiblioteca.DTO;
 using ApiBiblioteca.Services.SAuthenticaded;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -21,14 +20,19 @@ namespace ApiBiblioteca.Controllers
         [SwaggerOperation(Summary = "Retorna um token jwt")]
         public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
         {
-            var token = await _authenticated.Login(loginDto.Username, loginDto.Password);
+            var tokenData = await _authenticated.Login(loginDto.Username, loginDto.Password);
 
-            if (token == null)
+            if (tokenData == null)
             {
                 return Unauthorized("Usuário ou senha inválidos");
             }
 
-            return Ok(new { Token = token });
+          
+            return Ok(new
+            {
+                token = tokenData.Token,
+                userId = tokenData.UserId
+            });
         }
     }
 }

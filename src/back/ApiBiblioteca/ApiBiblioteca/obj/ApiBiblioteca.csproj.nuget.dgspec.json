@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj": {}
+    "C:\\Users\\alvim\\Desktop\\Consumindo_api\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {}
   },
   "projects": {
-    "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj": {
+    "C:\\Users\\alvim\\Desktop\\Consumindo_api\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\alvim\\Desktop\\Consumindo_api\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
         "projectName": "ApiBiblioteca",
-        "projectPath": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj",
+        "projectPath": "C:\\Users\\alvim\\Desktop\\Consumindo_api\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
         "packagesPath": "C:\\Users\\alvim\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\obj\\",
+        "outputPath": "C:\\Users\\alvim\\Desktop\\Consumindo_api\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alvim\\AppData\\Roaming\\NuGet\\NuGet.Config",

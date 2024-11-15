@@ -7,6 +7,7 @@
   }
   
   .card {
+    width: 200px;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -28,7 +29,7 @@
     border-radius: 4px; /* Bordas arredondadas para as imagens */
   }
   .cardContent {
-    height: 100px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     

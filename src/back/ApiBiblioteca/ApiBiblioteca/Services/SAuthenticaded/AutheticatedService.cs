@@ -1,4 +1,5 @@
 ﻿
+using ApiBiblioteca.DTO;
 using ApiBiblioteca.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -18,7 +19,7 @@ namespace ApiBiblioteca.Services.SAuthenticaded
             _context = context;
             _configuration = configuration;
         }
-        public async Task<string> Login(string username, string password)
+        public async Task<TokenResponse> Login(string username, string password)
         {
             var user = await _context.Usuarios.SingleOrDefaultAsync(u => u.Nome == username && u.Senha == password);
             if (user == null)
@@ -45,18 +46,23 @@ namespace ApiBiblioteca.Services.SAuthenticaded
             {
             new Claim(JwtRegisteredClaimNames.Sub, user.Nome),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.Role, userRole)
+            new Claim(ClaimTypes.Role, userRole),
+            new Claim("userId", user.Id.ToString()),
             };
 
             var token = new JwtSecurityToken(
                 issuer: jwtSettings["Issuer"],
                 audience: jwtSettings["Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(30),
+                expires: DateTime.Now.AddMinutes(120),
                 signingCredentials: creds
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return new TokenResponse
+            {
+                Token = new JwtSecurityTokenHandler().WriteToken(token),
+                UserId = user.Id,
+            };
         }
     }
 }

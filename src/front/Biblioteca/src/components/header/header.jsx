@@ -9,7 +9,7 @@ export default function Header() {
         <ul>
           <li>
             <NavLink
-              to="/home"
+              to="/biblioteca"
               className={({ isActive }) =>
                 isActive ? `${style.active} ${style.link}` : style.link
               }>

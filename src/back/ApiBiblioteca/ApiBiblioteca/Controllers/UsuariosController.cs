@@ -56,18 +56,25 @@ namespace ApiBiblioteca.Controllers
         [Authorize(Roles = "leitor,administrador")]
         [HttpPut("{id:int}")]
         [SwaggerOperation(Summary = "Edita um usuario")]
-        public async Task<ActionResult> Edit(int id, [FromBody] Usuario usuario)
+        public async Task<ActionResult> Edit(int id, [FromBody] UsuarioDTO usuarioDto)
         {
-            if (usuario.Id != id)
+            if (usuarioDto.Id != id)
             {
-                return BadRequest("Dados incorretos");
+                return BadRequest("O ID do corpo da requisição não corresponde ao ID da URL.");
             }
 
-            await _usuarioService.UpdateUsuario(usuario);
-            return Ok($"Usuário com id={id} foi atualizado com sucesso");
+            try
+            {
+                await _usuarioService.UpdateUsuario(usuarioDto);
+                return Ok($"Usuário com ID {id} foi atualizado com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
         }
 
-        [Authorize(Roles = "administrador")]
+            [Authorize(Roles = "administrador")]
         [HttpGet("pesquisar")]
         [SwaggerOperation(Summary = "Pesquisa um usuario")]
         public async Task<ActionResult<Usuario>> PesquisarLivro(string nome)
@@ -76,7 +83,7 @@ namespace ApiBiblioteca.Controllers
             {
                 throw new ArgumentException("O nome do usuario não pode ser nulo ou vazio.", nameof(nome));
             }
-            var livro = await _usuarioService.PesquisarLivro(nome);
+            var livro = await _usuarioService.PesquisarUsuario(nome);
             return Ok(livro);
         }
 

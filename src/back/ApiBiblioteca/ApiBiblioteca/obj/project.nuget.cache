@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "194P+Bi2gLM=",
+  "dgSpecHash": "vFlkv+esCyQ=",
   "success": true,
-  "projectFilePath": "E:\\Projeto_Biblioteca\\API_FINAL\\ApiBiblioteca\\ApiBiblioteca.csproj",
+  "projectFilePath": "C:\\Users\\alvim\\Desktop\\Consumindo_api\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alvim\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\alvim\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

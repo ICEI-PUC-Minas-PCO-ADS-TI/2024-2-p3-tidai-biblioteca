@@ -1,7 +1,9 @@
-﻿namespace ApiBiblioteca.Services.SAuthenticaded
+﻿using ApiBiblioteca.DTO;
+
+namespace ApiBiblioteca.Services.SAuthenticaded
 {
     public interface IAutheticatedService
     {
-        Task<string> Login(string username, string password);
+        Task<TokenResponse> Login(string username, string password);
     }
 }

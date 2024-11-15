@@ -49,9 +49,29 @@ namespace ApiBiblioteca.Services.SUsuario
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
         }
-        public async Task UpdateUsuario(Usuario usuario)
+        public async Task UpdateUsuario(UsuarioDTO usuarioDto)
         {
-            _context.Entry(usuario).State = EntityState.Modified;
+            var usuario = await _context.Usuarios.FindAsync(usuarioDto.Id);
+
+            if (usuario == null)
+            {
+                throw new Exception($"Usuário com ID {usuarioDto.Id} não encontrado.");
+            }
+
+            usuario.Nome = usuarioDto.Nome;
+            usuario.Email = usuarioDto.Email;
+            usuario.Cpf = usuarioDto.Cpf;
+            usuario.Cep = usuarioDto.Cep;
+            usuario.Rua = usuarioDto.Rua;
+            usuario.Bairro = usuarioDto.Bairro;
+            usuario.Cidade = usuarioDto.Cidade;
+            usuario.Uf = usuarioDto.Uf;
+            usuario.NumeroCasa = usuarioDto.NumeroCasa;
+            usuario.Telefone = usuarioDto.Telefone;
+            usuario.Senha = usuarioDto.Senha;
+            usuario.DataNascimento = usuarioDto.DataNascimento;
+
+            _context.Usuarios.Update(usuario);
             await _context.SaveChangesAsync();
         }
         public async Task DeleteUsuario (Usuario usuario)
@@ -73,7 +93,7 @@ namespace ApiBiblioteca.Services.SUsuario
                 
                 .ToListAsync();
         }
-        public async Task<IEnumerable<Usuario>> PesquisarLivro(string nome)
+        public async Task<IEnumerable<Usuario>> PesquisarUsuario(string nome)
         {
             nome = nome.ToLower();
 
