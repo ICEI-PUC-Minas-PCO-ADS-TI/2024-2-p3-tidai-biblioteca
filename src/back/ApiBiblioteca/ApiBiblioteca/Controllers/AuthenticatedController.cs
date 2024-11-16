@@ -31,7 +31,8 @@ namespace ApiBiblioteca.Controllers
             return Ok(new
             {
                 token = tokenData.Token,
-                userId = tokenData.UserId
+                userId = tokenData.UserId,
+                role = tokenData.Role
             });
         }
     }

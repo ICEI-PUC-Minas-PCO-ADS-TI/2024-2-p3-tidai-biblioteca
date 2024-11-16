@@ -62,6 +62,7 @@ namespace ApiBiblioteca.Services.SAuthenticaded
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
                 UserId = user.Id,
+                Role = userRole,
             };
         }
     }

@@ -32,7 +32,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(usuarios);
         }
 
-        [Authorize(Roles = "administrador")]
+        [Authorize(Roles = "leitor, administrador")]
         [HttpGet("{id:int}")]
         [SwaggerOperation(Summary = "Retorna usario por id")]
         public async Task<ActionResult<Usuario>> GetUsuarioId(int id)
