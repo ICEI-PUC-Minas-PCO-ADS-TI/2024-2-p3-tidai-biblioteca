@@ -41,9 +41,9 @@ function App() {
                 </Routes>
             ) : (
                 <>
-                    {tipoUsuario === 'admin' ? <HeaderAdmin /> : <Header />}
+                    {tipoUsuario === 'administrador' ? <HeaderAdmin /> : <Header />}
                     <Routes>
-                        {tipoUsuario === 'user' && (
+                        {tipoUsuario === 'leitor' && (
                             <>
                                 <Route path="/biblioteca" element={<Biblioteca />} />
                                 <Route path="/forum" element={<Forum />} />
@@ -52,9 +52,9 @@ function App() {
                                 <Route path='/minhaConta' element={<Usuario />} />
                             </>
                         )}
-                        {tipoUsuario === 'admin' && (
+                        {tipoUsuario === 'administrador' && (
                             <>
-                                <Route path="/homeAdmin" element={<HomeAdmin />} />
+                                <Route path="/homeAdmin" element={<Acervo />} />
                                 <Route path="/acervo" element={<Acervo />} />
                                 <Route path="/cadastro-de-livro" element={<CadastroLivro />} />
                                 <Route path="/lista-de-emprestimos" element={<Emprestimos />} />

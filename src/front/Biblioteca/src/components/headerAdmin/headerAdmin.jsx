@@ -8,7 +8,7 @@ export default function HeaderAdmin() {
         <ul>
           <li>
             <NavLink
-              to="/homeAdmin"
+              to="/Acervo"
               className={({ isActive }) =>
                 isActive ? `${style.active} ${style.link}` : style.link
               }
