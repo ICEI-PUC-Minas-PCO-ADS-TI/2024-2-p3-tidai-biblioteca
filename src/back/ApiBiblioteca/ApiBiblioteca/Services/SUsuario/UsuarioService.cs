@@ -80,19 +80,7 @@ namespace ApiBiblioteca.Services.SUsuario
              _context.Usuarios.Remove(usuario);
             await _context.SaveChangesAsync();
         }
-        public async Task<IEnumerable<ReservaDTO>> GetReservasUsuario(int id)
-        {
-          return await _context.Reservas
-                .Where(r => r.UsuarioId == id)
-                .Select(r=> new ReservaDTO
-                {
-                    NomeUsuario = r.Usuario.Nome,
-                    NomeLivro = r.Livro.Titulo,
-                    DataReserva = r.DataReserva
-                })
-                
-                .ToListAsync();
-        }
+        
         public async Task<IEnumerable<Usuario>> PesquisarUsuario(string nome)
         {
             nome = nome.ToLower();
@@ -102,6 +90,22 @@ namespace ApiBiblioteca.Services.SUsuario
 
             return usuarios;
 
+        }
+        public async Task<IEnumerable<ReservaDTO>> GetReservasUsuario(int id)
+        {
+            return await _context.Reservas
+                  .Where(r => r.UsuarioId == id)
+                  .Select(r => new ReservaDTO
+                  {
+                      NomeUsuario = r.Usuario.Nome,
+                      NomeLivro = r.Livro.Titulo,
+                      Autor = r.Livro.Autor,
+                      CapaUrl = r.Livro.CapaUrl,
+                      Editora = r.Livro.Editora,
+                      DataReserva = r.DataReserva
+                  })
+
+                  .ToListAsync();
         }
         public async Task<IEnumerable<EmprestimoDTO>> GetEmprestimoUsuario(int id)
         {
@@ -113,6 +117,9 @@ namespace ApiBiblioteca.Services.SUsuario
                              NomeLivro = e.Livro.Titulo,
                              NomeUsuario = e.Usuario.Nome,
                              Status = e.Status,
+                             Autor = e.Livro.Autor,
+                             CapaUrl = e.Livro.CapaUrl,
+                             Editora = e.Livro.Editora,
                              DataEmprestimo = e.DataEmprestimo, 
                              DataDevolucao = e.DataDevolucao 
                          })

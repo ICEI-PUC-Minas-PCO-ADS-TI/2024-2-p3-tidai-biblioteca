@@ -38,6 +38,8 @@ namespace ApiBiblioteca.Services.SReserva
                         Id = idReserva.Id,
                         NomeLivro = nomeLivro?.Titulo,
                         NomeUsuario = nomeUsuario?.Nome,
+                        Telefone = nomeUsuario?.Telefone,
+                        DataExpiracao = reserva.DataReserva.AddDays(3),
                         DataReserva = reserva.DataReserva,
                     };
                     reservasDto.Add(reservaDto);

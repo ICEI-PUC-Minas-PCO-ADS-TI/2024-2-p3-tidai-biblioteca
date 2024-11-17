@@ -1,4 +1,6 @@
-﻿namespace ApiBiblioteca.DTO
+﻿using System.Globalization;
+
+namespace ApiBiblioteca.DTO
 {
     public class TokenResponse
     {

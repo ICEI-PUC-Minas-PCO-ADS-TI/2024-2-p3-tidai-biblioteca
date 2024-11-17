@@ -74,7 +74,7 @@ namespace ApiBiblioteca.Controllers
             }
         }
 
-            [Authorize(Roles = "administrador")]
+        [Authorize(Roles = "administrador")]
         [HttpGet("pesquisar")]
         [SwaggerOperation(Summary = "Pesquisa um usuario")]
         public async Task<ActionResult<Usuario>> PesquisarLivro(string nome)
@@ -87,7 +87,7 @@ namespace ApiBiblioteca.Controllers
             return Ok(livro);
         }
 
-        //[Authorize(Roles = "leitor,administrador")]
+        [Authorize(Roles = "leitor,administrador")]
         [HttpDelete("{id:int}")]
         [SwaggerOperation(Summary = "Deleta um usuario")]
         public async Task<ActionResult> DeleteUsuario(int id)
@@ -105,7 +105,7 @@ namespace ApiBiblioteca.Controllers
         [Authorize(Roles = "leitor,administrador")]
         [HttpGet("emprestimos")]
         [SwaggerOperation(Summary = "Retorna os emprestimos de um determinado usuario")]
-        public async Task<ActionResult<Emprestimo>> GetEmprestimosUsuario(int id)
+        public async Task<ActionResult<EmprestimoDTO>> GetEmprestimosUsuario(int id)
         {
             var emprestimos = await _usuarioService.GetEmprestimoUsuario(id);
             return Ok(emprestimos);
@@ -114,7 +114,7 @@ namespace ApiBiblioteca.Controllers
         [Authorize(Roles = "leitor,administrador")]
         [HttpGet("reservas")]
         [SwaggerOperation(Summary = "Retorna os reservas de um determinado usuario")]
-        public async Task<ActionResult<Emprestimo>> GetReservaUsuario(int id)
+        public async Task<ActionResult<ReservaDTO>> GetReservaUsuario(int id)
         {
             var reservas = await _usuarioService.GetReservasUsuario(id);
             return Ok(reservas);

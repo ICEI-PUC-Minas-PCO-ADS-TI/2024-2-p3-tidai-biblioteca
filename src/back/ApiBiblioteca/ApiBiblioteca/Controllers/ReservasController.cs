@@ -74,7 +74,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [Authorize(Roles = "administrador")]
-        [HttpPost("/emprestimo{id}")]
+        [HttpPost("/reserva/retirada/{id}")]
         [SwaggerOperation(Summary = "Converte uma reserva em empréstimo")]
         public async Task<ActionResult> TransferenciaParaEmprestimo(int id)
         {

@@ -99,6 +99,7 @@ namespace ApiBiblioteca.Services.SEmprestimo
                         Id = e.Id,
                         NomeLivro = livro.Titulo,
                         NomeUsuario = usuario.Nome,
+                        Telefone = usuario.Telefone,
                         DataDevolucao = e.DataDevolucao,
                         DataEmprestimo = e.DataEmprestimo,
                         Status = e.Status,
