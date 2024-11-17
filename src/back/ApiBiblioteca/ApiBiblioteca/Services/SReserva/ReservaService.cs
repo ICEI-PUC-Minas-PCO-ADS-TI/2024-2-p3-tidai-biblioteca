@@ -56,8 +56,8 @@ namespace ApiBiblioteca.Services.SReserva
             {
                 return "Usuário não encontrado.";
             }
+            var nomeUsuario = usuario?.Nome;
 
-           
             var livro = await VerificarLivro(reservaDTO.LivroId);
             if (livro == null)
             {
@@ -67,6 +67,7 @@ namespace ApiBiblioteca.Services.SReserva
             {
                 return "Livro indisponível para reserva.";
             }
+            var nomeLivro = livro.Titulo;
 
 
             var reserva = new Reserva
@@ -79,7 +80,7 @@ namespace ApiBiblioteca.Services.SReserva
             _context.Reservas.Add(reserva);
             await _context.SaveChangesAsync();
 
-            return $"Reserva com IdUsuario: {reservaDTO.UsuarioId} e IdLivro: {reservaDTO.LivroId} criada com sucesso.";
+            return $"Reserva do livro: {nomeLivro} para o(a): {nomeUsuario} feita com sucesso.";
         }
 
         private async Task<Livro?> VerificarLivro(int livroId)

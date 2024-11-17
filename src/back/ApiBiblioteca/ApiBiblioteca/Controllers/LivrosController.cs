@@ -96,14 +96,37 @@ namespace ApiBiblioteca.Controllers
         [SwaggerOperation(Summary = "Deleta um livro")]
         public async Task<ActionResult> DeleteLivro(int id)
         {
-            var livro = await _livroService.GetLivroPorId(id);
-            if (livro == null)
+            try
             {
-                return NotFound($"Livro com id = {id} não encontrado");
-            }
+                // Obtém o livro pelo ID
+                var livro = await _livroService.GetLivroPorId(id);
 
-            await _livroService.DeleteLivro(livro);
-            return Ok($"Livro de id: {id} foi excluído com sucesso");
+                // Verifica se o livro foi encontrado
+                if (livro == null)
+                {
+                    return NotFound($"Livro com id = {id} não encontrado.");
+                }
+
+                // Tenta excluir o livro
+                await _livroService.DeleteLivro(livro);
+
+                // Retorna sucesso
+                return Ok($"Livro de id: {id} foi excluído com sucesso.");
+            }
+            catch (InvalidOperationException ex)
+            {
+                // Captura erros específicos de operação inválida (ex.: livro emprestado/reservado)
+                Console.WriteLine($"Erro ao tentar excluir livro: {ex.Message}");
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Captura erros gerais inesperados
+                Console.WriteLine($"Erro inesperado ao excluir livro: {ex.Message}");
+                return StatusCode(500, "Ocorreu um erro inesperado ao excluir o livro.");
+            }
         }
+
+
     }
 }

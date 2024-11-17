@@ -52,9 +52,20 @@ namespace ApiBiblioteca.Services.SLivro
         }
         public async Task DeleteLivro(Livro livro)
         {
+
+            var emprestimos = await _context.Emprestimos.Where(e => e.LivroId == livro.Id).ToListAsync();
+            var reservas = await _context.Reservas.Where(r => r.LivroId == livro.Id).ToListAsync();
+
+            if (emprestimos.Any() || reservas.Any())
+            {
+                throw new InvalidOperationException("O livro não pode ser excluído enquanto estiver emprestado ou reservado.");
+            }
+
             _context.Livros.Remove(livro);
             await _context.SaveChangesAsync();
+
         }
+
 
         public async Task<IEnumerable<Livro>> PesquisarLivro(string nome)
         {
