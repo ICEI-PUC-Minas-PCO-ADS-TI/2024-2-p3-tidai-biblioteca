@@ -2,6 +2,8 @@ import style from "../emprestimos/emprestimos.module.css";
 import BarraDePesquisa from "../../../components/barraPesquisa/barraPesquisa";
 import Buttons from "../../../components/buttons/buttons";
 import { useState, useEffect } from "react";
+import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
+import Notificacao from '../../../components/notificacao/notificacao.jsx';
 
 export default function Emprestimos() {
   const [PopUp, setPopUp] = useState(false);
@@ -44,9 +46,9 @@ export default function Emprestimos() {
 
         const data = await response.json();
         setReservas(data);
-        console.log(data);
       } catch (error) {
         console.error("Erro ao buscar livros:", error);
+        mostrarErro("Erro ao buscar reservas");
       }
     }
     fetchReserva();
@@ -74,6 +76,7 @@ export default function Emprestimos() {
         setEmprestimos(data);
       } catch (error) {
         console.error("Erro ao buscar livros:", error);
+        mostrarErro("Erro ao buscar empréstimos");
       }
     }
     fetchEmprestimos();
@@ -98,8 +101,6 @@ export default function Emprestimos() {
       }
 
       const data = await response.json();
-      console.log(data);
-
       if (data.length > 0) {
         const usuario = data[0];
         setDataUsuario({
@@ -119,60 +120,63 @@ export default function Emprestimos() {
 
         setPopUp(true);
       } else {
-        console.log("Usuário não encontrado.");
+        mostrarErro("Usuário não encontrado");
       }
     } catch (error) {
       console.error("Erro ao buscar usuario:", error);
+      mostrarErro("Erro ao buscar usuário");
     }
   }
 
   async function reservaRetirada(id) {
     try {
       const token = localStorage.getItem("token");
-
-      console.log(id);
-      const response = await fetch(`https://localhost:7016/reserva/retirada/${id}`, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        `https://localhost:7016/reserva/retirada/${id}`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Erro HTTP! Status: ${response.status}`);
       }
 
       setReservas(reservas.filter((reserva) => reserva.id !== id));
-
-      alert(`Emprestimo feito com sucesso! ${id}`);
+      mostrarSucesso("Reserva retirada com sucesso!");
     } catch (error) {
       console.error("Erro ao excluir retirar reserva:", error);
+      mostrarErro("Erro ao retirar reserva");
     }
   }
 
   async function deletarEmprestimo(id) {
     try {
       const token = localStorage.getItem("token");
-
-      console.log(id);
-      const response = await fetch(`https://localhost:7016/emprestimos/${id}`, {
-        method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        `https://localhost:7016/emprestimos/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Erro HTTP! Status: ${response.status}`);
       }
 
       setEmprestimos(emprestimos.filter((emprestimo) => emprestimo.id !== id));
-
-      alert(`Empréstimo excluído com sucesso do id ${id}`);
+      mostrarSucesso(`Empréstimo excluído com sucesso do id ${id}`);
     } catch (error) {
       console.error("Erro ao excluir empréstimo:", error);
+      mostrarErro("Erro ao excluir empréstimo");
     }
   }
 
@@ -185,7 +189,7 @@ export default function Emprestimos() {
             <BarraDePesquisa />
           </div>
           <div className={style.filtros}>
-          <label>
+            <label>
               <input
                 type="radio"
                 name="filtro"
@@ -285,36 +289,7 @@ export default function Emprestimos() {
           </tbody>
         </table>
       </div>
-
-      {PopUp && (
-        <div className={style.popup}>
-          <div className={style.popupContent}>
-            <div>
-              <p>Nome: {dataUsuario.nome}</p>
-              <p>Cpf: {dataUsuario.cpf}</p>
-            </div>
-            <div>
-              <p>Telefone: {dataUsuario.telefone}</p>
-              <p>E-mail: {dataUsuario.email}</p>
-            </div>
-            <div>
-              <p>Rua: {dataUsuario.rua}</p>
-            </div>
-            <div>
-              <p>Bairro: {dataUsuario.bairro}</p>
-            </div>
-            <div>
-              <p>Cidade: {dataUsuario.cidade}</p>
-              <p>Numero: {dataUsuario.numeroCasa}</p>
-            </div>
-            <Buttons
-              title="Fechar"
-              variant="delete"
-              onClick={() => setPopUp(false)}
-            />
-          </div>
-        </div>
-      )}
+      <Notificacao/>
     </div>
   );
 }

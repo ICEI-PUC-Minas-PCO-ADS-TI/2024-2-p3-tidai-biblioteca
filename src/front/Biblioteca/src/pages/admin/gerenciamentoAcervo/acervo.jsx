@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import style from "../gerenciamentoAcervo/acervo.module.css";
 import Card from "../../../components/card/card";
 import Buttons from "../../../components/buttons/buttons";
+import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
+import Notificacao from '../../../components/notificacao/notificacao.jsx'; 
 
 export function Acervo() {
   const [livros, setLivros] = useState([]);
@@ -49,6 +51,7 @@ export function Acervo() {
         setEditoras(uniqueEditoras);
       } catch (error) {
         console.error("Erro ao buscar livros:", error);
+        mostrarErro("Erro ao carregar os livros");
       }
     }
 
@@ -82,11 +85,10 @@ export function Acervo() {
   };
 
   // Função para salvar as alterações
-  
   const handleSave = async () => {
     try {
       const token = localStorage.getItem("token");
-  
+
       const response = await fetch(`https://localhost:7016/livros/${formData.id}`, {
         method: "PUT",
         headers: {
@@ -95,50 +97,56 @@ export function Acervo() {
         },
         body: JSON.stringify(formData),
       });
-  
-      
+
       if (!response.ok) {
-        const errorText = await response.text(); 
+        const errorText = await response.text();
         console.error("Erro da API:", errorText);
         throw new Error(`Erro HTTP! Status: ${response.status} - ${errorText}`);
       }
-  
+
       try {
         const data = await response.json();
         console.log("Resposta da API:", data);
       } catch (err) {
         console.log("Resposta não é JSON, mas foi bem-sucedida.");
       }
-  
-      alert("Livro atualizado com sucesso!");
+
+      mostrarSucesso("Livro atualizado com sucesso!"); // Notificação de sucesso
       setEditMode(false);
     } catch (error) {
       console.error("Erro ao salvar alterações:", error.message);
-      alert("Não foi possível salvar as alterações. Verifique os dados e tente novamente.");
+      mostrarErro("Não foi possível salvar as alterações. Verifique os dados e tente novamente."); // Notificação de erro
     }
   };
-  
 
   // Função para remover um livro
   const handleDelete = async (id) => {
     try {
+      console.log(id);
       const token = localStorage.getItem("token");
+      console.log(token);
+  
       const response = await fetch(`https://localhost:7016/livros/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
-
+  
       if (!response.ok) {
-        throw new Error(`Erro HTTP! Status: ${response.status}`);
+        
+        const errorMessage = await response.text();
+        throw new Error(errorMessage);
       }
-
+  
       setLivros((prevLivros) => prevLivros.filter((livro) => livro.id !== id));
+      mostrarSucesso("Livro removido com sucesso!");
     } catch (error) {
-      console.error("Erro ao remover livro:", error);
+      console.error("Erro ao remover livro:", error.message);
+      mostrarErro(error.message);
     }
   };
+  
 
   return (
     <>
@@ -256,6 +264,7 @@ export function Acervo() {
           </div>
         </div>
       )}
+      <Notificacao /> {/* Componente para as notificações */}
     </>
   );
 }

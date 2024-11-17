@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
+import Notificacao from '../../../components/notificacao/notificacao.jsx';
 import styles from './biblioteca.module.css';
 import Card from '../../../components/card/card';
 import Buttons from '../../../components/buttons/buttons';
@@ -37,19 +39,49 @@ const LivrosComFiltro = () => {
 
       } catch (error) {
         console.error("Erro ao buscar livros:", error);
+        mostrarErro("Erro ao carregar livros!");
       }
     }
     fetchLivros();
   }, []);
 
+  async function reserva(idLivro) {
+    try {
+      const idUsuario = localStorage.getItem("userId");
+      const token = localStorage.getItem("token");
+      const response = await fetch("https://localhost:7016/reserva", {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          usuarioId: idUsuario,
+          livroId: idLivro,
+        })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        mostrarErro(data.mensagem || "Erro ao realizar a reserva.");
+      } else {
+        mostrarSucesso(data.mensagem || "Reserva realizada com sucesso!");
+      }
+    } catch (error) {
+      console.error("Erro ao realizar a reserva:", error);
+      mostrarErro("Erro inesperado ao realizar a reserva.");
+    }
+  }
+
   const toggleAutor = (autor) => {
-    setSelectedAutores((prev) => 
+    setSelectedAutores((prev) =>
       prev.includes(autor) ? prev.filter(a => a !== autor) : [...prev, autor]
     );
   };
 
   const toggleEditora = (editora) => {
-    setSelectedEditoras((prev) => 
+    setSelectedEditoras((prev) =>
       prev.includes(editora) ? prev.filter(e => e !== editora) : [...prev, editora]
     );
   };
@@ -63,6 +95,7 @@ const LivrosComFiltro = () => {
 
   return (
     <div className={styles.livrosComFiltroContainer}>
+      <Notificacao />
       <h1 className={styles.titulo}>Bem-vindo</h1>
       <div className={styles.barraDePesquisa}>
         <BarraDePesquisa value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
@@ -112,7 +145,7 @@ const LivrosComFiltro = () => {
             qtd={livro.quantidade}
           >
             <Buttons title='Ver mais' variant='info' />
-            <Buttons title='Reservar' variant='confirmacao' />
+            <Buttons title='Reservar' variant='confirmacao' onClick={() => { reserva(livro.id) }} />
           </Card>
         ))}
       </div>

@@ -123,5 +123,10 @@
 .confirmButton:hover {
   background-color: #218838;
 }
-
+.contentCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
 

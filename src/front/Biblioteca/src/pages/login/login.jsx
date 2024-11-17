@@ -2,6 +2,8 @@ import style from "./login.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Buttons from "../../components/buttons/buttons";
+import { mostrarSucesso, mostrarErro } from '../../components/notificacao/notificacao.jsx';
+import Notificacao from '../../components/notificacao/notificacao.jsx';
 
 export default function Login({ onLogin }) {
   const [username, setUsername] = useState("");
@@ -9,6 +11,7 @@ export default function Login({ onLogin }) {
   const [error, setError] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [emailRecuperacao, setEmailRecuperacao] = useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false); // Controle de visibilidade da senha
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -45,7 +48,7 @@ export default function Login({ onLogin }) {
           tipoUsuario === "administrador" ? "/homeAdmin" : "/biblioteca"
         );
       } else {
-        alert("Credenciais inválidas");
+        mostrarErro("Credenciais inválidas");
       }
     } catch (err) {
       setError("Erro ao conectar com o servidor");
@@ -61,45 +64,55 @@ export default function Login({ onLogin }) {
     setShowPopup(false);
   };
 
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
   return (
     <div className={style.main}>
+      <Notificacao/>
       <div className={style.left}>
         <h1>Login</h1>
     
-          <div className={style.inputs}>
-            <i className="bi bi-envelope-at-fill"></i>
-            <input
-              type="text"
-              placeholder="Digite o nome do usuario"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-          </div>
+        <div className={style.inputs}>
+          <i className="bi bi-envelope-at-fill"></i>
+          <input
+            type="text"
+            placeholder="Digite o nome do usuario"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
 
-          <div className={style.inputs}>
-            <i className="bi bi-key"></i>
-            <input
-              type="password"
-              placeholder="Digite sua senha"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
+        <div className={style.inputs}>
+          <i className="bi bi-key"></i>
+          <input
+            type={passwordVisible ? "text" : "password"}
+            placeholder="Digite sua senha"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <i
+            className={`bi ${passwordVisible ? "bi-eye" : "bi-eye-slash"}`} 
+            onClick={togglePasswordVisibility} 
+            style={{ cursor: "pointer", marginLeft: "10px" }}
+          ></i>
+        </div>
 
-          <div className={style.checkbox}>
-            <div>
-              <input type="checkbox" name="remember" id="remember" />
-              <label htmlFor="remember">Lembre de mim</label>
-            </div>
-            <a href="#" onClick={togglePopup}>
-              Esqueci minha Senha
-            </a>
+        <div className={style.checkbox}>
+          <div>
+            <input type="checkbox" name="remember" id="remember" />
+            <label htmlFor="remember">Lembre de mim</label>
           </div>
+          <a href="#" onClick={togglePopup}>
+            Esqueci minha Senha
+          </a>
+        </div>
 
-          <button type="submit" onClick={handleSubmit}>
-            <i className="bi bi-door-open-fill"></i>
-            Fazer Login
-          </button>
+        <button type="submit" onClick={handleSubmit}>
+          <i className="bi bi-door-open-fill"></i>
+          Fazer Login
+        </button>
      
         <div className={style.cadastroLeft}>
           <h4>Cadastre-se como:</h4>

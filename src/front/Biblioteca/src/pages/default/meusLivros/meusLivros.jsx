@@ -34,14 +34,20 @@ const Acervo = () => {
           img: item.capaUrl,
         }));
 
-        const reservas = reservasResponse.data.map((item) => ({
-          id: item.id,
-          titulo: item.nomeLivro,
-          autor: item.autor,
-          editora: item.editora,
-          tipo: 'reservado',
-          img: item.capaUrl,
-        }));
+        const reservas = reservasResponse.data.map((item) => {
+          const dataReserva = new Date(item.dataReserva); 
+          dataReserva.setDate(dataReserva.getDate() + 3);
+        
+          return {
+            id: item.id,
+            titulo: item.nomeLivro,
+            autor: item.autor,
+            editora: item.editora,
+            dataRetida: dataReserva.toISOString(),
+            tipo: 'reservado',
+            img: item.capaUrl,
+          };
+        });
 
         setLivros([...emprestimos, ...reservas]);
       } catch (error) {
@@ -98,15 +104,11 @@ const Acervo = () => {
               autor={livro.autor}
               editora={livro.editora}
             >
-              <p>
+              <p className={styles.contentCard}>
                 {livro.tipo === 'emprestado'
                   ? `Data devolução: ${new Date(livro.dataDevolucao).toLocaleDateString('pt-BR')}`
-                  : 'Reservado'}
+                  : `Data limite p/ retirada:${new Date(livro.dataRetida).toLocaleDateString('pt-BR')}`}
               </p>
-              <Buttons title="Ver mais" variant="info" />
-              {livro.tipo === 'emprestado' && (
-                <Buttons title="Devolver" variant="confirmacao" />
-              )}
             </Card>
           ))
         )}

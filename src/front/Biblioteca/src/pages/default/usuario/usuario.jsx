@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './usuario.module.css';
+import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx'; 
+import Notificacao from '../../../components/notificacao/notificacao.jsx';
 
 const Usuario = () => {
   const [editMode, setEditMode] = useState(false);
@@ -95,18 +97,20 @@ const Usuario = () => {
         }),
       });
   
-      const text = await response.text(); // Lê a resposta como texto
+      const text = await response.text();
       console.log('Resposta da API:', text);
   
       if (!response.ok) {
         throw new Error(`Erro HTTP! Status: ${response.status} - ${text}`);
       }
   
-      // Caso a resposta seja bem-sucedida, logue a mensagem
-      console.log('Resposta da API:', text); // "Usuário com ID 6 foi atualizado com sucesso."
-      setEditMode(false); // Desativa o modo de edição após salvar
+      
+      console.log('Resposta da API:', text); 
+      mostrarSucesso("Usuario atualizado com sucesso");
+      setEditMode(false);
     } catch (error) {
       console.error('Erro ao salvar os dados do usuário:', error);
+      mostrarErro('Erro ao salvar os dados do usuário')
     }
   };
   
@@ -115,6 +119,7 @@ const Usuario = () => {
 
   return (
     <div className={styles.container}>
+      <Notificacao/>
       <h1 className={styles.titulo}>Dados Pessoais</h1>
       {!editMode ? (
         <>

@@ -1,6 +1,8 @@
 import Buttons from "../../../components/buttons/buttons";
 import style from "../cadastroLivro/cadastroLivro.module.css";
 import { useState } from "react";
+import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
+import Notificacao from '../../../components/notificacao/notificacao.jsx';
 
 export default function CadastroLivro() {
   const [formData, setFormData] = useState({
@@ -28,7 +30,7 @@ export default function CadastroLivro() {
     event.preventDefault();
   
     if (!formData.nomeLivro || !formData.autor || !formData.editora || !formData.genero || !formData.capa) {
-      alert("Por favor, preencha todos os campos obrigatórios.");
+      mostrarErro("Por favor, preencha todos os campos obrigatórios.");
       return;
     }
   
@@ -87,9 +89,10 @@ export default function CadastroLivro() {
         capa: '',
       });
       
-      alert("Livro cadastrado com sucesso!");
+      mostrarSucesso("Livro cadastrado com sucesso!");
     } catch (error) {
       console.error("Erro ao salvar os dados do livro:", error);
+      mostrarErro("Erro ao salvar os dados do livro")
     }
   };
   
@@ -97,6 +100,7 @@ export default function CadastroLivro() {
 
   return (
     <div className={style.mainForms}>
+      <Notificacao/>
       <div className={style.containerForms}>
         <p className={style.titleForm}>Cadastro de Livro</p>
         <form onSubmit={handleSubmit}>
