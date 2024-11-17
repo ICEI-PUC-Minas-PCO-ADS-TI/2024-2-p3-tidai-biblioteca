@@ -51,3 +51,8 @@
     flex: 1; /* Ocupa o espaço restante */
   }
   
+  .barraDePesquisa{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }

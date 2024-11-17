@@ -2,7 +2,7 @@ import style from '../header/header.module.css';
 import { NavLink } from 'react-router-dom';
 import BarraPesquisa from '../barraPesquisa/barraPesquisa';
 
-export default function Header() {
+export default function Header({onLogout}) {
   return (
     <>
       <div className={style.Header}>
@@ -95,6 +95,12 @@ export default function Header() {
                 </div>
               )}
             </NavLink>
+          </li>
+
+          <li>
+            <div className={style.logout}> 
+            <button onClick={onLogout}> <i class="bi bi-box-arrow-in-right"></i> Sair</button>
+            </div>
           </li>
         </ul>
       </div>

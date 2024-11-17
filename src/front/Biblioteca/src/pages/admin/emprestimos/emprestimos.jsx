@@ -1,26 +1,224 @@
 import style from "../emprestimos/emprestimos.module.css";
 import BarraDePesquisa from "../../../components/barraPesquisa/barraPesquisa";
 import Buttons from "../../../components/buttons/buttons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Emprestimos() {
+  const [PopUp, setPopUp] = useState(false);
+  const [dataUsuario, setDataUsuario] = useState({
+    id: 0,
+    nome: "",
+    email: "",
+    cpf: "",
+    cep: "",
+    rua: "",
+    bairro: "",
+    cidade: "",
+    uf: "",
+    numeroCasa: 0,
+    telefone: "",
+    dataNascimento: "",
+  });
 
+  const [emprestimos, setEmprestimos] = useState([]);
+  const [reservas, setReservas] = useState([]);
+  const [filtro, setFiltro] = useState("todos"); // Estado para o filtro
 
-  const [abrirPopUp, setAbrirPopUp ] = useState(false) ;
+  useEffect(() => {
+    async function fetchReserva() {
+      try {
+        const token = localStorage.getItem("token");
+        const response = await fetch(
+          "https://localhost:7016/usuario/livro",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
+        if (!response.ok) {
+          throw new Error(`Erro HTTP! Status: ${response.status}`);
+        }
 
+        const data = await response.json();
+        setReservas(data);
+        console.log(data);
+      } catch (error) {
+        console.error("Erro ao buscar livros:", error);
+      }
+    }
+    fetchReserva();
+  }, []);
+
+  useEffect(() => {
+    async function fetchEmprestimos() {
+      try {
+        const token = localStorage.getItem("token");
+        const response = await fetch(
+          "https://localhost:7016/emprestimos/usuarios/livros",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`Erro HTTP! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        setEmprestimos(data);
+      } catch (error) {
+        console.error("Erro ao buscar livros:", error);
+      }
+    }
+    fetchEmprestimos();
+  }, []);
+
+  async function abrirPopUp(nome) {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await fetch(
+        `https://localhost:7016/usuarios/pesquisar?nome=${nome}`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Erro HTTP! Status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log(data);
+
+      if (data.length > 0) {
+        const usuario = data[0];
+        setDataUsuario({
+          id: usuario.id,
+          nome: usuario.nome,
+          email: usuario.email,
+          cpf: usuario.cpf,
+          cep: usuario.cep,
+          rua: usuario.rua,
+          bairro: usuario.bairro,
+          cidade: usuario.cidade,
+          uf: usuario.uf,
+          numeroCasa: usuario.numeroCasa,
+          telefone: usuario.telefone,
+          dataNascimento: usuario.dataNascimento,
+        });
+
+        setPopUp(true);
+      } else {
+        console.log("Usuário não encontrado.");
+      }
+    } catch (error) {
+      console.error("Erro ao buscar usuario:", error);
+    }
+  }
+
+  async function reservaRetirada(id) {
+    try {
+      const token = localStorage.getItem("token");
+
+      console.log(id);
+      const response = await fetch(`https://localhost:7016/reserva/retirada/${id}`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Erro HTTP! Status: ${response.status}`);
+      }
+
+      setReservas(reservas.filter((reserva) => reserva.id !== id));
+
+      alert(`Emprestimo feito com sucesso! ${id}`);
+    } catch (error) {
+      console.error("Erro ao excluir retirar reserva:", error);
+    }
+  }
+
+  async function deletarEmprestimo(id) {
+    try {
+      const token = localStorage.getItem("token");
+
+      console.log(id);
+      const response = await fetch(`https://localhost:7016/emprestimos/${id}`, {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Erro HTTP! Status: ${response.status}`);
+      }
+
+      setEmprestimos(emprestimos.filter((emprestimo) => emprestimo.id !== id));
+
+      alert(`Empréstimo excluído com sucesso do id ${id}`);
+    } catch (error) {
+      console.error("Erro ao excluir empréstimo:", error);
+    }
+  }
 
   return (
-    <>
-      <div className={style.main}>
-        
+    <div className={style.main}>
+      <div className={style.container}>
+        <h2>Lista de Emprestimos</h2>
+        <div className={style.headerEmprestimos}>
+          <div className={style.barraPesquisaEmprestimo}>
+            <BarraDePesquisa />
+          </div>
+          <div className={style.filtros}>
+          <label>
+              <input
+                type="radio"
+                name="filtro"
+                value="todos"
+                checked={filtro === "todos"}
+                onChange={() => setFiltro("todos")}
+              />
+              Todos
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="filtro"
+                value="emprestimos"
+                checked={filtro === "emprestimos"}
+                onChange={() => setFiltro("emprestimos")}
+              />
+              Emprestimos
+            </label>
 
-        <div className={style.container}>
-              <h2>Lista de Emprestimos</h2>
-              <div className={style.barraPesquisaEmprestimo}>
-                <BarraDePesquisa />
-            </div>
-              <table>
+            <label>
+              <input
+                type="radio"
+                name="filtro"
+                value="reservas"
+                checked={filtro === "reservas"}
+                onChange={() => setFiltro("reservas")}
+              />
+              Reservas
+            </label>
+          </div>
+        </div>
+        <table>
           <thead>
             <tr>
               <th>Nome</th>
@@ -33,60 +231,90 @@ export default function Emprestimos() {
               <th></th>
             </tr>
           </thead>
-
           <tbody>
-            <tr>
-              <td>João</td>
-              <td>The Witcher</td>
-              <td>27/09/2024</td>
-              <td>10/10/2024</td>
-              <td>Em dia</td>
-              <td>99812232</td>
-              <td><Buttons title='Mais Info' variant='info' onClick={()=> setAbrirPopUp(true)} /></td>
-              <td><Buttons title='Devolvido' variant='confirmacao'/></td>
-            </tr>
-            <tr>
-              <td>Lucas</td>
-              <td>The Witcher</td>
-              <td>27/09/2024</td>
-              <td>10/10/2024</td>
-              <td>Em dia</td>
-              <td>99812232</td>
-              <td><Buttons title='Mais Info' variant='info' onClick={()=> setAbrirPopUp(true)} /></td>
-              <td><Buttons title='Devolvido' variant='confirmacao'/></td>
-            </tr>
+            {(filtro === "todos" || filtro === "emprestimos") &&
+              emprestimos.map((emprestimo) => (
+                <tr key={emprestimo.id}>
+                  <td>{emprestimo.nomeUsuario}</td>
+                  <td>{emprestimo.nomeLivro}</td>
+                  <td>{emprestimo.dataEmprestimo}</td>
+                  <td>{emprestimo.dataDevolucao}</td>
+                  <td>{emprestimo.status}</td>
+                  <td>{emprestimo.telefone}</td>
+                  <td>
+                    <Buttons
+                      title="Mais Info"
+                      variant="info"
+                      onClick={() => abrirPopUp(emprestimo.nomeUsuario)}
+                    />
+                  </td>
+                  <td>
+                    <Buttons
+                      title="Devolvido"
+                      variant="confirmacao"
+                      onClick={() => deletarEmprestimo(emprestimo.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            {(filtro === "todos" || filtro === "reservas") &&
+              reservas.map((reserva) => (
+                <tr key={reserva.id}>
+                  <td>{reserva.nomeUsuario}</td>
+                  <td>{reserva.nomeLivro}</td>
+                  <td>{reserva.dataReserva}</td>
+                  <td>{reserva.dataExpiracao}</td>
+                  <td>Aguardando retirada</td>
+                  <td>{reserva.telefone}</td>
+                  <td>
+                    <Buttons
+                      title="Mais Info"
+                      variant="info"
+                      onClick={() => abrirPopUp(reserva.nomeUsuario)}
+                    />
+                  </td>
+                  <td>
+                    <Buttons
+                      title="Retirado"
+                      variant="confirmacao"
+                      onClick={() => reservaRetirada(reserva.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
           </tbody>
         </table>
-
-        </div>
-
-        {abrirPopUp && (
-            <div className={style.popup}>
-            <div className={style.popupContent}>
-              <div>
-                <p>Nome: Saulo</p>
-                <p>Cpf: 123.233.230.09</p>
-              </div>
-              <div>
-                <p>Telefone: 37 9 9892849</p>
-                <p>E-mail: Saulo@gmail.com</p>
-              </div>
-              <div>
-                <p> Rua: Floriano Peixoto</p>
-              </div>
-              <div>
-                <p> Bairro: Vila Tavares</p>
-              </div>
-                
-              <div>
-                <p> Cidade: Bom despacho</p>
-                <p> Numero: 102</p>
-              </div>
-              <Buttons title='Fechar' variant='delete' onClick={()=> setAbrirPopUp(false)}/>
-            </div>
-          </div>
-        )}
       </div>
-    </>
+
+      {PopUp && (
+        <div className={style.popup}>
+          <div className={style.popupContent}>
+            <div>
+              <p>Nome: {dataUsuario.nome}</p>
+              <p>Cpf: {dataUsuario.cpf}</p>
+            </div>
+            <div>
+              <p>Telefone: {dataUsuario.telefone}</p>
+              <p>E-mail: {dataUsuario.email}</p>
+            </div>
+            <div>
+              <p>Rua: {dataUsuario.rua}</p>
+            </div>
+            <div>
+              <p>Bairro: {dataUsuario.bairro}</p>
+            </div>
+            <div>
+              <p>Cidade: {dataUsuario.cidade}</p>
+              <p>Numero: {dataUsuario.numeroCasa}</p>
+            </div>
+            <Buttons
+              title="Fechar"
+              variant="delete"
+              onClick={() => setPopUp(false)}
+            />
+          </div>
+        </div>
+      )}
+    </div>
   );
 }

@@ -29,6 +29,7 @@ const Usuario = () => {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
           },
+          
         });
 
         if (!response.ok) {
@@ -51,6 +52,7 @@ const Usuario = () => {
           dataNascimento: data.dataNascimento,
           senha: data.senha, 
         });
+        
       } catch (error) {
         console.log("Erro ao buscar usuario:", error);
       }

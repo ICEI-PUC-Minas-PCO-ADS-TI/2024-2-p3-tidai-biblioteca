@@ -114,16 +114,10 @@ export default function Login({ onLogin }) {
         <div>
           <h1>Bem-Vindo!</h1>
           <h2>A sua biblioteca virtual</h2>
-          <h4 id="title-">Cadastre-se como:</h4>
+          <h4 id="title-">Não tem uma conta:</h4>
           <div className={style.buttonsCadastros}>
             <NavLink to="/cadastroUsuario" className={style.buttonsNavLink}>
-              <button>Leitor</button>
-            </NavLink>
-            <NavLink
-              to="/cadastroAdministrador"
-              className={style.buttonsNavLink}
-            >
-              <button>Administrador</button>
+              <button>Inscreva-se</button>
             </NavLink>
           </div>
         </div>

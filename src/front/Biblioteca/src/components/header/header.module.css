@@ -54,6 +54,13 @@
     justify-content: center;
     gap: 3em;
 }
+.logout button:hover{
+    cursor: pointer;
+    color: rgb(233, 68, 68);
+}
+.logout button{
+    all: unset;
+}
 @media (max-width: 480px) {
     .Header {
         display: flex;

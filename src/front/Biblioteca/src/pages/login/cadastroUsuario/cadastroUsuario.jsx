@@ -1,12 +1,84 @@
 import style from "../cadastroUsuario/cadastroUsuario.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CadastroUsuario() {
+  const [formData, setFormData] = useState({
+    nome: "",
+    email: "",
+    cpf: "",
+    cep: "",
+    rua: "",
+    bairro: "",
+    cidade: "",
+    uf: "",
+    numeroCasa: "",
+    telefone: "",
+    dataNascimento: "",
+    senha: "",
+    confirmarSenha: "",
+  });
+
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  async function cadastro(e) {
+    e.preventDefault(); // Previne o comportamento padrão de recarregar a página
+
+    if (formData.senha !== formData.confirmarSenha) {
+      alert("As senhas não coincidem.");
+      return;
+    }
+
+    try {
+      const response = await fetch("https://localhost:7016/usuarios/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nome: formData.nome,
+          email: formData.email,
+          cpf: formData.cpf,
+          cep: formData.cep,
+          rua: formData.rua,
+          bairro: formData.bairro,
+          cidade: formData.cidade,
+          uf: formData.uf,
+          numeroCasa: formData.numeroCasa,
+          telefone: formData.telefone,
+          dataNascimento: formData.dataNascimento,
+          senha: formData.senha,
+        }),
+      });
+
+      const text = await response.text();
+      console.log("Resposta da API:", text);
+
+      if (!response.ok) {
+        throw new Error(`Erro HTTP! Status: ${response.status} - ${text}`);
+      }
+
+      alert("Cadastro realizado com sucesso!");
+      navigate("/"); // Redireciona para a página inicial
+    } catch (error) {
+      console.log("Erro ao realizar o cadastro:", error);
+      alert("Erro ao realizar o cadastro. Tente novamente.");
+    }
+  }
+
   return (
     <div className={style.main}>
       <div className={style.container}>
         <h1>Cadastro de Usuário</h1>
-        <form action="submit" method="post">
+        <form onSubmit={cadastro}>
           <div className={style.formGroup}>
             <label htmlFor="nome">Nome</label>
             <input
@@ -15,6 +87,8 @@ export default function CadastroUsuario() {
               name="nome"
               required
               placeholder="Digite seu nome completo"
+              value={formData.nome}
+              onChange={handleChange}
             />
           </div>
 
@@ -26,6 +100,8 @@ export default function CadastroUsuario() {
               name="email"
               required
               placeholder="Digite seu e-mail"
+              value={formData.email}
+              onChange={handleChange}
             />
           </div>
 
@@ -38,6 +114,8 @@ export default function CadastroUsuario() {
                 name="cpf"
                 required
                 placeholder="000.000.000-00"
+                value={formData.cpf}
+                onChange={handleChange}
               />
             </div>
 
@@ -48,17 +126,21 @@ export default function CadastroUsuario() {
                 id="telefone"
                 name="telefone"
                 placeholder="(XX) XXXXX-XXXX"
+                value={formData.telefone}
+                onChange={handleChange}
               />
             </div>
           </div>
 
           <div className={style.formGroup}>
-            <label htmlFor="data-nascimento">Data de Nascimento</label>
+            <label htmlFor="dataNascimento">Data de Nascimento</label>
             <input
               type="date"
-              id="data-nascimento"
-              name="data-nascimento"
+              id="dataNascimento"
+              name="dataNascimento"
               required
+              value={formData.dataNascimento}
+              onChange={handleChange}
             />
           </div>
 
@@ -71,6 +153,8 @@ export default function CadastroUsuario() {
                 name="cep"
                 required
                 placeholder="00000-000"
+                value={formData.cep}
+                onChange={handleChange}
               />
             </div>
 
@@ -82,6 +166,8 @@ export default function CadastroUsuario() {
                 name="rua"
                 required
                 placeholder="Nome da rua"
+                value={formData.rua}
+                onChange={handleChange}
               />
             </div>
           </div>
@@ -95,6 +181,8 @@ export default function CadastroUsuario() {
                 name="bairro"
                 required
                 placeholder="Nome do bairro"
+                value={formData.bairro}
+                onChange={handleChange}
               />
             </div>
 
@@ -106,17 +194,21 @@ export default function CadastroUsuario() {
                 name="cidade"
                 required
                 placeholder="Nome da cidade"
+                value={formData.cidade}
+                onChange={handleChange}
               />
             </div>
 
             <div className={style.formGroup}>
-              <label htmlFor="numero">Número</label>
+              <label htmlFor="numeroCasa">Número</label>
               <input
                 type="text"
-                id="numero"
-                name="numero"
+                id="numeroCasa"
+                name="numeroCasa"
                 required
                 placeholder="N"
+                value={formData.numeroCasa}
+                onChange={handleChange}
               />
             </div>
           </div>
@@ -130,17 +222,21 @@ export default function CadastroUsuario() {
                 name="senha"
                 required
                 placeholder="Digite uma senha"
+                value={formData.senha}
+                onChange={handleChange}
               />
             </div>
 
             <div className={style.formGroup}>
-              <label htmlFor="confirmar-senha">Confirmar Senha:</label>
+              <label htmlFor="confirmarSenha">Confirmar Senha:</label>
               <input
                 type="password"
-                id="confirmar-senha"
-                name="confirmar-senha"
+                id="confirmarSenha"
+                name="confirmarSenha"
                 required
                 placeholder="Confirme sua senha"
+                value={formData.confirmarSenha}
+                onChange={handleChange}
               />
             </div>
           </div>

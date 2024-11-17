@@ -33,6 +33,13 @@
 .active {
     border-bottom: 2px solid #F0F0F0;
 }
+.logout button:hover{
+    cursor: pointer;
+    color: rgb(233, 68, 68);
+}
+.logout button{
+    all: unset;
+}
 @media (max-width: 768px) {
     .HeaderAdmin {
         display: flex;

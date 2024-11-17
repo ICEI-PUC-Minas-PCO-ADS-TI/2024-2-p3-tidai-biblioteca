@@ -1,7 +1,7 @@
 import style from './barraPesquisa.module.css';
 import { useState } from "react";
 
-export default function BarraDePesquisa({ className: customClass }) {
+export default function BarraDePesquisa({ className: customClass, value, onChange }) {
   const [focado, setFocado] = useState(false);
 
   return (
@@ -9,6 +9,8 @@ export default function BarraDePesquisa({ className: customClass }) {
       <input
         type="search"
         placeholder="Pesquisar"
+        value={value}
+        onChange={onChange}
         onFocus={() => setFocado(true)}
         onBlur={() => setFocado(false)}
       />

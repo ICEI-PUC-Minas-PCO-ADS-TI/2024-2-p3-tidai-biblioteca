@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './biblioteca.module.css';
 import Card from '../../../components/card/card';
 import Buttons from '../../../components/buttons/buttons';
+import BarraDePesquisa from '../../../components/barraPesquisa/barraPesquisa';
 
 const LivrosComFiltro = () => {
   const [livros, setLivros] = useState([]);
@@ -9,6 +10,7 @@ const LivrosComFiltro = () => {
   const [editoras, setEditoras] = useState([]);
   const [selectedAutores, setSelectedAutores] = useState([]);
   const [selectedEditoras, setSelectedEditoras] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     async function fetchLivros() {
@@ -28,10 +30,8 @@ const LivrosComFiltro = () => {
         const data = await response.json();
         setLivros(data);
 
-        // Extraindo autores e editoras únicos
         const uniqueAutores = [...new Set(data.map(livro => livro.autor))];
         const uniqueEditoras = [...new Set(data.map(livro => livro.editora))];
-        
         setAutores(uniqueAutores);
         setEditoras(uniqueEditoras);
 
@@ -57,17 +57,20 @@ const LivrosComFiltro = () => {
   const livrosFiltrados = livros.filter((livro) => {
     const autorMatch = selectedAutores.length === 0 || selectedAutores.includes(livro.autor);
     const editoraMatch = selectedEditoras.length === 0 || selectedEditoras.includes(livro.editora);
-    return autorMatch && editoraMatch;
+    const searchMatch = livro.titulo.toLowerCase().includes(searchTerm.toLowerCase());
+    return autorMatch && editoraMatch && searchMatch;
   });
 
   return (
     <div className={styles.livrosComFiltroContainer}>
       <h1 className={styles.titulo}>Bem-vindo</h1>
-
+      <div className={styles.barraDePesquisa}>
+        <BarraDePesquisa value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+      </div>
       <div className={styles.content}>
         <div className={styles.sidebar}>
           <h3 className={styles.tituloFiltro}>Autores</h3>
-          <div className={styles.tituloFiltro}>
+          <div>
             {autores.map((autor) => (
               <div key={autor}>
                 <label>
@@ -99,19 +102,19 @@ const LivrosComFiltro = () => {
           </div>
         </div>
 
-          {livrosFiltrados.map((livro) => (
-            <Card
-              key={livro.id}
-              img={livro.capaUrl} 
-              titulo={livro.titulo}
-              autor={livro.autor}
-              editora={livro.editora}
-              qtd={livro.quantidade}
-            >
-              <Buttons title='Ver mais' variant='info' />
-              <Buttons title='Reservar' variant='confirmacao' />
-            </Card>
-          ))}
+        {livrosFiltrados.map((livro) => (
+          <Card
+            key={livro.id}
+            img={livro.capaUrl} 
+            titulo={livro.titulo}
+            autor={livro.autor}
+            editora={livro.editora}
+            qtd={livro.quantidade}
+          >
+            <Buttons title='Ver mais' variant='info' />
+            <Buttons title='Reservar' variant='confirmacao' />
+          </Card>
+        ))}
       </div>
     </div>
   );

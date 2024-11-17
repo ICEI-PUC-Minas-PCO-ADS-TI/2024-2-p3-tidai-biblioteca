@@ -1,7 +1,7 @@
 import style from "../headerAdmin/headerAdmin.module.css";
 import { NavLink } from "react-router-dom";
 
-export default function HeaderAdmin() {
+export default function HeaderAdmin({onLogout}) {
   return (
     <>
       <div className={style.HeaderAdmin}>
@@ -98,6 +98,11 @@ export default function HeaderAdmin() {
                 </div>
               )}
             </NavLink>
+          </li>
+          <li>
+            <div className={style.logout}> 
+            <button onClick={onLogout}> <i class="bi bi-box-arrow-in-right"></i> Sair</button>
+            </div>
           </li>
         </ul>
       </div>
