@@ -227,6 +227,14 @@ export function Acervo() {
         <div className={style.modal}>
           <div className={style.modalContent}>
             <h2>Editar Livro</h2>
+            <label>Capa Livro:</label>
+            <input
+              type="text"
+              value={formData.capaUrl}
+              onChange={(e) =>
+                setFormData({ ...formData, capaUrl: e.target.value })
+              }
+            />
             <label>Título:</label>
             <input
               type="text"
@@ -251,6 +259,7 @@ export function Acervo() {
                 setFormData({ ...formData, editora: e.target.value })
               }
             />
+            
             <label>Quantidade:</label>
             <input
               type="number"
