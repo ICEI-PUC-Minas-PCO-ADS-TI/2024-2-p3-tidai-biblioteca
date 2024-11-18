@@ -115,7 +115,7 @@ namespace ApiBiblioteca.Controllers
         }
 
         [Authorize(Roles = "leitor,administrador")]
-        [HttpPut]
+        [HttpPut("{id:int}")]
         [SwaggerOperation(Summary = "Renova um emprestimo para mais 7 dias")]
         public async Task<ActionResult> Renovacao(int id)
         {

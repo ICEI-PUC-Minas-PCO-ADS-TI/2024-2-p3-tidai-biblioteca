@@ -111,11 +111,11 @@ export function Acervo() {
         console.log("Resposta não é JSON, mas foi bem-sucedida.");
       }
 
-      mostrarSucesso("Livro atualizado com sucesso!"); // Notificação de sucesso
+      mostrarSucesso("Livro atualizado com sucesso!");
       setEditMode(false);
     } catch (error) {
       console.error("Erro ao salvar alterações:", error.message);
-      mostrarErro("Não foi possível salvar as alterações. Verifique os dados e tente novamente."); // Notificação de erro
+      mostrarErro("Não foi possível salvar as alterações. Verifique os dados e tente novamente.");
     }
   };
 
@@ -273,7 +273,7 @@ export function Acervo() {
           </div>
         </div>
       )}
-      <Notificacao /> {/* Componente para as notificações */}
+      <Notificacao />
     </>
   );
 }

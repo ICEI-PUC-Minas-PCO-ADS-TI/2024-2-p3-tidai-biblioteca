@@ -116,6 +116,7 @@ namespace ApiBiblioteca.Services.SUsuario
                          {
                              NomeLivro = e.Livro.Titulo,
                              NomeUsuario = e.Usuario.Nome,
+                             IdEmprestimo = e.Id,
                              Status = e.Status,
                              Autor = e.Livro.Autor,
                              CapaUrl = e.Livro.CapaUrl,
