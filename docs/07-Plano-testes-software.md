@@ -1,30 +1,24 @@
 # Plano de testes de software
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>, <a href="04-Projeto-interface.md"> Projeto de interface</a>
+O plano de testes de software é essencial para garantir a qualidade do software. Isso porque, o plano garante que o software seja testado de forma completa e ampla, passando por todas as funcionalidades do produto.
 
-O plano de testes de software é gerado a partir da especificação do sistema e consiste em casos de teste que deverão ser executados quando a implementação estiver parcial ou totalmente pronta. Apresente os cenários de teste utilizados na realização dos testes da sua aplicação. Escolha cenários de teste que demonstrem os requisitos sendo satisfeitos.
+O plano de testes também ajuda na identificação de erros de programação, problemas de usabilidade e até mesmo de desempenho inadequado.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico, o grupo deve detalhar quais funcionalidades foram avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-Não deixe de enumerar os casos de teste de forma sequencial e garantir que o(s) requisito(s) associado(s) a cada um deles esteja(m) correto(s) — de acordo com o que foi definido na <a href="02-Especificacao.md">Especificação do projeto</a>.
-
-Por exemplo:
-
-| **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
+| **Caso de teste**  | **CT-001 – Cadastro de livros**  |
 |:---: |:---: |
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Requisito associado | RF-01 - A aplicação deve apresentar, em uma página relacionada, a possibilidade do cadastro completo de livros |
+| Objetivo do teste | Verificar se o usuário consegue cadastrar um livro na aplicação |
+| Passos | - Realizar login no sistema com o nível de acesso administrador - Clicar na opção "Cadastrar livro" - Preencher todas as informações necessarias. |
+| Critério de êxito | - O livro foi cadastrado. |
+| Responsável pela elaboração do caso de teste | Alessandro Gomes Pereira |
 
 <br>
 
-| **Caso de teste**  | **CT-002 – Efetuar login**  |
+| **Caso de teste**  | **CT-002 – Gerenciamento de acervo**  |
 |:---: |:---: |
-| Requisito associado | RF-00Y - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do teste | Verificar se o usuário consegue realizar login. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
+| Requisito associado | RF-02 - O administrador deve ser capaz de gerenciar completamente o acervo. |
+| Objetivo do teste | Verificar se o administrador consegue realizar o CRUD. |
+| Passos | - Acessar o navegador <br>  |
 | Critério de êxito | - O login foi realizado com sucesso. |
 | Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
 
