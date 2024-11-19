@@ -18,19 +18,36 @@ O plano de testes também ajuda na identificação de erros de programação, pr
 |:---: |:---: |
 | Requisito associado | RF-02 - O administrador deve ser capaz de gerenciar completamente o acervo. |
 | Objetivo do teste | Verificar se o administrador consegue realizar o CRUD. |
-| Passos | - Acessar o navegador <br>  |
-| Critério de êxito | - O login foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Passos | - Acessar o navegador <br> - Realizar login no sistema com nível de acesso administrador <br> -Na página inicial ser capaz de atualizar e remover livros do acervo <br> - Na página "Cadastro de livros" ser capaz de cadastrar um livro (RF-01) |
+| Critério de êxito | - Operação CRUD realizada com sucesso. |
+| Responsável pela elaboração do caso de teste | Alessandro Gomes Pereira |
 
 
-## Ferramentas de testes (opcional)
+| **Caso de teste**  | **CT-003 – Renovar emprestimo**  |
+|:---: |:---: |
+| Requisito associado | RF-03 - O usuário deve ser capaz de renovar um livro. |
+| Objetivo do teste | Verificar se o usuário é capaz de relizar a renovação de um livro. |
+| Passos | - Acessar o navegador <br> - Realizar login no sistema <br> -Navegar até a página de renovação <br> - A renovação só pode ser feita se o livro não estiver reservado por nenhum outro usuário |
+| Critério de êxito | - Renovação realizada com sucesso. |
+| Responsável pela elaboração do caso de teste | Alessandro Gomes Pereira |
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links úteis**:
-> - [IBM - criação e geração de planos de teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e técnicas de testes ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> - [Teste de software: conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e geração de planos de teste de software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+
+| **Caso de teste**  | **CT-004 – Emprestimo de livros**  |
+|:---: |:---: |
+| Requisito associado | RF-04 - Emprestar livro. |
+| Objetivo do teste | O usuário deve ser capaz de solicitar o emprestimo de um livro. |
+| Passos | - Acessar o navegador <br> - Realizar login no sistema <br> -Na página inicial o usuário poderá ver todo o acervo <br> - Para solicitar o emprestimo do livro basta clicar no botão "Emprestimo" |
+| Critério de êxito | - Emprestimo realizado com sucesso. |
+| Responsável pela elaboração do caso de teste | Alessandro Gomes Pereira |
+
+
+
+| **Caso de teste**  | **CT-005 – Cadastro de usuários**  |
+|:---: |:---: |
+| Requisito associado | RF-05 - Cadastrar usuários. |
+| Objetivo do teste | O sistema deve permitir que o usuário realize o cadastro. |
+| Passos | - Acessar o navegador <br> - Na tela de login, clicar no botão "Criar conta usuário" <br> -Colocar todas as informaões necessarias para o cadastro |
+| Critério de êxito | - Cadastro realizao com sucesso. |
+| Responsável pela elaboração do caso de teste | Alessandro Gomes Pereira |
+
+
