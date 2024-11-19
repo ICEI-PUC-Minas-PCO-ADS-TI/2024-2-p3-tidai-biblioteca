@@ -8,7 +8,7 @@ O plano de testes também ajuda na identificação de erros de programação, pr
 |:---: |:---: |
 | Requisito associado | RF-01 - A aplicação deve apresentar, em uma página relacionada, a possibilidade do cadastro completo de livros |
 | Objetivo do teste | Verificar se o usuário consegue cadastrar um livro na aplicação |
-| Passos | - Realizar login no sistema com o nível de acesso administrador - Clicar na opção "Cadastrar livro" - Preencher todas as informações necessarias. |
+| Passos | - Realizar login no sistema com o nível de acesso administrador <br>- Clicar na opção "Cadastrar livro"<br> - Preencher todas as informações necessarias. |
 | Critério de êxito | - O livro foi cadastrado. |
 | Responsável pela elaboração do caso de teste | Alessandro Gomes Pereira |
 
