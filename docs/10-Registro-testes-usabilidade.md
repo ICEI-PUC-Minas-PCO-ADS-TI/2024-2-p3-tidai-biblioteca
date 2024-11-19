@@ -1,8 +1,6 @@
 # Registro de testes de usabilidade
 
-<span style="color:red">Pré-requisitos: <a href="04-Projeto-interface.md"> Projeto de interface</a></span>, <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a>
-
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O registro de testes de usabilidade é um relatório que contém as evidências dos testes e os relatos dos usuários participantes, baseado no <a href="09-Plano-testes-usabilidade.md"> Plano de testes de usabilidade</a> desenvolvido para os casos de uso desta etapa.
-
-> **Links úteis**:
-> - [Ferramentas de testes de usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+Após a aplicação de um teste de usabilidade estruturado, foi possível identificar barreiras críticas e propor melhorias que, quando implementadas, poderão transformar a experiência do usuário.
+Os resultados da análise revelaram que algumas funções do site, como a consulta ao catálogo, possuem alta taxa de sucesso, sendo completadas sem dificuldades por todos os participantes. Por outro lado, tarefas mais complexas, como o gerenciamento de usuários e a geração de relatórios, apresentaram taxas de sucesso significativamente menores. Esses números indicam problemas relacionados à clareza da interface e à organização das opções. Além disso, o tempo médio necessário para executar tarefas avançadas foi elevado, refletindo a necessidade de uma interface mais intuitiva e de um design centrado no usuário.
+Diante desses achados, é imprescindível adotar medidas que tornem o sistema mais acessível e funcional. Entre as recomendações sugeridas estão: a introdução de sinalizações visuais para campos obrigatórios, a reorganização dos menus para facilitar o acesso às funções mais usadas e a substituição de termos técnicos por expressões claras e diretas. 
+Portanto, os resultados evidenciam que, embora o site ofereça uma base sólida, há pontos críticos que comprometem a experiência do usuário, especialmente em tarefas administrativas. A implementação das melhorias propostas é fundamental para assegurar que o sistema cumpra seu objetivo principal: facilitar o gerenciamento da biblioteca e promover o acesso à informação. Somente por meio de uma abordagem contínua de teste e revisão será possível criar uma ferramenta eficiente, intuitiva e acessível a todos os públicos.
