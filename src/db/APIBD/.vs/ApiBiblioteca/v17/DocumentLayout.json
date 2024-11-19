@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\models\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\models\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\dto\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\sauthenticaded\\autheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\sauthenticaded\\autheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\sauthenticaded\\iautheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\sauthenticaded\\iautheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\berna\\onedrive\\documentos\\github\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 157,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Emprestimo.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Models\\Emprestimo.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Models\\Emprestimo.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Models\\Emprestimo.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Models\\Emprestimo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T18:33:32.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\appsettings.json",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\appsettings.json",
+              "RelativeToolTip": "ApiBiblioteca\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAACYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-19T18:23:08.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BibliotecaContext.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAuwOUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T18:22:33.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAwEYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:41:13.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwEYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:38:39.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:36:46.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:36:14.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "RelativeToolTip": "ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:13:00.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AutheticatedService.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowEEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:09:06.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticatedController.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:11:34.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAutheticatedService.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:07:52.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MensagensController.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:03:44.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TopicosController.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:02:52.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\berna\\OneDrive\\Documentos\\GitHub\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAIwFsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:00:14.548Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
