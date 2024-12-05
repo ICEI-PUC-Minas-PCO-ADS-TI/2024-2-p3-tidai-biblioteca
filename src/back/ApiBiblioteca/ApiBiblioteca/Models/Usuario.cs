@@ -13,6 +13,8 @@ public partial class Usuario
 
     public string Cpf { get; set; } = null!;
 
+    public string TipoUsuario { get; set; } = null!;
+
     public string Cep { get; set; } = null!;
 
     public string Rua { get; set; } = null!;
@@ -32,6 +34,8 @@ public partial class Usuario
     public string Senha { get; set; } = null!;
 
     public virtual ICollection<Emprestimo> Emprestimos { get; set; } = new List<Emprestimo>();
+
+    public virtual ICollection<HistoricoLeitura> HistoricoLeituras { get; set; } = new List<HistoricoLeitura>();
 
     public virtual ICollection<Mensagen> Mensagens { get; set; } = new List<Mensagen>();
 

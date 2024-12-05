@@ -29,5 +29,7 @@ public partial class Livro
 
     public virtual ICollection<Emprestimo> Emprestimos { get; set; } = new List<Emprestimo>();
 
+    public virtual ICollection<HistoricoLeitura> HistoricoLeituras { get; set; } = new List<HistoricoLeitura>();
+
     public virtual ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 }

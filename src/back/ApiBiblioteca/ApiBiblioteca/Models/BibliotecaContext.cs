@@ -16,7 +16,10 @@ public partial class BibliotecaContext : DbContext
     {
     }
 
-    public virtual DbSet<Emprestimo> Emprestimos { get; set; }  
+    public virtual DbSet<Emprestimo> Emprestimos { get; set; }
+
+    public virtual DbSet<HistoricoLeitura> HistoricoLeituras { get; set; }
+
     public virtual DbSet<Livro> Livros { get; set; }
 
     public virtual DbSet<Mensagen> Mensagens { get; set; }
@@ -29,7 +32,7 @@ public partial class BibliotecaContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySql("server=localhost;port=3306;database=biblioteca;user=root;password=1234", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
+        => optionsBuilder.UseMySql("Server=biblioteca-server.mysql.database.azure.com; Port=3306; UserID=matheus; Password=Stellantis1105!; Database=biblioteca;", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -40,8 +43,6 @@ public partial class BibliotecaContext : DbContext
         modelBuilder.Entity<Emprestimo>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("emprestimos");
 
             entity.HasIndex(e => e.LivroId, "livro_id");
 
@@ -59,18 +60,42 @@ public partial class BibliotecaContext : DbContext
 
             entity.HasOne(d => d.Livro).WithMany(p => p.Emprestimos)
                 .HasForeignKey(d => d.LivroId)
-                .HasConstraintName("emprestimos_ibfk_2");
+                .HasConstraintName("Emprestimos_ibfk_2");
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Emprestimos)
                 .HasForeignKey(d => d.UsuarioId)
-                .HasConstraintName("emprestimos_ibfk_1");
+                .HasConstraintName("Emprestimos_ibfk_1");
+        });
+
+        modelBuilder.Entity<HistoricoLeitura>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity.ToTable("HistoricoLeitura");
+
+            entity.HasIndex(e => e.LivroId, "livroId");
+
+            entity.HasIndex(e => e.UsuarioId, "usuarioId");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.DataLeitura).HasColumnName("dataLeitura");
+            entity.Property(e => e.LivroId).HasColumnName("livroId");
+            entity.Property(e => e.UsuarioId).HasColumnName("usuarioId");
+
+            entity.HasOne(d => d.Livro).WithMany(p => p.HistoricoLeituras)
+                .HasForeignKey(d => d.LivroId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("HistoricoLeitura_ibfk_2");
+
+            entity.HasOne(d => d.Usuario).WithMany(p => p.HistoricoLeituras)
+                .HasForeignKey(d => d.UsuarioId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("HistoricoLeitura_ibfk_1");
         });
 
         modelBuilder.Entity<Livro>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("livros");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AnoLivro).HasColumnName("ano_livro");
@@ -101,8 +126,6 @@ public partial class BibliotecaContext : DbContext
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity.ToTable("mensagens");
-
             entity.HasIndex(e => e.MensagemId, "mensagem_id");
 
             entity.HasIndex(e => e.TopicoId, "topico_id");
@@ -123,22 +146,20 @@ public partial class BibliotecaContext : DbContext
 
             entity.HasOne(d => d.Mensagem).WithMany(p => p.InverseMensagem)
                 .HasForeignKey(d => d.MensagemId)
-                .HasConstraintName("mensagens_ibfk_2");
+                .HasConstraintName("Mensagens_ibfk_2");
 
             entity.HasOne(d => d.Topico).WithMany(p => p.Mensagens)
                 .HasForeignKey(d => d.TopicoId)
-                .HasConstraintName("mensagens_ibfk_1");
+                .HasConstraintName("Mensagens_ibfk_1");
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Mensagens)
                 .HasForeignKey(d => d.UsuarioId)
-                .HasConstraintName("mensagens_ibfk_3");
+                .HasConstraintName("Mensagens_ibfk_3");
         });
 
         modelBuilder.Entity<Reserva>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("reservas");
 
             entity.HasIndex(e => e.LivroId, "livro_id");
 
@@ -151,18 +172,16 @@ public partial class BibliotecaContext : DbContext
 
             entity.HasOne(d => d.Livro).WithMany(p => p.Reservas)
                 .HasForeignKey(d => d.LivroId)
-                .HasConstraintName("reservas_ibfk_2");
+                .HasConstraintName("Reservas_ibfk_2");
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Reservas)
                 .HasForeignKey(d => d.UsuarioId)
-                .HasConstraintName("reservas_ibfk_1");
+                .HasConstraintName("Reservas_ibfk_1");
         });
 
         modelBuilder.Entity<Topico>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("topicos");
 
             entity.HasIndex(e => e.UsuarioId, "usuario_id");
 
@@ -181,14 +200,12 @@ public partial class BibliotecaContext : DbContext
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Topicos)
                 .HasForeignKey(d => d.UsuarioId)
-                .HasConstraintName("topicos_ibfk_1");
+                .HasConstraintName("Topicos_ibfk_1");
         });
 
         modelBuilder.Entity<Usuario>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
-
-            entity.ToTable("usuarios");
 
             entity.HasIndex(e => e.Cpf, "cpf").IsUnique();
 
@@ -226,6 +243,9 @@ public partial class BibliotecaContext : DbContext
             entity.Property(e => e.Telefone)
                 .HasMaxLength(15)
                 .HasColumnName("telefone");
+            entity.Property(e => e.TipoUsuario)
+                .HasMaxLength(30)
+                .HasColumnName("tipoUsuario");
             entity.Property(e => e.Uf)
                 .HasMaxLength(2)
                 .IsFixedLength()

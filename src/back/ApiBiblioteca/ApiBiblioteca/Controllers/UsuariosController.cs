@@ -47,13 +47,13 @@ namespace ApiBiblioteca.Controllers
 
         [HttpPost]
         [SwaggerOperation(Summary = "Cria um usuario")]
-        public async Task<ActionResult> CreateUsuario(CreateUsuarioDTO usuarioDTO)
+        public async Task<ActionResult> CreateUsuario(Usuario usuario)
         {
-            await _usuarioService.CreateUsuario(usuarioDTO);
+            await _usuarioService.CreateUsuario(usuario);
             return Ok("Usuario criado com sucesso");
         }
 
-        [Authorize(Roles = "leitor,administrador")]
+        //[Authorize(Roles = "leitor,administrador")]
         [HttpPut("{id:int}")]
         [SwaggerOperation(Summary = "Edita um usuario")]
         public async Task<ActionResult> Edit(int id, [FromBody] UsuarioDTO usuarioDto)

@@ -21,14 +21,14 @@ namespace ApiBiblioteca.Services.SAuthenticaded
         }
         public async Task<TokenResponse> Login(string username, string password)
         {
-            var user = await _context.Usuarios.SingleOrDefaultAsync(u => u.Nome == username && u.Senha == password);
+            var user = await _context.Usuarios.SingleOrDefaultAsync(u => u.Email == username && u.Senha == password);
             if (user == null)
             {
                 return null;
             }
 
             string userRole;
-            if (username == "admin" && password == "1234")
+            if (user.TipoUsuario == "admin")
             {
                 userRole = "administrador";
             }

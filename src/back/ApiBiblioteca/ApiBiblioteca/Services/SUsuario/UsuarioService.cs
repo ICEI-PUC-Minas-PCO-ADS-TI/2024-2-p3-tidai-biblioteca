@@ -29,26 +29,27 @@ namespace ApiBiblioteca.Services.SUsuario
             var usuario = await _context.Usuarios.FindAsync(id);
             return usuario;
         }
-        public async Task CreateUsuario(CreateUsuarioDTO usuarioDTO)
+        public async Task CreateUsuario(Usuario usuario)
         {
-            var usuario = new Usuario
+      
+            bool emailJaCadastrado = await _context.Usuarios
+                .AnyAsync(u => u.Email == usuario.Email);
+            if (emailJaCadastrado)
             {
-                Nome = usuarioDTO.Nome,
-                Email = usuarioDTO.Email,
-                Cpf = usuarioDTO.Cpf,
-                Cep = usuarioDTO.Cep,
-                Rua = usuarioDTO.Rua,
-                Bairro = usuarioDTO.Bairro,
-                Cidade = usuarioDTO.Cidade,
-                Uf = usuarioDTO.Uf,
-                NumeroCasa = usuarioDTO.NumeroCasa,
-                Telefone = usuarioDTO.Telefone,
-                DataNascimento = usuarioDTO.DataNascimento,
-                Senha = usuarioDTO.Senha,
-            };
+                throw new Exception("Email já cadastrado");
+            }
+
+            bool cpfJaCadastrado = await _context.Usuarios
+                .AnyAsync(u => u.Cpf == usuario.Cpf);
+            if (cpfJaCadastrado)
+            {
+                throw new Exception("CPF já cadastrado");
+            }
+
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
         }
+
         public async Task UpdateUsuario(UsuarioDTO usuarioDto)
         {
             var usuario = await _context.Usuarios.FindAsync(usuarioDto.Id);

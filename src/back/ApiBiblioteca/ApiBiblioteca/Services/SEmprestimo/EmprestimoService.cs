@@ -26,7 +26,15 @@ namespace ApiBiblioteca.Services.SEmprestimo
         public async Task DeleteEmprestimo(Emprestimo emprestimo)
         {
             var livro = await _context.Livros.FindAsync(emprestimo.LivroId);
+            var usuario = await _context.Usuarios.FindAsync(emprestimo.UsuarioId);
             livro.Quantidade++;
+            
+            HistoricoLeitura historico = new HistoricoLeitura();
+            historico.UsuarioId = emprestimo.UsuarioId;
+            historico.LivroId = emprestimo.LivroId;
+            historico.DataLeitura = DateOnly.FromDateTime(DateTime.Now);
+            
+            _context.HistoricoLeituras.Add(historico);
             _context.Emprestimos.Remove(emprestimo);
             await _context.SaveChangesAsync();
             

@@ -1,77 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\",
+  "WorkspaceRootPath": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\livroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\slivro\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\slivro\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\slivro\\ilivroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\slivro\\ilivroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\dto\\createlivrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\createlivrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\semprestimo\\emprestimoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\services\\semprestimo\\emprestimoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\semprestimo\\emprestimoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\dto\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\createusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\services\\shistorico\\historicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\shistorico\\historicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\models\\historicoleitura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\models\\historicoleitura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\sauthenticaded\\autheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\services\\sauthenticaded\\autheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\sauthenticaded\\autheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\services\\sauthenticaded\\iautheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\models\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\susuario\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\controllers\\historicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\historicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\services\\shistorico\\ihistoricoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\shistorico\\ihistoricoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\authenticatedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\dto\\historicodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\historicodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\dto\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\dto\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\services\\sauthenticaded\\iautheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\services\\sauthenticaded\\iautheticatedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\apibiblioteca\\apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\topicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|c:\\users\\matheus.alvim\\desktop\\nova pasta\\apibiblioteca\\apibiblioteca\\apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38EAEC32-1FFB-4A8F-8756-6E356563CA1C}|ApiBiblioteca\\ApiBiblioteca.csproj|solutionrelative:apibiblioteca\\controllers\\mensagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -82,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 157,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,193 +106,229 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateLivroDTO.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
-              "RelativeToolTip": "ApiBiblioteca\\DTO\\CreateLivroDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T16:44:19.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EmprestimoService.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T16:37:31.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateUsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
-              "RelativeToolTip": "ApiBiblioteca\\DTO\\CreateUsuarioDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T16:02:49.485Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\appsettings.json",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\appsettings.json",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\appsettings.json",
-              "RelativeToolTip": "ApiBiblioteca\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-28T15:58:05.019Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwEAAAAAAAAAAAAAAAA==",
+              "Title": "HistoricoService.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SHistorico\\HistoricoService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SHistorico\\HistoricoService.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SHistorico\\HistoricoService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SHistorico\\HistoricoService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:16:43.753Z",
+              "WhenOpened": "2024-11-28T23:27:39.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmprestimoController.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\EmprestimoController.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\EmprestimoController.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\EmprestimoController.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Controllers\\EmprestimoController.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAcwF0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:23:01.954Z"
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\appsettings.json",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\appsettings.json",
+              "RelativeToolTip": "ApiBiblioteca\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T23:23:25.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LivrosController.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\LivrosController.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\LivrosController.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\LivrosController.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Controllers\\LivrosController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwCkAAABBAAAA",
+              "DocumentIndex": 7,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwC8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:22:20.09Z"
+              "WhenOpened": "2024-11-15T15:41:13.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
               "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
               "RelativeToolTip": "ApiBiblioteca\\Services\\SUsuario\\UsuarioService.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAUwFIAAAAcAAAA",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:21:09.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:21:02.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Program.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Program.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Program.cs*",
-              "RelativeToolTip": "ApiBiblioteca\\Program.cs*",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAYwHkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:12:12.009Z",
+              "WhenOpened": "2024-11-15T15:38:39.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ILivroService.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Services\\SLivro\\ILivroService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SUsuario\\IUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T16:47:26.659Z"
+              "WhenOpened": "2024-11-15T15:36:46.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BibliotecaContext.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Models\\BibliotecaContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wCIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T23:33:35.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "LivroService.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Services\\SLivro\\LivroService.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAIwEMAAAAJAAAA",
+              "Title": "AutheticatedService.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T16:48:30.207Z"
+              "WhenOpened": "2024-10-28T15:09:06.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmprestimoService.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SEmprestimo\\EmprestimoService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wCMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:14:22.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HistoricoLeitura.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Models\\HistoricoLeitura.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Models\\HistoricoLeitura.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Models\\HistoricoLeitura.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Models\\HistoricoLeitura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:36:29.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IHistoricoService.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SHistorico\\IHistoricoService.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SHistorico\\IHistoricoService.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SHistorico\\IHistoricoService.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Services\\SHistorico\\IHistoricoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T23:27:19.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HistoricoController.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\HistoricoController.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\HistoricoController.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\HistoricoController.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Controllers\\HistoricoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T11:11:50.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Program.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\Program.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Program.cs",
+              "RelativeToolTip": "ApiBiblioteca\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwEoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:15:56.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "ApiBiblioteca\\DTO\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:36:14.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "RelativeToolTip": "ApiBiblioteca\\DTO\\TokenResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:13:00.26Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "AuthenticatedController.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
               "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
               "RelativeToolTip": "ApiBiblioteca\\Controllers\\AuthenticatedController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAwwBEAAAAJAAAA",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:11:34.315Z"
+              "WhenOpened": "2024-10-28T15:11:34.315Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AutheticatedService.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
-              "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
-              "RelativeToolTip": "ApiBiblioteca\\Services\\SAuthenticaded\\AutheticatedService.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAmwD4AAAAAAAAA",
+              "DocumentIndex": 14,
+              "Title": "HistoricoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\DTO\\HistoricoDTO.cs",
+              "RelativeDocumentMoniker": "ApiBiblioteca\\DTO\\HistoricoDTO.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\DTO\\HistoricoDTO.cs",
+              "RelativeToolTip": "ApiBiblioteca\\DTO\\HistoricoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:09:06.309Z"
+              "WhenOpened": "2024-11-28T23:48:23.55Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "IAutheticatedService.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
               "RelativeDocumentMoniker": "ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
               "RelativeToolTip": "ApiBiblioteca\\Services\\SAuthenticaded\\IAutheticatedService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T15:07:52.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "MensagensController.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
               "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\MensagensController.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\MensagensController.cs",
               "RelativeToolTip": "ApiBiblioteca\\Controllers\\MensagensController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAIwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -292,11 +336,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "TopicosController.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
               "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\TopicosController.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\TopicosController.cs",
               "RelativeToolTip": "ApiBiblioteca\\Controllers\\TopicosController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -304,11 +348,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "ReservasController.cs",
-              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
               "RelativeDocumentMoniker": "ApiBiblioteca\\Controllers\\ReservasController.cs",
-              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Git_biblioteca\\2024-2-p3-tidai-biblioteca\\src\\back\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\matheus.alvim\\Desktop\\Nova pasta\\ApiBiblioteca\\ApiBiblioteca\\ApiBiblioteca\\Controllers\\ReservasController.cs",
               "RelativeToolTip": "ApiBiblioteca\\Controllers\\ReservasController.cs",
               "ViewState": "AQIAAEEAAAAAAAAAAAAIwFsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

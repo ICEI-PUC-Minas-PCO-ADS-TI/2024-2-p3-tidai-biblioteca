@@ -11,7 +11,7 @@ namespace ApiBiblioteca.Services.SUsuario
         Task<IEnumerable<ReservaDTO>> GetReservasUsuario(int id);
         Task<IEnumerable<EmprestimoDTO>> GetEmprestimoUsuario(int id);
         Task DeleteUsuario(Usuario usuario);
-        Task CreateUsuario(CreateUsuarioDTO usuarioDTO);
+        Task CreateUsuario(Usuario usuario);
         Task UpdateUsuario(UsuarioDTO usuario);
     }
 }
