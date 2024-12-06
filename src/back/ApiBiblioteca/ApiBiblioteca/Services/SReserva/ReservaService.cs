@@ -50,6 +50,16 @@ namespace ApiBiblioteca.Services.SReserva
 
         public async Task<string> CreateReserva(CreateReservaDTO reservaDTO)
         {
+            var reservaExiste = await _context.Reservas
+                .FirstOrDefaultAsync(r => r.UsuarioId == reservaDTO.UsuarioId && r.LivroId == reservaDTO.LivroId);
+
+
+            if (reservaExiste != null)
+            {
+                return "Reserva já existe";
+            }
+
+
 
             var usuario = await _context.Usuarios.FindAsync(reservaDTO.UsuarioId);
             if (usuario == null)

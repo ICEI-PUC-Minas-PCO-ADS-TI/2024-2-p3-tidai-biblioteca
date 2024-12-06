@@ -50,6 +50,9 @@ namespace ApiBiblioteca.Controllers
             else if (resultado == "Livro indisponível para reserva.")
             {
                 return BadRequest(new { mensagem = resultado });
+            }else if(resultado == "Reserva já existe")
+            {
+                return NotFound(new { mensagem = resultado });
             }
 
             return Ok(new { mensagem = resultado });
