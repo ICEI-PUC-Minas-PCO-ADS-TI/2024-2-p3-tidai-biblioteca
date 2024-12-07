@@ -1,4 +1,6 @@
 import style from "../cadastroUsuario/cadastroUsuario.module.css";
+import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
+import Notificacao from '../../../components/notificacao/notificacao.jsx';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -23,59 +25,108 @@ export default function CadastroUsuario() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    const maskedValue = applyMask(name, value);
+
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: maskedValue,
     }));
   };
 
-  async function cadastro(e) {
-    e.preventDefault(); // Previne o comportamento padrão de recarregar a página
+  const applyMask = (field, value) => {
+    if (field === "cpf") {
+      return value
+        .replace(/\D/g, "") 
+        .replace(/(\d{3})(\d)/, "$1.$2")
+        .replace(/(\d{3})(\d)/, "$1.$2") 
+        .replace(/(\d{3})(\d{1,2})$/, "$1-$2"); 
+    }
+
+    if (field === "telefone") {
+      return value
+        .replace(/\D/g, "")
+        .replace(/(\d{2})(\d)/, "($1) $2")
+        .replace(/(\d{5})(\d{1,4})$/, "$1-$2"); 
+    }
+
+    if (field === "cep") {
+      return value
+        .replace(/\D/g, "") 
+        .replace(/(\d{5})(\d{1,3})$/, "$1-$2"); 
+    }
+
+    return value; 
+  };
+
+  const validarCampos = () => {
+    if (!formData.nome.trim()) {
+      mostrarErro("O nome é obrigatório.");
+      return false;
+    }
+
+    if (!formData.email.includes("@")) {
+      mostrarErro("O e-mail deve ser válido.");
+      return false;
+    }
+
+    if (formData.cpf.length !== 14) {
+      mostrarErro("O CPF deve estar no formato 000.000.000-00.");
+      return false;
+    }
+
+    if (formData.cep.length !== 9) {
+      mostrarErro("O CEP deve estar no formato 00000-000.");
+      return false;
+    }
+
+    if (formData.telefone.length < 14) {
+      mostrarErro("O telefone deve estar no formato (00) 0 0000-0000.");
+      return false;
+    }
 
     if (formData.senha !== formData.confirmarSenha) {
-      alert("As senhas não coincidem.");
-      return;
+      mostrarErro("As senhas não coincidem.");
+      return false;
     }
+
+    return true;
+  };
+
+  const cadastro = async (e) => {
+    e.preventDefault();
+    if (!validarCampos()) return;
 
     try {
-      const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          nome: formData.nome,
-          email: formData.email,
-          cpf: formData.cpf,
-          cep: formData.cep,
-          rua: formData.rua,
-          bairro: formData.bairro,
-          cidade: formData.cidade,
-          uf: formData.uf,
-          numeroCasa: formData.numeroCasa,
-          telefone: formData.telefone,
-          dataNascimento: formData.dataNascimento,
-          senha: formData.senha,
-        }),
-      });
+      const response = await fetch(
+        "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
-      const text = await response.text();
-      console.log("Resposta da API:", text);
+      const message = await response.text();
 
       if (!response.ok) {
-        throw new Error(`Erro HTTP! Status: ${response.status} - ${text}`);
+        mostrarErro(`Erro: ${message}`);
+        return;
       }
 
-      alert("Cadastro realizado com sucesso!");
-      navigate("/"); // Redireciona para a página inicial
+      mostrarSucesso(message);
+      navigate("/");
     } catch (error) {
-      console.log("Erro ao realizar o cadastro:", error);
-      alert("Erro ao realizar o cadastro. Tente novamente.");
+      console.error("Erro ao realizar o cadastro:", error);
+      mostrarErro("Erro ao realizar o cadastro. Tente novamente.");
     }
-  }
+  };
 
   return (
     <div className={style.main}>
+      <Notificacao />
       <div className={style.container}>
         <h1>Cadastro de Usuário</h1>
         <form onSubmit={cadastro}>
@@ -125,7 +176,8 @@ export default function CadastroUsuario() {
                 type="tel"
                 id="telefone"
                 name="telefone"
-                placeholder="(XX) XXXXX-XXXX"
+                required
+                placeholder="(00) 0 0000-0000"
                 value={formData.telefone}
                 onChange={handleChange}
               />
