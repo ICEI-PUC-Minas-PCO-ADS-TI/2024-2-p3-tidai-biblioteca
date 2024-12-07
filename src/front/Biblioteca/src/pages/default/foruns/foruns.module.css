@@ -75,3 +75,46 @@
 .button:hover {
   background-color: #0056b3;
 }
+
+.addMessageContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputMessage {
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.messagesSection {
+  margin-top: 10px;
+}
+
+.message {
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+
+.noMessages {
+  color: #888;
+}
