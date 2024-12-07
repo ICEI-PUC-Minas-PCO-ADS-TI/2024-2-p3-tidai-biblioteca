@@ -3,13 +3,18 @@ import axios from "axios";
 import styles from "./meusLivros.module.css";
 import Card from "../../../components/card/card";
 import Buttons from "../../../components/buttons/buttons";
-import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
-import Notificacao from '../../../components/notificacao/notificacao.jsx';
+import {
+  mostrarSucesso,
+  mostrarErro,
+} from "../../../components/notificacao/notificacao.jsx";
+import Notificacao from "../../../components/notificacao/notificacao.jsx";
+
 const Acervo = () => {
   const [livros, setLivros] = useState([]);
   const [filtro, setFiltro] = useState("todos");
   const userId = localStorage.getItem("userId");
   const token = localStorage.getItem("token");
+
 
   useEffect(() => {
     const fetchLivros = async () => {
@@ -20,16 +25,23 @@ const Acervo = () => {
           },
         };
 
-        const [emprestimosResponse, reservasResponse] = await Promise.all([
-          axios.get(
-            `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/emprestimos?id=${userId}`,
-            config
-          ),
-          axios.get(
-            `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/reservas?id=${userId}`,
-            config
-          ),
-        ]);
+     
+        const [emprestimosResponse, reservasResponse, historicoResponse] =
+          await Promise.all([
+            axios.get(
+              `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/emprestimos?id=${userId}`,
+              config
+            ),
+            axios.get(
+              `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/reservas?id=${userId}`,
+              config
+            ),
+            axios.get(
+              `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/historico/usuario/${userId}`,
+              config
+            ),
+          ]);
+
         const emprestimos = emprestimosResponse.data.map((item) => ({
           id: item.id,
           idEmprestimo: item.idEmprestimo,
@@ -37,9 +49,10 @@ const Acervo = () => {
           autor: item.autor,
           editora: item.editora,
           tipo: "emprestado",
-          dataDevolucao: item.dataDevolucao,
+          data: item.dataDevolucao,
           img: item.capaUrl,
         }));
+
         const reservas = reservasResponse.data.map((item) => {
           const dataReserva = new Date(item.dataReserva);
           dataReserva.setDate(dataReserva.getDate() + 3);
@@ -48,35 +61,43 @@ const Acervo = () => {
             titulo: item.nomeLivro,
             autor: item.autor,
             editora: item.editora,
-            dataRetida: dataReserva.toISOString(),
             tipo: "reservado",
+            data: dataReserva.toISOString(),
             img: item.capaUrl,
           };
         });
 
-        setLivros([...emprestimos, ...reservas]);
+        const historico = historicoResponse.data.map((item) => ({
+          id: item.id,
+          titulo: item.nomeLivro,
+          autor: item.nomeAutor,
+          editora: item.editora,
+          tipo: "lido",
+          data: item.dataHistorico,
+          img: item.capaLivro,
+        }));
+
+        setLivros([...emprestimos, ...reservas, ...historico]);
       } catch (error) {
-        console.error("Erro ao carregar os livros:", error);
+        console.error("Erro ao carregar os livros:", error.response || error);
+        mostrarErro("Erro ao carregar os livros. Tente novamente.");
       }
     };
 
     fetchLivros();
   }, [userId, token]);
 
-  const handleFiltroChange = (e) => {
-    setFiltro(e.target.value);
+  const filtros = {
+    todos: () => true,
+    emprestimos: (livro) => livro.tipo === "emprestado",
+    reservado: (livro) => livro.tipo === "reservado",
+    lido: (livro) => livro.tipo === "lido",
   };
 
-  const livrosFiltrados = livros.filter((livro) => {
-    if (filtro === "todos") return true;
-    if (filtro === "emprestimos") return livro.tipo === "emprestado";
-    if (filtro === "reservado") return livro.tipo === "reservado";
-    if (filtro === "lido") return livro.lido;
-    return false;
-  });
+  
+  const livrosFiltrados = livros.filter(filtros[filtro]);
 
-  const renovacao = async function Renovacao(idEmprestimo) {
-    console.log("Função renovação sendo chamado");
+  const renovacao = async (idEmprestimo) => {
     try {
       const response = await fetch(
         `https://localhost:7016/emprestimos/${idEmprestimo}`,
@@ -90,19 +111,13 @@ const Acervo = () => {
       );
 
       if (!response.ok) {
-        // Exibindo o status da resposta para entender o erro
         const errorData = await response.json();
         console.error("Erro na renovação:", errorData);
-        mostrarErro(
-          `Erro ao renovar empréstimo: ${
-            errorData.message || "Erro desconhecido"
-          }`
-        );
+        mostrarErro(`Erro ao renovar empréstimo: ${errorData.message || "Erro desconhecido"}`);
         return;
       }
 
       mostrarSucesso("Empréstimo renovado por mais 7 dias");
-      console.log("Empréstimo renovado com sucesso!");
     } catch (error) {
       console.error("Erro ao realizar a renovação do empréstimo:", error);
       mostrarErro("Erro inesperado ao renovar o empréstimo.");
@@ -122,7 +137,7 @@ const Acervo = () => {
                   name="filtro"
                   value={tipo}
                   checked={filtro === tipo}
-                  onChange={handleFiltroChange}
+                  onChange={(e) => setFiltro(e.target.value)}
                 />
                 {tipo.charAt(0).toUpperCase() + tipo.slice(1)}
               </label>
@@ -137,7 +152,7 @@ const Acervo = () => {
         ) : (
           livrosFiltrados.map((livro) => (
             <Card
-              key={`${livro.idEmprestimo}-${livro.id}`}
+              key={livro.id}
               img={livro.img}
               titulo={livro.titulo}
               autor={livro.autor}
@@ -145,14 +160,11 @@ const Acervo = () => {
             >
               <p className={styles.contentCard}>
                 {livro.tipo === "emprestado"
-                  ? `Data devolução: ${new Date(
-                      livro.dataDevolucao
-                    ).toLocaleDateString("pt-BR")}`
-                  : `Data limite p/ retirada: ${new Date(
-                      livro.dataRetida
-                    ).toLocaleDateString("pt-BR")}`}
+                  ? `Data devolução: ${new Date(livro.data).toLocaleDateString("pt-BR")}`
+                  : livro.tipo === "reservado"
+                  ? `Data limite p/ retirada: ${new Date(livro.data).toLocaleDateString("pt-BR")}`
+                  : `Lido em: ${new Date(livro.data).toLocaleDateString("pt-BR")}`}
               </p>
-
               {livro.tipo === "emprestado" && (
                 <Buttons
                   title="Renovação"
@@ -164,9 +176,8 @@ const Acervo = () => {
           ))
         )}
       </div>
-      <Notificacao/>
+      <Notificacao />
     </div>
-    
   );
 };
 
