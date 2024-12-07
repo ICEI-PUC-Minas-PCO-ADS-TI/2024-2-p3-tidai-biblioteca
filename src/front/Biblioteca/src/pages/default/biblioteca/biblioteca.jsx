@@ -46,6 +46,12 @@ const LivrosComFiltro = () => {
   }, []);
 
   async function reserva(idLivro) {
+    const confirmarReserva = window.confirm("Você tem certeza que deseja reservar este livro?");
+    
+    if (!confirmarReserva) {
+      return; 
+    }
+  
     try {
       const idUsuario = localStorage.getItem("userId");
       const token = localStorage.getItem("token");
@@ -60,14 +66,18 @@ const LivrosComFiltro = () => {
           livroId: idLivro,
         })
       });
-
+  
       const data = await response.json();
-
+  
       if (!response.ok) {
         mostrarErro(data.mensagem || "Erro ao realizar a reserva.");
       } else {
         mostrarSucesso(data.mensagem || "Reserva realizada com sucesso!");
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000); 
       }
+      
     } catch (error) {
       console.error("Erro ao realizar a reserva:", error);
       mostrarErro("Erro inesperado ao realizar a reserva.");
