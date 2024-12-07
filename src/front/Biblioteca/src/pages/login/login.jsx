@@ -100,16 +100,6 @@ export default function Login({ onLogin }) {
           ></i>
         </div>
 
-        <div className={style.checkbox}>
-          <div>
-            <input type="checkbox" name="remember" id="remember" />
-            <label htmlFor="remember">Lembre de mim</label>
-          </div>
-          <a href="#" onClick={togglePopup}>
-            Esqueci minha Senha
-          </a>
-        </div>
-
         <button type="submit" onClick={handleSubmit}>
           <i className="bi bi-door-open-fill"></i>
           Fazer Login
