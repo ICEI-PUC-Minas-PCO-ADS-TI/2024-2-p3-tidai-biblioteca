@@ -28,7 +28,7 @@ export function Acervo() {
     async function fetchLivros() {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("https://localhost:7016/livros", {
+        const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livros", {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
@@ -89,7 +89,7 @@ export function Acervo() {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await fetch(`https://localhost:7016/livros/${formData.id}`, {
+      const response = await fetch(`https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livros/${formData.id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -126,7 +126,7 @@ export function Acervo() {
       const token = localStorage.getItem("token");
       console.log(token);
   
-      const response = await fetch(`https://localhost:7016/livros/${id}`, {
+      const response = await fetch(`https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livros/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

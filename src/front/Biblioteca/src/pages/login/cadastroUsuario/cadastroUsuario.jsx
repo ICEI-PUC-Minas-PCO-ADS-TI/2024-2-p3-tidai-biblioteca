@@ -38,7 +38,7 @@ export default function CadastroUsuario() {
     }
 
     try {
-      const response = await fetch("https://localhost:7016/usuarios/", {
+      const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -18,7 +18,7 @@ const LivrosComFiltro = () => {
     async function fetchLivros() {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("https://localhost:7016/livros", {
+        const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livros", {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ const LivrosComFiltro = () => {
     try {
       const idUsuario = localStorage.getItem("userId");
       const token = localStorage.getItem("token");
-      const response = await fetch("https://localhost:7016/reserva", {
+      const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/reserva", {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

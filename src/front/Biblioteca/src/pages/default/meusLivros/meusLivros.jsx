@@ -22,11 +22,11 @@ const Acervo = () => {
 
         const [emprestimosResponse, reservasResponse] = await Promise.all([
           axios.get(
-            `https://localhost:7016/usuarios/emprestimos?id=${userId}`,
+            `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/emprestimos?id=${userId}`,
             config
           ),
           axios.get(
-            `https://localhost:7016/usuarios/reservas?id=${userId}`,
+            `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/reservas?id=${userId}`,
             config
           ),
         ]);

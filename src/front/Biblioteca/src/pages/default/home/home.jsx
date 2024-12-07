@@ -9,7 +9,7 @@ export default function Home() {
         async function fetchLivros() {
             try {
                 const token = localStorage.getItem("token")
-                const response = await fetch("https://localhost:7016/livros", {
+                const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livros", {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json'

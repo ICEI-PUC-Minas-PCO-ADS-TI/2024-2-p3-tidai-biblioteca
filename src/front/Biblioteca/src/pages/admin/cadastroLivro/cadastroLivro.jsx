@@ -49,7 +49,7 @@ export default function CadastroLivro() {
   
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://localhost:7016/livros", {
+      const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livros", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

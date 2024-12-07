@@ -26,7 +26,7 @@ const Usuario = () => {
       try {
         const token = localStorage.getItem("token");
         const userId = localStorage.getItem("userId");
-        const response = await fetch(`https://localhost:7016/usuarios/${userId}`, {
+        const response = await fetch(`https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/${userId}`, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const Usuario = () => {
       const token = localStorage.getItem("token");
       const userId = localStorage.getItem("userId");
   
-      const response = await fetch(`https://localhost:7016/usuarios/${userId}`, {
+      const response = await fetch(`https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/${userId}`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,

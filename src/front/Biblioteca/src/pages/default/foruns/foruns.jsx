@@ -14,7 +14,7 @@ export default function Foruns() {
   useEffect(() => {
     async function fetchTopics() {
       try {
-        const response = await fetch("https://localhost:7016/mensagens", {
+        const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens", {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ export default function Foruns() {
 const addTopic = async () => {
   if (newTopic.trim()) {
     try {
-      const response = await fetch("https://localhost:7016/topico", {
+      const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/topico", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const addMessageToTopic = async (topicoId) => {
 
   if (message.trim()) {
     try {
-      const response = await fetch("https://localhost:7016/mensagens", {
+      const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -113,7 +113,7 @@ const addMessageToTopic = async (topicoId) => {
 
   const deleteTopic = async (id) => {
     try {
-      const response = await fetch(`https://localhost:7016/mensagens/${id}`, {
+      const response = await fetch(`https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,

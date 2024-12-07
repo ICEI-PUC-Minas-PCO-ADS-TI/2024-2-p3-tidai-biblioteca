@@ -31,7 +31,7 @@ export default function Emprestimos() {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          "https://localhost:7016/usuario/livro",
+          "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livro",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ export default function Emprestimos() {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          "https://localhost:7016/emprestimos/usuarios/livros",
+          "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/emprestimos/usuarios/livros",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ export default function Emprestimos() {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `https://localhost:7016/usuarios/pesquisar?nome=${nome}`,
+        `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/pesquisar?nome=${nome}`,
         {
           method: "GET",
           headers: {
@@ -132,7 +132,7 @@ export default function Emprestimos() {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `https://localhost:7016/reserva/retirada/${id}`,
+        `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/reserva/retirada/${id}`,
         {
           method: "POST",
           headers: {
@@ -158,7 +158,7 @@ export default function Emprestimos() {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `https://localhost:7016/emprestimos/${id}`,
+        `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/emprestimos/${id}`,
         {
           method: "DELETE",
           headers: {
