@@ -11,7 +11,7 @@ export default function Login({ onLogin }) {
   const [error, setError] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [emailRecuperacao, setEmailRecuperacao] = useState("");
-  const [passwordVisible, setPasswordVisible] = useState(false); // Controle de visibilidade da senha
+  const [passwordVisible, setPasswordVisible] = useState(false); 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -28,29 +28,30 @@ export default function Login({ onLogin }) {
           body: JSON.stringify({ username: username, password: password }),
         }
       );
-
+  
       if (response.ok) {
         const data = await response.json();
-
+        console.log("Resposta da API:", data); 
+  
         const token = data.token;
-        localStorage.setItem("token", token);
-
         const userId = data.userId;
-        localStorage.setItem("userId", userId);
-
         const role = data.role;
-        localStorage.setItem("role", role)
-
-        console.log("Token:"+token +"\nUserId"+ userId +"\nRole:"+role)
-        const tipoUsuario = role;
-        onLogin(tipoUsuario);
-        navigate(
-          tipoUsuario === "administrador" ? "/homeAdmin" : "/biblioteca"
-        );
+  
+        console.log("Token recebido:", token);
+        console.log("UserId recebido:", userId);
+        console.log("Role recebida:", role);
+  
+        localStorage.setItem("token", token);
+        localStorage.setItem("userId", userId);
+        localStorage.setItem("role", role);
+  
+        onLogin(role);
+        navigate(role === "administrador" ? "/homeAdmin" : "/biblioteca");
       } else {
         mostrarErro("Credenciais inválidas");
       }
     } catch (err) {
+      console.error("Erro ao realizar login:", err);
       setError("Erro ao conectar com o servidor");
     }
   };

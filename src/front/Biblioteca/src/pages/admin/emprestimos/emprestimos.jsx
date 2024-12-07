@@ -24,14 +24,42 @@ export default function Emprestimos() {
 
   const [emprestimos, setEmprestimos] = useState([]);
   const [reservas, setReservas] = useState([]);
+  const [historico, setHistorico] = useState([]);
   const [filtro, setFiltro] = useState("todos"); // Estado para o filtro
+
+  useEffect(() => {
+    async function fetchReserva() {
+      try {
+        const userId = localStorage.getItem("userId");
+        const response = await fetch(
+          "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/historico",
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`Erro HTTP! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        setHistorico(data);
+      } catch (error) {
+        console.error("Erro ao buscar livros:", error);
+        mostrarErro("Erro ao buscar reservas");
+      }
+    }
+    fetchReserva();
+  }, []);
 
   useEffect(() => {
     async function fetchReserva() {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/livro",
+          "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuario/livro",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -220,6 +248,17 @@ export default function Emprestimos() {
               />
               Reservas
             </label>
+
+            <label>
+              <input
+                type="radio"
+                name="filtro"
+                value="historico"
+                checked={filtro === "historico"}
+                onChange={() => setFiltro("historico")}
+              />
+              Histórico
+            </label>
           </div>
         </div>
         <table>
@@ -261,6 +300,7 @@ export default function Emprestimos() {
                   </td>
                 </tr>
               ))}
+
             {(filtro === "todos" || filtro === "reservas") &&
               reservas.map((reserva) => (
                 <tr key={reserva.id}>
@@ -286,10 +326,29 @@ export default function Emprestimos() {
                   </td>
                 </tr>
               ))}
+            {(filtro === "todos" || filtro === "historico") &&
+              historico.map((historicoItem) => (
+                <tr key={historicoItem.id}>
+                  <td>{historicoItem.nomeUsuario}</td>
+                  <td>{historicoItem.nomeLivro}</td>
+                  <td>{historicoItem.dataHistorico}</td>
+                  <td>-</td>
+                  <td>Finalizado</td>
+                  <td>{historicoItem.telefone}</td>
+                  <td>
+                    <Buttons
+                      title="Mais Info"
+                      variant="info"
+                      onClick={() => abrirPopUp(historicoItem.nomeUsuario)}
+                    />
+                  </td>
+                  <td></td>
+                </tr>
+              ))}
           </tbody>
         </table>
       </div>
-      <Notificacao/>
+      <Notificacao />
     </div>
   );
 }
