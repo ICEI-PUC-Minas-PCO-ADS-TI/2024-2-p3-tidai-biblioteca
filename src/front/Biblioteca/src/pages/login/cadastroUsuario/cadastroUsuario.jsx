@@ -11,6 +11,7 @@ export default function CadastroUsuario() {
     cpf: "",
     cep: "",
     rua: "",
+    tipoUsuario: "",
     bairro: "",
     cidade: "",
     uf: "",
@@ -25,7 +26,6 @@ export default function CadastroUsuario() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     const maskedValue = applyMask(name, value);
 
     setFormData((prevData) => ({
@@ -37,26 +37,30 @@ export default function CadastroUsuario() {
   const applyMask = (field, value) => {
     if (field === "cpf") {
       return value
-        .replace(/\D/g, "") 
+        .replace(/\D/g, "") // Remove tudo que não é número
         .replace(/(\d{3})(\d)/, "$1.$2")
-        .replace(/(\d{3})(\d)/, "$1.$2") 
-        .replace(/(\d{3})(\d{1,2})$/, "$1-$2"); 
+        .replace(/(\d{3})(\d)/, "$1.$2")
+        .replace(/(\d{3})(\d{1,2})$/, "$1-$2");
     }
 
     if (field === "telefone") {
       return value
         .replace(/\D/g, "")
         .replace(/(\d{2})(\d)/, "($1) $2")
-        .replace(/(\d{5})(\d{1,4})$/, "$1-$2"); 
+        .replace(/(\d{5})(\d{1,4})$/, "$1-$2");
     }
 
     if (field === "cep") {
       return value
-        .replace(/\D/g, "") 
-        .replace(/(\d{5})(\d{1,3})$/, "$1-$2"); 
+        .replace(/\D/g, "")
+        .replace(/(\d{5})(\d{1,3})$/, "$1-$2");
     }
 
-    return value; 
+    return value;
+  };
+
+  const removeFormatting = (value) => {
+    return value.replace(/\D/g, ""); // Remove tudo que não é número
   };
 
   const validarCampos = () => {
@@ -70,18 +74,18 @@ export default function CadastroUsuario() {
       return false;
     }
 
-    if (formData.cpf.length !== 14) {
-      mostrarErro("O CPF deve estar no formato 000.000.000-00.");
+    if (removeFormatting(formData.cpf).length !== 11) {
+      mostrarErro("O CPF deve ser válido.");
       return false;
     }
 
-    if (formData.cep.length !== 9) {
-      mostrarErro("O CEP deve estar no formato 00000-000.");
+    if (removeFormatting(formData.cep).length !== 8) {
+      mostrarErro("O CEP deve ser válido.");
       return false;
     }
 
-    if (formData.telefone.length < 14) {
-      mostrarErro("O telefone deve estar no formato (00) 0 0000-0000.");
+    if (removeFormatting(formData.telefone).length < 10) {
+      mostrarErro("O telefone deve ser válido.");
       return false;
     }
 
@@ -97,6 +101,23 @@ export default function CadastroUsuario() {
     e.preventDefault();
     if (!validarCampos()) return;
 
+    // Remove formatação para enviar os dados ao servidor
+    const payload = {
+      nome: formData.nome,
+      email: formData.email,
+      cpf: removeFormatting(formData.cpf),
+      tipoUsuario: "user",
+      cep: removeFormatting(formData.cep),
+      rua: formData.rua,
+      bairro: formData.bairro,
+      cidade: formData.cidade,
+      uf: formData.uf,
+      numeroCasa: formData.numeroCasa,
+      telefone: removeFormatting(formData.telefone),
+      dataNascimento: formData.dataNascimento,
+      senha: formData.senha,
+    };
+
     try {
       const response = await fetch(
         "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/",
@@ -105,7 +126,7 @@ export default function CadastroUsuario() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(payload),
         }
       );
 
