@@ -19,7 +19,7 @@ export default function Login({ onLogin }) {
 
     try {
       const response = await fetch(
-        "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/api/Authenticated/login",
+        "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/autenticacao/login",
         {
           method: "POST",
           headers: {
