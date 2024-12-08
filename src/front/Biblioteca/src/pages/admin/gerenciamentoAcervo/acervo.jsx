@@ -112,6 +112,9 @@ export function Acervo() {
       }
 
       mostrarSucesso("Livro atualizado com sucesso!");
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
       setEditMode(false);
     } catch (error) {
       console.error("Erro ao salvar alterações:", error.message);
@@ -141,6 +144,9 @@ export function Acervo() {
   
       setLivros((prevLivros) => prevLivros.filter((livro) => livro.id !== id));
       mostrarSucesso("Livro removido com sucesso!");
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
     } catch (error) {
       console.error("Erro ao remover livro:", error.message);
       mostrarErro(error.message);
