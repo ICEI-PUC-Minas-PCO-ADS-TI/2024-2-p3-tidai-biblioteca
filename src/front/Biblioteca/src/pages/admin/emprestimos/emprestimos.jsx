@@ -181,6 +181,9 @@ export default function Emprestimos() {
 
       setReservas(reservas.filter((reserva) => reserva.id !== id));
       mostrarSucesso("Reserva retirada com sucesso!");
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
     } catch (error) {
       console.error("Erro ao excluir retirar reserva:", error);
       mostrarErro("Erro ao retirar reserva");
@@ -207,6 +210,9 @@ export default function Emprestimos() {
 
       setEmprestimos(emprestimos.filter((emprestimo) => emprestimo.id !== id));
       mostrarSucesso(`Livro devolvido com sucesso ${id}`);
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
     } catch (error) {
       console.error("Erro ao excluir empréstimo:", error);
       mostrarErro("Erro ao excluir empréstimo");
