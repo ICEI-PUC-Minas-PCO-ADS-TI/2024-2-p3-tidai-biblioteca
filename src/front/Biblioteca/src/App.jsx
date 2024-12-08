@@ -73,6 +73,7 @@ function App() {
           <Routes>
             {tipoUsuario === "leitor" && (
               <>
+                <Route path="/" element={<Biblioteca />} />
                 <Route path="/biblioteca" element={<Biblioteca />} />
                 <Route path="/forum" element={<Forum />} />
                 <Route path="/historico" element={<Historico />} />

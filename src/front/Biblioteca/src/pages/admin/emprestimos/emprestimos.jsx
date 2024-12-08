@@ -2,11 +2,15 @@ import style from "../emprestimos/emprestimos.module.css";
 import BarraDePesquisa from "../../../components/barraPesquisa/barraPesquisa";
 import Buttons from "../../../components/buttons/buttons";
 import { useState, useEffect } from "react";
-import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
-import Notificacao from '../../../components/notificacao/notificacao.jsx';
+import {
+  mostrarSucesso,
+  mostrarErro,
+} from "../../../components/notificacao/notificacao.jsx";
+import Notificacao from "../../../components/notificacao/notificacao.jsx";
 
 export default function Emprestimos() {
   const [PopUp, setPopUp] = useState(false);
+  const [termoPesquisa, setTermoPesquisa] = useState("");
   const [dataUsuario, setDataUsuario] = useState({
     id: 0,
     nome: "",
@@ -25,7 +29,7 @@ export default function Emprestimos() {
   const [emprestimos, setEmprestimos] = useState([]);
   const [reservas, setReservas] = useState([]);
   const [historico, setHistorico] = useState([]);
-  const [filtro, setFiltro] = useState("todos"); // Estado para o filtro
+  const [filtro, setFiltro] = useState("todos");
 
   useEffect(() => {
     async function fetchReserva() {
@@ -111,6 +115,7 @@ export default function Emprestimos() {
   }, []);
 
   async function abrirPopUp(nome) {
+    console.log("esta chamando");
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
@@ -201,12 +206,46 @@ export default function Emprestimos() {
       }
 
       setEmprestimos(emprestimos.filter((emprestimo) => emprestimo.id !== id));
-      mostrarSucesso(`Empréstimo excluído com sucesso do id ${id}`);
+      mostrarSucesso(`Livro devolvido com sucesso ${id}`);
     } catch (error) {
       console.error("Erro ao excluir empréstimo:", error);
       mostrarErro("Erro ao excluir empréstimo");
     }
   }
+
+  function formatarData(data) {
+    return new Date(data).toLocaleDateString("pt-BR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    });
+  }
+
+  function formatarTelefone(telefone) {
+    if (!telefone) return "";
+    const telefoneLimpo = telefone.replace(/\D/g, "");
+    if (telefoneLimpo.length === 11) {
+      return telefoneLimpo.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+    }
+    return telefone;
+  }
+  function formatarCPF(cpf) {
+    if (!cpf) return "";
+    const cpfLimpo = cpf.replace(/\D/g, "");
+    if (cpfLimpo.length === 11) {
+      return cpfLimpo.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+    }
+    return cpf;
+  }
+  function filtrarDados(dados) {
+    if (!termoPesquisa.trim()) return dados;
+    return dados.filter((item) => 
+      item.nomeUsuario?.toLowerCase().includes(termoPesquisa.toLowerCase()) ||
+      item.nomeLivro?.toLowerCase().includes(termoPesquisa.toLowerCase())
+    );
+  }
+  
+  
 
   return (
     <div className={style.main}>
@@ -214,7 +253,10 @@ export default function Emprestimos() {
         <h2>Lista de Emprestimos</h2>
         <div className={style.headerEmprestimos}>
           <div className={style.barraPesquisaEmprestimo}>
-            <BarraDePesquisa />
+            <BarraDePesquisa
+              value={termoPesquisa}
+              onChange={(e) => setTermoPesquisa(e.target.value)}
+            />
           </div>
           <div className={style.filtros}>
             <label>
@@ -276,14 +318,14 @@ export default function Emprestimos() {
           </thead>
           <tbody>
             {(filtro === "todos" || filtro === "emprestimos") &&
-              emprestimos.map((emprestimo) => (
+             filtrarDados(emprestimos).map((emprestimo) => (
                 <tr key={emprestimo.id}>
                   <td>{emprestimo.nomeUsuario}</td>
                   <td>{emprestimo.nomeLivro}</td>
-                  <td>{emprestimo.dataEmprestimo}</td>
-                  <td>{emprestimo.dataDevolucao}</td>
+                  <td>{formatarData(emprestimo.dataEmprestimo)}</td>
+                  <td>{formatarData(emprestimo.dataDevolucao)}</td>
                   <td>{emprestimo.status}</td>
-                  <td>{emprestimo.telefone}</td>
+                  <td>{formatarTelefone(emprestimo.telefone)}</td>
                   <td>
                     <Buttons
                       title="Mais Info"
@@ -302,14 +344,14 @@ export default function Emprestimos() {
               ))}
 
             {(filtro === "todos" || filtro === "reservas") &&
-              reservas.map((reserva) => (
+              filtrarDados(reservas).map((reserva) => (
                 <tr key={reserva.id}>
                   <td>{reserva.nomeUsuario}</td>
                   <td>{reserva.nomeLivro}</td>
-                  <td>{reserva.dataReserva}</td>
-                  <td>{reserva.dataExpiracao}</td>
+                  <td>{formatarData(reserva.dataReserva)}</td>
+                  <td>{formatarData(reserva.dataExpiracao)}</td>
                   <td>Aguardando retirada</td>
-                  <td>{reserva.telefone}</td>
+                  <td>{formatarTelefone(reserva.telefone)}</td>
                   <td>
                     <Buttons
                       title="Mais Info"
@@ -326,15 +368,16 @@ export default function Emprestimos() {
                   </td>
                 </tr>
               ))}
-            {(filtro === "todos" || filtro === "historico") &&
-              historico.map((historicoItem) => (
+
+            {filtro === "historico" &&
+              filtrarDados(historico).map((historicoItem) => (
                 <tr key={historicoItem.id}>
                   <td>{historicoItem.nomeUsuario}</td>
                   <td>{historicoItem.nomeLivro}</td>
-                  <td>{historicoItem.dataHistorico}</td>
                   <td>-</td>
+                  <td>{formatarData(historicoItem.dataHistorico)}</td>
                   <td>Finalizado</td>
-                  <td>{historicoItem.telefone}</td>
+                  <td>{formatarTelefone(historicoItem.telefone)}</td>
                   <td>
                     <Buttons
                       title="Mais Info"
@@ -347,6 +390,36 @@ export default function Emprestimos() {
               ))}
           </tbody>
         </table>
+        {PopUp && (
+          <div className={style.popup}>
+            <div className={style.popupContent}>
+              <div>
+                <p>Nome: {dataUsuario.nome}</p>
+                <p>Cpf: {formatarCPF(dataUsuario.cpf)}</p>
+              </div>
+              <div>
+                <p>Telefone: {formatarTelefone(dataUsuario.telefone)}</p>
+                <p>E-mail: {dataUsuario.email}</p>
+              </div>
+              <div>
+                <p> Rua: {dataUsuario.rua}</p>
+              </div>
+              <div>
+                <p> Bairro: {dataUsuario.bairro}</p>
+              </div>
+
+              <div>
+                <p> Cidade: {dataUsuario.cidade}</p>
+                <p> Numero: {dataUsuario.numeroCasa}</p>
+              </div>
+              <Buttons
+                title="Fechar"
+                variant="delete"
+                onClick={() => setPopUp(false)}
+              />
+            </div>
+          </div>
+        )}
       </div>
       <Notificacao />
     </div>
