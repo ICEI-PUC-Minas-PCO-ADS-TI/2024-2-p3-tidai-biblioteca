@@ -7,6 +7,8 @@ import Card from "../../../components/card/card";
 import Buttons from "../../../components/buttons/buttons";
 import BarraDePesquisa from "../../../components/barraPesquisa/barraPesquisa";
 
+
+
 const Biblioteca = () => {
   const [livros, setLivros] = useState([]);
   const [autores, setAutores] = useState([]);
