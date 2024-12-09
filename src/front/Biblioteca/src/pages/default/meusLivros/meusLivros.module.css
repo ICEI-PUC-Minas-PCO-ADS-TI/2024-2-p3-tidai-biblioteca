@@ -1,132 +1,95 @@
-/* src/pages/admin/gerenciamentoAcervo/meusLivros.module.css */
-
+/* estilos gerais */
 .acervoContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  box-sizing: border-box;
-  background-color: #f8f9fa; /* Fundo mais claro para a página */
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* Para permitir o posicionamento absoluto do filtro */
 }
 
-.sidebar {
-  width: 240px; /* Aumenta a largura da sidebar para melhor espaço */
-  padding: 20px;
-  background-color: #ffffff; /* Fundo branco para destacar a sidebar */
-  border-right: 1px solid #ccc;
-  height: auto;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para a sidebar */
-}
-
-.sidebar h2 {
-  font-size: 1.5rem;
+.tituloPagina {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
   margin-bottom: 20px;
-  color: #343a40; /* Cor do título */
+  text-align: center;
 }
 
-.sidebar form {
+/* Filtro Container alinhado à direita */
+.filtroContainer {
   display: flex;
   flex-direction: column;
+  position: absolute; /* Alinha o filtro à direita */
+  right: 20px; /* Ajuste horizontal */
+  top: 120px; /* Ajuste vertical */
+  width: auto;
+  max-width: 400px;
+  padding: 20px; /* Espaçamento interno */
+  border: 1px solid #ddd; /* Borda */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+  background-color: #fff; /* Fundo branco para contraste */
 }
 
-.sidebar label {
-  margin-bottom: 10px;
-  cursor: pointer; /* Muda o cursor para indicar que é clicável */
-  color: #495057; /* Cor do texto */
+/* Formulário de filtro em linha */
+.filtroForm {
+  display: flex;
+  flex-direction: row; /* Filtro na horizontal */
+  gap: 20px; /* Espaçamento entre os filtros */
+  width: 100%;
 }
 
-/* Estilos para os cards dos livros */
-/* src/pages/admin/gerenciamentoAcervo/acervo.module.css */
+.filtroItem {
+  margin: 0;
+}
 
+.filtroItem label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.filtroItem input {
+  margin-right: 8px;
+}
+
+/* Estilo para o container dos cards */
 .cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste conforme necessário */
-  gap: 20px; /* Espaçamento entre os cards */
-  padding: 20px;
-  flex: 1; /* Certifique-se de que ocupa o espaço restante */
-  margin: 0; /* Remova margens que possam estar causando espaço em branco */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adapta os cards para diferentes tamanhos de tela */
+  gap: 60px; /* Espaçamento entre os cards */
+  width: 100%;
+  margin-top: 100px;
 }
 
-
-.card {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s; /* Efeito de transição suave */
+/* Estilo específico para os cards */
+.contentCard {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
 }
 
-.card:hover {
-  transform: translateY(-5px); /* Eleva o card ao passar o mouse */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filtroContainer {
+    position: relative;
+    width: 100%;
+    max-width: none; /* Remove a largura máxima */
+    top: 0; /* Remove o ajuste do topo em telas menores */
+    margin-bottom: 20px; /* Espaçamento entre o filtro e o conteúdo */
+  }
+
+  .filtroForm {
+    flex-direction: column; /* Filtro em coluna em telas menores */
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr; /* Cards empilhados em telas pequenas */
+  }
 }
-
-
-/* src/components/card/card.module.css */
-
-.cardImage img {
-  width: 100%; /* Ajusta a imagem para ocupar 100% do container */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 4px; /* Bordas arredondadas para as imagens */
-}
-
-
-.cardContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.cardContent h3 {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  color: #212529; /* Cor do título do card */
-}
-
-.cardContent p {
-  font-size: 1rem;
-  color: #6c757d; /* Cor do texto com menor destaque */
-}
-
-/* Estilos para os botões */
-.buttonContainer {
-  display: flex;
-  justify-content: space-between; /* Distribui os botões */
-  margin-top: 10px; /* Espaço acima dos botões */
-}
-
-.editButton {
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Efeito de transição suave */
-}
-
-.editButton:hover {
-  background-color: #0056b3;
-}
-
-.confirmButton {
-  background-color: #28a745; /* Verde para confirmação */
-  color: #ffffff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s; /* Efeito de transição suave */
-}
-
-.confirmButton:hover {
-  background-color: #218838;
-}
-.contentCard{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-}
-

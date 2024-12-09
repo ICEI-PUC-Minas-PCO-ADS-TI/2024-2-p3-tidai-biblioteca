@@ -15,7 +15,6 @@ const Acervo = () => {
   const userId = localStorage.getItem("userId");
   const token = localStorage.getItem("token");
 
-
   useEffect(() => {
     const fetchLivros = async () => {
       try {
@@ -25,7 +24,6 @@ const Acervo = () => {
           },
         };
 
-     
         const [emprestimosResponse, reservasResponse, historicoResponse] =
           await Promise.all([
             axios.get(
@@ -94,13 +92,12 @@ const Acervo = () => {
     lido: (livro) => livro.tipo === "lido",
   };
 
-  
   const livrosFiltrados = livros.filter(filtros[filtro]);
 
   const renovacao = async (idEmprestimo) => {
     try {
       const response = await fetch(
-        `https://localhost:7016/emprestimos/${idEmprestimo}`,
+        `https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/emprestimos/${idEmprestimo}`,
         {
           method: "PUT",
           headers: {
@@ -126,11 +123,12 @@ const Acervo = () => {
 
   return (
     <div className={styles.acervoContainer}>
-      <div className={styles.sidebar}>
-        <h2>Filtros</h2>
-        <form>
+      <h1 className={styles.tituloPagina}>Meus Livros</h1> {/* Título da página */}
+
+      <div className={styles.filtroContainer}>
+        <form className={styles.filtroForm}>
           {["todos", "emprestimos", "reservado", "lido"].map((tipo) => (
-            <div key={tipo}>
+            <div key={tipo} className={styles.filtroItem}>
               <label>
                 <input
                   type="radio"
