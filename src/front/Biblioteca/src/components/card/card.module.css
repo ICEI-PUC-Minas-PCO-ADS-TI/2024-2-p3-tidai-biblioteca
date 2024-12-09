@@ -1,53 +1,112 @@
+/* Container de cards */
 .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Aumenta o tamanho mínimo */
-    gap: 20px;
-    padding: 20px;
-    flex: 1; /* Ocupa o espaço restante */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustado para uma coluna mais flexível */
+  gap: 20px;
+  padding: 20px;
+  flex: 1; /* Ocupa o espaço restante */
+}
+
+/* Estilos do card */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+  text-align: center;
+  transition: transform 0.2s ease; /* Efeito de transição suave */
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Espaça os itens no card */
+  height: 100%; /* Garante que o card ocupe o espaço completo */
+}
+
+
+/* Imagem do card */
+.cardImage img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 4px; /* Bordas arredondadas para as imagens */
+}
+
+/* Conteúdo do card (título e descrição) */
+.cardContent {
+  flex-grow: 1; /* Garante que o conteúdo ocupe o máximo de espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContent h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #212529; /* Cor do título do card */
+  font-weight: 600;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  color: #6c757d; /* Cor do texto com menor destaque */
+  flex-grow: 1; /* Garante que o texto ocupe o espaço restante no card */
+  margin: 0; /* Remove margens desnecessárias */
+}
+
+/* Botões do card */
+.buttonsCard {
+  display: flex;
+  justify-content: space-between; /* Alinha os botões à esquerda e à direita */
+  gap: 1em;
+  align-self: center;
+  margin-top: 10px;
+  padding-top: 10px; /* Ajusta o espaçamento entre os botões e o conteúdo */
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste para telas menores */
   }
-  
+
   .card {
-    width: 200px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
-    text-align: center;
-    transition: transform 0.2s; /* Efeito de transição suave */
+    padding: 10px; /* Diminui o padding em telas menores */
   }
-  
-  .card:hover {
-    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
-  }
-  
+
   .cardImage img {
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 4px; /* Bordas arredondadas para as imagens */
+    width: 120px; /* Ajuste no tamanho da imagem */
+    height: 160px;
   }
-  .cardContent {
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    
-  }
-  
+
   .cardContent h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #212529; /* Cor do título do card */
+    font-size: 1rem; /* Reduz o tamanho da fonte do título */
   }
-  
+
   .cardContent p {
-    font-size: 1rem;
-    color: #6c757d; /* Cor do texto com menor destaque */
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
   }
-  .buttonsCard{
-    height: 30px;
-    gap: 1em;
-    display: flex;
-    margin: 1em;
+
+  .buttonsCard {
+    gap: 0.5em; /* Diminui o espaço entre os botões */
   }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 8px; /* Diminui o padding em telas muito pequenas */
+  }
+
+  .cardImage img {
+    width: 100px; /* Ajuste adicional para telas muito pequenas */
+    height: 130px;
+  }
+
+  .cardContent h3 {
+    font-size: 0.9rem; /* Menor tamanho de fonte para dispositivos móveis */
+  }
+
+  .cardContent p {
+    font-size: 0.8rem; /* Menor tamanho de texto */
+  }
+}
