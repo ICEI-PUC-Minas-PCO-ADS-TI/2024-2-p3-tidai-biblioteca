@@ -1,89 +1,88 @@
-.HeaderAdmin{
-    display: flex;
-    gap: 2.5rem;
-    background-color: #1b13b2;
-    height: 80px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+/* headerAdmin.module.css */
+
+.HeaderAdmin {
+  background-color: #1e90ff; /* Dodger blue background */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.HeaderAdmin ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .HeaderAdmin li {
-    border-bottom:2px solid transparent ;
+  margin: 0;
 }
 
-.HeaderAdmin i{
-    margin: 10px;
-    font-size: 25px;
+.HeaderAdmin a {
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.HeaderAdmin a{
-    text-decoration: none;
-    color: inherit;
-}
-.HeaderAdmin ul{
 
-    list-style: none;
-    display: flex;
-    gap:2rem; 
-    color: aliceblue;
+.HeaderAdmin a:hover,
+.HeaderAdmin a.active {
+  background-color: #4682b4; /* Steel blue background */
+  color: #ffffff; /* White text */
 }
-.iconHeader{
-    width: 16px;
-    filter: brightness(0), invert(1);
+
+.HeaderAdmin .contentHeaderAdmin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.active {
-    border-bottom: 2px solid #F0F0F0;
+
+.HeaderAdmin .logout {
+  margin-left: auto;
 }
-.logout button:hover{
-    cursor: pointer;
-    color: rgb(233, 68, 68);
+
+.HeaderAdmin button {
+  background-color: #ffffff; /* White background */
+  color: #1e90ff; /* Dodger blue text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.logout button{
-    all: unset;
+
+.HeaderAdmin button:hover {
+  background-color: #f0f8ff; /* Light blue background */
 }
+
+/* Responsividade */
 @media (max-width: 768px) {
-    .HeaderAdmin {
-        display: flex;
-        flex-direction: column;
-        height: 60px;
-    }
+  .HeaderAdmin ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .HeaderAdmin i {
-        font-size: 18px;
-    }
-
-    .HeaderAdmin a {
-        font-size: 10px;
-    }
-
-    .contentHeaderAdmin {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
-}
-@media (max-width:375px) {
-    .HeaderAdmin {
-        display: flex;
-        flex-direction: column;
-        height: 60px;
-    }
-
-    .HeaderAdmin i {
-        font-size: 18px;
-    }
-
-    .HeaderAdmin a {
-        font-size: 10px;
-    }
-
-    .contentHeaderAdmin {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-    }
+  .HeaderAdmin .logout {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
+@media (max-width: 480px) {
+  .HeaderAdmin {
+    padding: 10px;
+  }
+
+  .HeaderAdmin a {
+    padding: 8px 10px;
+  }
+
+  .HeaderAdmin button {
+    padding: 8px 15px;
+  }
+}
