@@ -18,6 +18,7 @@ import Emprestimos from "./pages/admin/emprestimos/emprestimos.jsx";
 
 import CadastroAdmin from "./pages/login/cadastroAdmin/cadastroAdmin.jsx";
 import CadastroUsuario from "./pages/login/cadastroUsuario/cadastroUsuario.jsx";
+import LivroDetalhes from "./pages/default/biblioteca/detalhesLivro.jsx";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -79,6 +80,7 @@ function App() {
                 <Route path="/historico" element={<Historico />} />
                 <Route path="/meus-livros" element={<MeusLivros />} />
                 <Route path="/minhaConta" element={<Usuario />} />
+                <Route path="/livro/:id" element={<LivroDetalhes />} />
               </>
             )}
             {tipoUsuario === "administrador" && (
