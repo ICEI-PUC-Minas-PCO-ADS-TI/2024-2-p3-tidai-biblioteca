@@ -256,7 +256,7 @@ export default function Emprestimos() {
   return (
     <div className={style.main}>
       <div className={style.container}>
-        <h2>Lista de Emprestimos</h2>
+        <h2 className={style.title}>Lista de Emprestimos</h2>
         <div className={style.headerEmprestimos}>
           <div className={style.barraPesquisaEmprestimo}>
             <BarraDePesquisa
