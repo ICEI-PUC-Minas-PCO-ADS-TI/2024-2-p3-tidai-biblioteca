@@ -11,7 +11,7 @@ export default function Login({ onLogin }) {
   const [error, setError] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [emailRecuperacao, setEmailRecuperacao] = useState("");
-  const [passwordVisible, setPasswordVisible] = useState(false); 
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -28,23 +28,23 @@ export default function Login({ onLogin }) {
           body: JSON.stringify({ username: username, password: password }),
         }
       );
-  
+
       if (response.ok) {
         const data = await response.json();
-        console.log("Resposta da API:", data); 
-  
+        console.log("Resposta da API:", data);
+
         const token = data.token;
         const userId = data.userId;
         const role = data.role;
-  
+
         console.log("Token recebido:", token);
         console.log("UserId recebido:", userId);
         console.log("Role recebida:", role);
-  
+
         localStorage.setItem("token", token);
         localStorage.setItem("userId", userId);
         localStorage.setItem("role", role);
-  
+
         onLogin(role);
         navigate(role === "administrador" ? "/homeAdmin" : "/biblioteca");
       } else {
@@ -72,9 +72,17 @@ export default function Login({ onLogin }) {
   return (
     <div className={style.main}>
       <Notificacao/>
+
+      <div className={style.rigth1}>
+        <div>
+          <h1>Bem-Vindo!</h1>
+          <h2>A sua biblioteca virtual</h2>
+        </div>
+      </div>
+
       <div className={style.left}>
         <h1>Login</h1>
-    
+
         <div className={style.inputs}>
           <i className="bi bi-envelope-at-fill"></i>
           <input
@@ -94,8 +102,8 @@ export default function Login({ onLogin }) {
             onChange={(e) => setPassword(e.target.value)}
           />
           <i
-            className={`bi ${passwordVisible ? "bi-eye" : "bi-eye-slash"}`} 
-            onClick={togglePasswordVisibility} 
+            className={`bi ${passwordVisible ? "bi-eye" : "bi-eye-slash"}`}
+            onClick={togglePasswordVisibility}
             style={{ cursor: "pointer", marginLeft: "10px" }}
           ></i>
         </div>
@@ -104,7 +112,14 @@ export default function Login({ onLogin }) {
           <i className="bi bi-door-open-fill"></i>
           Fazer Login
         </button>
-     
+
+        <div className={style.register1}>
+          <h4>Ainda não possui conta?</h4>
+          <NavLink to="/cadastroUsuario" className={style.buttonsNavLink1}>
+            <button>Inscreva-se</button>
+          </NavLink>
+        </div>
+
         <div className={style.cadastroLeft}>
           <h4>Cadastre-se como:</h4>
           <div className={style.buttonsCadastro}>
@@ -145,3 +160,5 @@ export default function Login({ onLogin }) {
     </div>
   );
 }
+
+
