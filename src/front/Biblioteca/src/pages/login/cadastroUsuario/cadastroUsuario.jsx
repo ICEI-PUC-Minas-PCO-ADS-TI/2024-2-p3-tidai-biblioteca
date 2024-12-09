@@ -11,7 +11,7 @@ export default function CadastroUsuario() {
     cpf: "",
     cep: "",
     rua: "",
-    tipoUsuario: "",
+    tipoUsuario: "user", // Valor padrão definido
     bairro: "",
     cidade: "",
     uf: "",
@@ -51,39 +51,54 @@ export default function CadastroUsuario() {
     }
 
     if (field === "cep") {
-      return value.replace(/\D/g, "").replace(/(\d{5})(\d{1,3})$/, "$1-$2");
+      return value
+        .replace(/\D/g, "")
+        .replace(/(\d{5})(\d{1,3})$/, "$1-$2");
     }
 
     return value;
   };
 
-  const removeFormatting = (value) => value.replace(/\D/g, "");
+  const removeFormatting = (value) => {
+    return value.replace(/\D/g, "");
+  };
 
   const validarCampos = () => {
     if (!formData.nome.trim()) {
       mostrarErro("O nome é obrigatório.");
       return false;
     }
+
     if (!formData.email.includes("@")) {
       mostrarErro("O e-mail deve ser válido.");
       return false;
     }
+
     if (removeFormatting(formData.cpf).length !== 11) {
       mostrarErro("O CPF deve ser válido.");
       return false;
     }
+
     if (removeFormatting(formData.cep).length !== 8) {
       mostrarErro("O CEP deve ser válido.");
       return false;
     }
+
     if (removeFormatting(formData.telefone).length < 10) {
       mostrarErro("O telefone deve ser válido.");
       return false;
     }
+
     if (formData.senha !== formData.confirmarSenha) {
       mostrarErro("As senhas não coincidem.");
       return false;
     }
+
+    if (!formData.tipoUsuario.trim()) {
+      mostrarErro("O tipo de usuário é obrigatório.");
+      return false;
+    }
+
     return true;
   };
 
@@ -95,13 +110,13 @@ export default function CadastroUsuario() {
       nome: formData.nome,
       email: formData.email,
       cpf: removeFormatting(formData.cpf),
-      tipoUsuario: "user",
+      tipoUsuario: formData.tipoUsuario,
       cep: removeFormatting(formData.cep),
       rua: formData.rua,
       bairro: formData.bairro,
       cidade: formData.cidade,
       uf: formData.uf,
-      numeroCasa: formData.numeroCasa,
+      numeroCasa: parseInt(formData.numeroCasa, 10),
       telefone: removeFormatting(formData.telefone),
       dataNascimento: formData.dataNascimento,
       senha: formData.senha,
@@ -112,16 +127,20 @@ export default function CadastroUsuario() {
         "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/",
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify(payload),
         }
       );
 
       const message = await response.text();
+
       if (!response.ok) {
         mostrarErro(`Erro: ${message}`);
         return;
       }
+
       mostrarSucesso(message);
       navigate("/");
     } catch (error) {
@@ -131,153 +150,180 @@ export default function CadastroUsuario() {
   };
 
   return (
-    <div className={style.main}>
-      <Notificacao />
-      <div className={style.container}>
-        <h1>Cadastro de Usuário</h1>
-        <form onSubmit={cadastro}>
-          <div className={style.formGroup}>
-            <label htmlFor="nome">Nome</label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              required
-              placeholder="Digite seu nome completo"
-              value={formData.nome}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className={style.formGroup}>
-            <label htmlFor="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Digite seu e-mail"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className={style.doubleInput}>
-            <div className={style.formGroup}>
-              <label htmlFor="cpf">CPF</label>
-              <input
-                type="text"
-                id="cpf"
-                name="cpf"
-                required
-                placeholder="000.000.000-00"
-                value={formData.cpf}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className={style.formGroup}>
-              <label htmlFor="telefone">Telefone</label>
-              <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                required
-                placeholder="(00) 0 0000-0000"
-                value={formData.telefone}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-
-          <div className={style.doubleInput}>
-            <div className={style.formGroup}>
-              <label htmlFor="dataNascimento">Data de Nascimento</label>
-              <input
-                type="date"
-                id="dataNascimento"
-                name="dataNascimento"
-                required
-                value={formData.dataNascimento}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className={style.formGroup}>
-              <label htmlFor="cep">CEP</label>
-              <input
-                type="text"
-                id="cep"
-                name="cep"
-                required
-                placeholder="00000-000"
-                value={formData.cep}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-
-          <div className={style.doubleInput}>
-            <div className={style.formGroup}>
-              <label htmlFor="bairro">Bairro</label>
-              <input
-                type="text"
-                id="bairro"
-                name="bairro"
-                required
-                placeholder="Nome do bairro"
-                value={formData.bairro}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className={style.formGroup}>
-              <label htmlFor="cidade">Cidade</label>
-              <input
-                type="text"
-                id="cidade"
-                name="cidade"
-                required
-                placeholder="Nome da cidade"
-                value={formData.cidade}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-
-          <div className={style.doubleInput}>
-            <div className={style.formGroup}>
-              <label htmlFor="senha">Senha:</label>
-              <input
-                type="password"
-                id="senha"
-                name="senha"
-                required
-                placeholder="Digite uma senha"
-                value={formData.senha}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className={style.formGroup}>
-              <label htmlFor="confirmarSenha">Confirmar Senha:</label>
-              <input
-                type="password"
-                id="confirmarSenha"
-                name="confirmarSenha"
-                required
-                placeholder="Confirme sua senha"
-                value={formData.confirmarSenha}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-
-          <div className={style.formGroup}>
-            <button type="submit">Cadastrar</button>
-          </div>
-        </form>
+<div className={style.main}>
+  <Notificacao />
+  <div className={style.container}>
+    <h1>Cadastro de Usuário</h1>
+    <form onSubmit={cadastro}>
+      <div className={style.formGroup}>
+        <label htmlFor="nome">Nome</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Digite seu nome completo"
+          value={formData.nome}
+          onChange={handleChange}
+        />
       </div>
-    </div>
+
+      <div className={style.formGroup}>
+        <label htmlFor="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Digite seu e-mail"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className={style.doubleInput}>
+        <div className={style.formGroup}>
+          <label htmlFor="cpf">CPF</label>
+          <input
+            type="text"
+            id="cpf"
+            name="cpf"
+            required
+            placeholder="000.000.000-00"
+            value={formData.cpf}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className={style.formGroup}>
+          <label htmlFor="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            required
+            placeholder="(00) 0 0000-0000"
+            value={formData.telefone}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+
+      <div className={style.doubleInput}>
+        <div className={style.formGroup}>
+          <label htmlFor="dataNascimento">Data de Nascimento</label>
+          <input
+            type="date"
+            id="dataNascimento"
+            name="dataNascimento"
+            required
+            value={formData.dataNascimento}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className={style.formGroup}>
+          <label htmlFor="cep">CEP</label>
+          <input
+            type="text"
+            id="cep"
+            name="cep"
+            required
+            placeholder="00000-000"
+            value={formData.cep}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+
+      <div className={style.formGroup}>
+        <label htmlFor="rua">Rua</label>
+        <input
+          type="text"
+          id="rua"
+          name="rua"
+          required
+          placeholder="Nome da rua"
+          value={formData.rua}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className={style.doubleInput}>
+        <div className={style.formGroup}>
+          <label htmlFor="bairro">Bairro</label>
+          <input
+            type="text"
+            id="bairro"
+            name="bairro"
+            required
+            placeholder="Nome do bairro"
+            value={formData.bairro}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className={style.formGroup}>
+          <label htmlFor="cidade">Cidade</label>
+          <input
+            type="text"
+            id="cidade"
+            name="cidade"
+            required
+            placeholder="Nome da cidade"
+            value={formData.cidade}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className={style.formGroup}>
+          <label htmlFor="numeroCasa">Número</label>
+          <input
+            type="text"
+            id="numeroCasa"
+            name="numeroCasa"
+            required
+            placeholder="N"
+            value={formData.numeroCasa}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+
+      <div className={style.doubleInput}>
+        <div className={style.formGroup}>
+          <label htmlFor="senha">Senha:</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            required
+            placeholder="Digite uma senha"
+            value={formData.senha}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className={style.formGroup}>
+          <label htmlFor="confirmarSenha">Confirmar Senha:</label>
+          <input
+            type="password"
+            id="confirmarSenha"
+            name="confirmarSenha"
+            required
+            placeholder="Confirme sua senha"
+            value={formData.confirmarSenha}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+
+      <div className={style.formGroup}>
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
   );
 }

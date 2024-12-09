@@ -56,7 +56,7 @@ body, html {
 
 .doubleInput {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os campos se ajustem em linha */
     gap: 1rem;
     width: 100%;
 }
