@@ -1,0 +1,181 @@
+.pageContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.mainContainer {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookImage {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.infoContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.author,
+.publisher,
+.description,
+.availability {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.availability {
+    font-size: 18px;
+    color: #007600;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos para dispositivos móveis e telas menores */
+@media (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .imageContainer {
+        max-width: 100%;
+        justify-content: flex-start; /* Alinha imagem à esquerda em telas pequenas */
+    }
+
+    .bookImage {
+        width: 100%;
+        max-width: 400px; /* Define um tamanho máximo para a imagem */
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .infoContainer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 20px; /* Tamanho menor para telas pequenas */
+    }
+
+    .author,
+    .publisher,
+    .description,
+    .availability {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .actions {
+        flex-direction: column; /* Organiza os botões em coluna */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .actions button {
+        width: 100%; /* Faz os botões ocuparem toda a largura */
+    }
+}
+
+/* Estilos para telas muito pequenas, como dispositivos móveis em modo retrato */
+@media (max-width: 480px) {
+    .title {
+        font-size: 18px; /* Tamanho menor ainda para telas pequenas */
+    }
+
+    .author,
+    .publisher,
+    .description,
+    .availability {
+        font-size: 12px; /* Diminui mais o texto para caber bem na tela */
+    }
+
+    .actions button {
+        font-size: 14px; /* Ajusta o tamanho da fonte no botão */
+        padding: 12px 20px; /* Aumenta o padding para botões maiores */
+    }
+}
+
+/* Estilos do botão "Voltar" */
+.backButton {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start; /* Alinha o botão à esquerda */
+    width: 100%;
+}
+
+.voltarBtn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Botão arredondado */
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.voltarBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+.voltarBtn:active {
+    background-color: #004085;
+    transform: translateY(0); /* Efeito de clique */
+}
+
+.voltarBtn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsividade para o botão "Voltar" */
+@media (max-width: 768px) {
+    .voltarBtn {
+        font-size: 16px;
+        padding: 10px 20px; /* Ajuste do padding para telas menores */
+    }
+}
