@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import style from "../gerenciamentoAcervo/acervo.module.css";
 import Card from "../../../components/card/card";
 import Buttons from "../../../components/buttons/buttons";
-import { mostrarSucesso, mostrarErro } from '../../../components/notificacao/notificacao.jsx';
-import Notificacao from '../../../components/notificacao/notificacao.jsx'; 
+import { mostrarSucesso, mostrarErro } from "../../../components/notificacao/notificacao.jsx";
+import Notificacao from "../../../components/notificacao/notificacao.jsx"; 
 
 export function Acervo() {
   const [livros, setLivros] = useState([]);
@@ -137,7 +137,6 @@ export function Acervo() {
       });
   
       if (!response.ok) {
-        
         const errorMessage = await response.text();
         throw new Error(errorMessage);
       }
@@ -152,7 +151,6 @@ export function Acervo() {
       mostrarErro(error.message);
     }
   };
-  
 
   return (
     <>
@@ -265,7 +263,6 @@ export function Acervo() {
                 setFormData({ ...formData, editora: e.target.value })
               }
             />
-            
             <label>Quantidade:</label>
             <input
               type="number"
