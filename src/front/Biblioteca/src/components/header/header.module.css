@@ -1,98 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* header.module.css */
 
 .Header {
+    background-color: #1e90ff; /* Dodger blue background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 2.5rem;
-    width: 100%;
-    background-color: #1b13b2;
-    height: 80px;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
-.Header li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid transparent;
-}
-
-
-.Header i {
-    margin: 10px;
-    font-size: 25px;
-}
-
-.Header a {
+    gap: 20px;
+  }
+  
+  .Header li {
+    margin: 0;
+  }
+  
+  .Header a {
     text-decoration: none;
-    color: inherit;
-}
-
-.Header ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    color: aliceblue;
-}
-
-.iconHeader {
-    width: 16px;
-    filter: brightness(0), invert(1);
-}
-
-.active {
-    border-bottom: 2px solid #F0F0F0;
-}
-.leftHeader {
+    color: #ffffff; /* White text */
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3em;
-}
-.logout button:hover{
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Header a:hover,
+  .Header a.active {
+    background-color: #4682b4; /* Steel blue background */
+    color: #ffffff; /* White text */
+  }
+  
+  .Header .contentHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Header .logout {
+    margin-left: auto;
+  }
+  
+  .Header button {
+    background-color: #ffffff; /* White background */
+    color: #1e90ff; /* Dodger blue text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-    color: rgb(233, 68, 68);
-}
-.logout button{
-    all: unset;
-}
-@media (max-width: 480px) {
+    transition: background-color 0.3s ease;
+  }
+  
+  .Header button:hover {
+    background-color: #f0f8ff; /* Light blue background */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .Header ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .Header .logout {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
     .Header {
-        display: flex;
-        flex-direction: column;
-        height: 60px;
+      padding: 10px;
     }
-
-    .Header i {
-        font-size: 18px;
-    }
-
+  
     .Header a {
-        font-size: 10px;
+      padding: 8px 10px;
     }
-
-    .contentHeader {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+  
+    .Header button {
+      padding: 8px 15px;
     }
-}
-
-@media (max-width: 540px) {
-    .Header {
-        width: 1024px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .Header {
-        width: 1024px;
-    }
-}
+  }
+  
