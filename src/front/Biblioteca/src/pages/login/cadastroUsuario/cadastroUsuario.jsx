@@ -37,7 +37,7 @@ export default function CadastroUsuario() {
   const applyMask = (field, value) => {
     if (field === "cpf") {
       return value
-        .replace(/\D/g, "") // Remove tudo que não é número
+        .replace(/\D/g, "")
         .replace(/(\d{3})(\d)/, "$1.$2")
         .replace(/(\d{3})(\d)/, "$1.$2")
         .replace(/(\d{3})(\d{1,2})$/, "$1-$2");
@@ -51,49 +51,39 @@ export default function CadastroUsuario() {
     }
 
     if (field === "cep") {
-      return value
-        .replace(/\D/g, "")
-        .replace(/(\d{5})(\d{1,3})$/, "$1-$2");
+      return value.replace(/\D/g, "").replace(/(\d{5})(\d{1,3})$/, "$1-$2");
     }
 
     return value;
   };
 
-  const removeFormatting = (value) => {
-    return value.replace(/\D/g, ""); // Remove tudo que não é número
-  };
+  const removeFormatting = (value) => value.replace(/\D/g, "");
 
   const validarCampos = () => {
     if (!formData.nome.trim()) {
       mostrarErro("O nome é obrigatório.");
       return false;
     }
-
     if (!formData.email.includes("@")) {
       mostrarErro("O e-mail deve ser válido.");
       return false;
     }
-
     if (removeFormatting(formData.cpf).length !== 11) {
       mostrarErro("O CPF deve ser válido.");
       return false;
     }
-
     if (removeFormatting(formData.cep).length !== 8) {
       mostrarErro("O CEP deve ser válido.");
       return false;
     }
-
     if (removeFormatting(formData.telefone).length < 10) {
       mostrarErro("O telefone deve ser válido.");
       return false;
     }
-
     if (formData.senha !== formData.confirmarSenha) {
       mostrarErro("As senhas não coincidem.");
       return false;
     }
-
     return true;
   };
 
@@ -101,7 +91,6 @@ export default function CadastroUsuario() {
     e.preventDefault();
     if (!validarCampos()) return;
 
-    // Remove formatação para enviar os dados ao servidor
     const payload = {
       nome: formData.nome,
       email: formData.email,
@@ -123,20 +112,16 @@ export default function CadastroUsuario() {
         "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/usuarios/",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         }
       );
 
       const message = await response.text();
-
       if (!response.ok) {
         mostrarErro(`Erro: ${message}`);
         return;
       }
-
       mostrarSucesso(message);
       navigate("/");
     } catch (error) {
@@ -205,19 +190,19 @@ export default function CadastroUsuario() {
             </div>
           </div>
 
-          <div className={style.formGroup}>
-            <label htmlFor="dataNascimento">Data de Nascimento</label>
-            <input
-              type="date"
-              id="dataNascimento"
-              name="dataNascimento"
-              required
-              value={formData.dataNascimento}
-              onChange={handleChange}
-            />
-          </div>
-
           <div className={style.doubleInput}>
+            <div className={style.formGroup}>
+              <label htmlFor="dataNascimento">Data de Nascimento</label>
+              <input
+                type="date"
+                id="dataNascimento"
+                name="dataNascimento"
+                required
+                value={formData.dataNascimento}
+                onChange={handleChange}
+              />
+            </div>
+
             <div className={style.formGroup}>
               <label htmlFor="cep">CEP</label>
               <input
@@ -227,19 +212,6 @@ export default function CadastroUsuario() {
                 required
                 placeholder="00000-000"
                 value={formData.cep}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className={style.formGroup}>
-              <label htmlFor="rua">Rua</label>
-              <input
-                type="text"
-                id="rua"
-                name="rua"
-                required
-                placeholder="Nome da rua"
-                value={formData.rua}
                 onChange={handleChange}
               />
             </div>
@@ -268,19 +240,6 @@ export default function CadastroUsuario() {
                 required
                 placeholder="Nome da cidade"
                 value={formData.cidade}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className={style.formGroup}>
-              <label htmlFor="numeroCasa">Número</label>
-              <input
-                type="text"
-                id="numeroCasa"
-                name="numeroCasa"
-                required
-                placeholder="N"
-                value={formData.numeroCasa}
                 onChange={handleChange}
               />
             </div>
