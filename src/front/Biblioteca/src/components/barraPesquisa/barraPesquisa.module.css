@@ -1,39 +1,84 @@
-.barraPesquisa input{
+.barraPesquisa input {
     border: none;
     border-right: 1px solid black;
     outline: none;
     margin: 5px;
     padding-left: 10px;
-    width: 550px;
+    width: 100%; /* Ajusta para 100% da largura disponível */
+    max-width: 550px; /* Limita a largura máxima */
     height: 25px;
     background: transparent;
-    }
-    .barraPesquisa{
-    width: 600px;
+  }
+  
+  .barraPesquisa {
+    width: 100%; /* Permite que ocupe a largura completa do contêiner pai */
+    max-width: 600px; /* Limita a largura máxima */
     padding: .25rem;
     border-radius: 20px;
     border: 1px solid black;
-    }
-    .barraPesquisa i{
+    display: flex;
+    align-items: center; /* Alinha o input e o botão na horizontal */
+    justify-content: space-between; /* Adiciona espaçamento entre o input e o botão */
+  }
+  
+  .barraPesquisa i {
     margin: 7px;
     font-size: 20px;
-    }
-    .barraPesquisa button {
+  }
+  
+  .barraPesquisa button {
     border: none;
     outline: none;
     background: transparent;
-    }
-    .barraPesquisa button :hover {
+  }
+  
+  .barraPesquisa button:hover {
     cursor: pointer;
-    }
-    .barraPesquisa input:focus{
+  }
+  
+  .barraPesquisa input:focus {
     border: none;
     border-right: 1px solid blue;
-    }
-    .barraPesquisa input:focus + button i {
+  }
+  
+  .barraPesquisa input:focus + button i {
     color: blue;
-    }
-    .focado{
+  }
+  
+  .focado {
     border: 1px solid blue;
     box-shadow: 0 4px 12px rgba(0, 4, 255, 0.3);
+  }
+  
+  /* Media Query para telas menores */
+  @media (max-width: 768px) {
+    .barraPesquisa {
+      max-width: 100%; /* Barra de pesquisa ocupa a largura total da tela em dispositivos móveis */
     }
+  
+    .barraPesquisa input {
+      max-width: 450px; /* Limita a largura do input em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .barraPesquisa input {
+      font-size: 14px; /* Diminui o tamanho da fonte para telas muito pequenas */
+      height: 30px; /* Ajusta a altura para telas pequenas */
+    }
+  
+    .barraPesquisa i {
+      font-size: 18px; /* Ajusta o ícone para telas menores */
+    }
+  
+    .barraPesquisa {
+      padding: .2rem;
+      max-width: 100%;
+      flex-direction: column; /* Coloca o botão abaixo do input em telas pequenas */
+    }
+  
+    .barraPesquisa button {
+      margin-top: 5px;
+    }
+  }
+  
