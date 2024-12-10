@@ -54,9 +54,14 @@
 Após a execução dos casos de teste para as funcionalidades descritas nos requisitos do sistema, todos os critérios de êxito foram atendidos com sucesso.
 
 No CT-001, o processo de cadastro de livros foi realizado com êxito, garantindo que o usuário consiga inserir os dados de um novo livro na aplicação.
+
 No CT-002, a funcionalidade de gerenciamento completo do acervo foi verificada e o administrador conseguiu realizar as operações CRUD (criação, leitura, atualização e remoção) de livros no sistema.
+
 No CT-003, o processo de renovação de empréstimo foi corretamente validado, com o usuário conseguindo renovar o empréstimo de um livro, desde que este não estivesse reservado por outro usuário.
+
 No CT-004, a funcionalidade de empréstimo de livros foi testada com sucesso, permitindo que os usuários solicitassem empréstimos diretamente pelo sistema.
+
 No CT-005, o cadastro de novos usuários foi realizado com êxito, permitindo que novos usuários se registrassem no sistema sem dificuldades.
+
 Portanto, com base nos testes realizados, a aplicação está operando de acordo com os requisitos estabelecidos, atendendo às funcionalidades principais de forma satisfatória. A avaliação dos casos de teste foi concluída com êxito, sem identificar problemas significativos, o que garante a continuidade do processo de desenvolvimento e implantação do sistema.
 
