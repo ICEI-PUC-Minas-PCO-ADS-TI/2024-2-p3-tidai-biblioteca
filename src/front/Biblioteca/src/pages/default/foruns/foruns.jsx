@@ -1,230 +1,186 @@
 import React, { useState, useEffect } from "react";
 import styles from "./foruns.module.css";
-import { mostrarSucesso, mostrarErro } from "../../../components/notificacao/notificacao.jsx";
-import Notificacao from "../../../components/notificacao/notificacao.jsx";
 
 export default function Foruns() {
-  const [topics, setTopics] = useState([]); // Tópicos carregados ou adicionados
-  const [newTopic, setNewTopic] = useState(""); // Novo título de tópico
-  const [newTopicMessage, setNewTopicMessage] = useState(""); // Mensagem inicial do novo tópico
-  const [newMessages, setNewMessages] = useState({}); // Estado para mensagens dos tópicos
+  const [topics, setTopics] = useState([]);
+  const [mensagens, setMensagens] = useState([]);
+  const [newTopic, setNewTopic] = useState("");
+  const [comment, setComment] = useState({});
   const token = localStorage.getItem("token");
+  const userId = localStorage.getItem("userId");
 
-  // Buscar tópicos ao carregar a página
   useEffect(() => {
-    async function fetchTopics() {
+    async function fetchTopicosEMensagens() {
       try {
-        const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-        });
-
-        if (!response.ok) throw new Error(`Erro HTTP! Status: ${response.status}`);
-
-        const data = await response.json();
-        // Garantir que cada tópico tenha uma lista de comments
-        const formattedData = data.map((topic) => ({
-          ...topic,
-          comments: topic.comments || [],
-        }));
-        setTopics(formattedData);
-      } catch (error) {
-        console.error("Erro ao buscar mensagens:", error);
-        mostrarErro("Erro ao carregar os tópicos.");
-      }
-    }
-    fetchTopics();
-  }, [token]);
-
-  // Adicionar um novo tópico e uma mensagem inicial
-  const addTopic = async () => {
-    if (newTopic.trim()) {
-      try {
-        const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/topico", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({
-            titulo: newTopic,
-            usuarioId: 1,
-            dataCriacao: new Date().toISOString(),
-          }),
-        });
-
-        if (!response.ok) throw new Error("Erro ao criar tópico.");
-
-        const result = await response.json();
-
-        // Adicionar mensagem inicial ao tópico
-        let newTopicData = { ...result, comments: [] };
-        if (newTopicMessage.trim()) {
-          const messageResponse = await addMessageToTopic(result.id, newTopicMessage, true);
-          newTopicData.comments.push(messageResponse);
-        }
-
-        setTopics([...topics, newTopicData]);
-        setNewTopic("");
-        setNewTopicMessage("");
-        mostrarSucesso("Tópico criado com sucesso!");
-      } catch (error) {
-        console.error("Erro ao criar tópico:", error.message);
-        mostrarErro("Erro ao criar o tópico.");
-      }
-    }
-  };
-
-  // Adicionar mensagem a um tópico
-  const addMessageToTopic = async (topicId, messageContent, isInitial = false) => {
-    const message = messageContent.trim();
-
-    if (message) {
-      try {
-        const response = await fetch("https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({
-            conteudo: message,
-            topicoId: topicId,
-            usuarioId: 1,
-            dataCriacao: new Date().toISOString(),
-          }),
-        });
-
-        if (!response.ok) throw new Error("Erro ao adicionar mensagem.");
-
-        const result = await response.json();
-
-        setTopics((prevTopics) =>
-          prevTopics.map((topic) =>
-            topic.id === topicId
-              ? { ...topic, comments: [...topic.comments, result] }
-              : topic
-          )
+        const topicosResponse = await fetch(
+          "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/topico",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          }
         );
 
-        if (!isInitial) {
-          setNewMessages({ ...newMessages, [topicId]: "" });
+        if (!topicosResponse.ok) {
+          throw new Error(
+            `Erro ao buscar tópicos. Status: ${topicosResponse.status}`
+          );
         }
-        return result;
+
+        const topicosData = await topicosResponse.json();
+        setTopics(topicosData);
+
+        const mensagensResponse = await fetch(
+          "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        if (!mensagensResponse.ok) {
+          throw new Error(
+            `Erro ao buscar mensagens. Status: ${mensagensResponse.status}`
+          );
+        }
+
+        const mensagensData = await mensagensResponse.json();
+        setMensagens(mensagensData);
       } catch (error) {
-        console.error("Erro ao adicionar mensagem:", error.message);
-        mostrarErro("Erro ao adicionar a mensagem.");
+        console.error("Erro ao buscar tópicos e mensagens:", error);
       }
     }
-  };
 
-  const deleteTopic = async (id) => {
+    fetchTopicosEMensagens();
+  }, [token]);
+
+  const addComment = async (topicId, conteudo) => {
+    const commentContent = conteudo || "";
+
+    if (!commentContent.trim()) {
+      console.error("Comentário vazio não pode ser enviado.");
+      return;
+    }
+
     try {
-      const response = await fetch(`https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens/${id}`, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await fetch(
+        "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            conteudo: commentContent,
+            topicoId: topicId,
+            usuarioId: userId,
+          }),
+        }
+      );
 
-      if (!response.ok) throw new Error("Erro ao excluir tópico.");
+      if (!response.ok) {
+        throw new Error(
+          `Erro ao adicionar comentário. Status: ${response.status}`
+        );
+      }
 
-      setTopics(topics.filter((topic) => topic.id !== id)); 
-      mostrarSucesso("Tópico excluído com sucesso!");
+      const novaMensagem = await response.json();
+      setMensagens((prevMensagens) => [...prevMensagens, novaMensagem]);
+      setComment((prevComments) => ({ ...prevComments, [topicId]: "" }));
     } catch (error) {
-      console.error("Erro ao excluir tópico:", error);
-      mostrarErro("Erro ao excluir o tópico.");
+      console.error("Erro ao adicionar comentário:", error);
     }
   };
-  
-  
-  // Renderizar um tópico
-  const renderTopic = (topic) => (
-    <div key={topic.id} className={styles.topic}>
-      <h3>{topic.titulo}</h3>
-      <p>{topic.conteudo || "Sem conteúdo"}</p>
-  
-      {/* Renderizar Comentários */}
-      <div className={styles.commentsSection}>
-        {Array.isArray(topic.comments) && topic.comments.length > 0 ? (
-          topic.comments.map((comment, index) => (
-            <div key={comment.id || index} className={styles.comment}>
-              <p>{comment.conteudo}</p>
-              {comment.usuarioId && (
-                <span className={styles.commentUser}>
-                  Usuário: {comment.usuarioId}
-                </span>
-              )}
-              {comment.dataCriacao && (
-                <span className={styles.commentDate}>
-                  Data: {new Date(comment.dataCriacao).toLocaleString()}
-                </span>
-              )}
-            </div>
-          ))
-        ) : (
-          <p className={styles.noComments}>Nenhum comentário ainda.</p>
-        )}
-      </div>
-  
-      {/* Adicionar Mensagem */}
-      <div className={styles.inputContainer}>
-        <input
-          type="text"
-          placeholder="Escreva uma mensagem..."
-          value={newMessages[topic.id] || ""}
-          onChange={(e) =>
-            setNewMessages({ ...newMessages, [topic.id]: e.target.value })
-          }
-          className={styles.input}
-        />
-        <button
-          onClick={() => addMessageToTopic(topic.id, newMessages[topic.id])}
-          className={styles.button}
-        >
-          Comentar
-        </button>
-        <button onClick={() => deleteTopic(topic.id)} className={styles.button}>
-          Excluir
-        </button>
-      </div>
-    </div>
-  );
-  
+
+  const addTopic = async (topico) => {
+    const topicoTitulo = topico.trim();
+
+    if (!topicoTitulo) {
+      console.error("Título do tópico não pode ser vazio.");
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/topico",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ titulo: topicoTitulo, usuarioId: userId }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Erro ao adicionar tópico. Status: ${response.status}`);
+      }
+
+      const novoTopico = await response.json();
+      setTopics((prevTopics) => [...prevTopics, novoTopico]);
+      setNewTopic("");
+    } catch (error) {
+      console.error("Erro ao adicionar tópico:", error);
+    }
+  };
 
   return (
     <div className={styles.container}>
-      <Notificacao />
       <h1 className={styles.header}>Fórum da Biblioteca</h1>
 
-      {/* Lista de Tópicos */}
       <div className={styles.topicList}>
-        {topics.length > 0 ? (
-          topics.map(renderTopic)
-        ) : (
-          <p className={styles.empty}>Nenhum tópico criado ainda.</p>
-        )}
+        {topics.map((topic) => (
+          <div key={topic.id} className={styles.topic}>
+            <h3>{topic.titulo}</h3>
+
+            <div className={styles.commentsSection}>
+              {mensagens
+                .filter((mensagem) => mensagem.topicoId === topic.id)
+                .map((mensagem) => (
+                  <div key={mensagem.id} className={styles.comment}>
+                    <p>{mensagem.conteudo}</p>
+                  </div>
+                ))}
+            </div>
+
+            <div className={styles.inputContainer}>
+              <input
+                type="text"
+                placeholder="Escreva um comentário..."
+                value={comment[topic.id] || ""}
+                onChange={(e) =>
+                  setComment({
+                    ...comment,
+                    [topic.id]: e.target.value,
+                  })
+                }
+                className={styles.input}
+              />
+              <button
+                onClick={() => addComment(topic.id, comment[topic.id] || "")}
+                className={styles.button}
+              >
+                Comentar
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className={styles.inputContainer}>
         <input
           type="text"
-          placeholder="Título do tópico..."
+          placeholder="Escreva o título do tópico..."
           value={newTopic}
           onChange={(e) => setNewTopic(e.target.value)}
           className={styles.input}
         />
-        <input
-          type="text"
-          placeholder="Mensagem inicial..."
-          value={newTopicMessage}
-          onChange={(e) => setNewTopicMessage(e.target.value)}
-          className={styles.input}
-        />
-        <button onClick={addTopic} className={styles.button}>
+        <button onClick={() => addTopic(newTopic)} className={styles.button}>
           Adicionar Tópico
         </button>
       </div>
