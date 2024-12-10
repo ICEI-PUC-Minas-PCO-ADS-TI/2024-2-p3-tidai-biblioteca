@@ -30,7 +30,7 @@ export default function Foruns() {
 
         const topicosData = await topicosResponse.json();
         setTopics(topicosData);
-
+        console.log(topicosData);
         const mensagensResponse = await fetch(
           "https://biblioteca-aahcb8aeeegfdwg8.brazilsouth-01.azurewebsites.net/mensagens",
           {
@@ -49,6 +49,7 @@ export default function Foruns() {
 
         const mensagensData = await mensagensResponse.json();
         setMensagens(mensagensData);
+        console.log(mensagensData);
       } catch (error) {
         console.error("Erro ao buscar tópicos e mensagens:", error);
       }
@@ -82,12 +83,16 @@ export default function Foruns() {
         }
       );
 
+      console.log("Comment Content:", commentContent);
+      console.log("Topic ID:", topicId);
+      console.log("User ID:", userId);
+
       if (!response.ok) {
         throw new Error(
           `Erro ao adicionar comentário. Status: ${response.status}`
         );
       }
-
+      
       const novaMensagem = await response.json();
       setMensagens((prevMensagens) => [...prevMensagens, novaMensagem]);
       setComment((prevComments) => ({ ...prevComments, [topicId]: "" }));
@@ -137,6 +142,10 @@ export default function Foruns() {
         {topics.map((topic) => (
           <div key={topic.id} className={styles.topic}>
             <h3>{topic.titulo}</h3>
+            <p>
+              Data criação:{" "}
+              {new Date(topic.dataCriacao).toLocaleDateString("pt-BR")}
+            </p>
 
             <div className={styles.commentsSection}>
               {mensagens
@@ -144,6 +153,15 @@ export default function Foruns() {
                 .map((mensagem) => (
                   <div key={mensagem.id} className={styles.comment}>
                     <p>{mensagem.conteudo}</p>
+                    <div className={styles.commentContent}>
+                      <p>Criado por: {mensagem.nomeUsuario}</p>
+                      <p>
+                        Data criação:{" "}
+                        {new Date(mensagem.dataCriacao).toLocaleDateString(
+                          "pt-BR"
+                        )}
+                      </p>
+                    </div>
                   </div>
                 ))}
             </div>

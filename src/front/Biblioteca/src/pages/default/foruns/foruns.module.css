@@ -108,6 +108,11 @@
 .messagesSection {
   margin-top: 10px;
 }
+.commentContent{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
 
 .message {
   margin-bottom: 5px;
